@@ -21,14 +21,19 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
         //Zero Parameter Constructor.
     }
-    public static void main(String[] args) {
+    /**
+     * Main Function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int size = Integer.parseInt(scan.nextLine());
         Percolation p = new Percolation(size);
