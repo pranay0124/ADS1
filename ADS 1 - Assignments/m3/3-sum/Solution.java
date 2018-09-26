@@ -1,8 +1,25 @@
+/**
+ * Author : Pranay Kumar Y.
+ * Date : 26th September,2018.
+ */
 import java.util.Scanner;
 import java.util.Arrays;
-
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//Zero Parameter Constructor.
+	}
+	/**
+	 * Main Function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int size = scan.nextInt();
 		int[] array = new int[size];
