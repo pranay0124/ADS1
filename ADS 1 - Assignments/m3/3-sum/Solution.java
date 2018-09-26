@@ -17,19 +17,19 @@ class Solution {
 		int tail = 0;
 		int count = 0;
 		Arrays.sort(array);
-		for(int i=0;i<size-2;i++) {
-			a=array[i];
-			head=i+1;
-			tail = size-1;
-			while(head<tail) {
-				b=array[head];
-				c=array[tail];
-				if(a+b+c==0) {
+		for (int i = 0; i < size - 2; i++) {
+			a = array[i];
+			head = i + 1;
+			tail = size - 1;
+			while (head < tail) {
+				b = array[head];
+				c = array[tail];
+				if (a + b + c == 0) {
 					count++;
-					head+=1;
-					tail-=1;
-				} else if(a+b+c <0) {
-					head +=1;
+					head += 1;
+					tail -= 1;
+				} else if (a + b + c < 0) {
+					head += 1;
 				} else {
 					tail -= 1;
 				}
