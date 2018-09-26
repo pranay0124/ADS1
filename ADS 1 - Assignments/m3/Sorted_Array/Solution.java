@@ -56,7 +56,7 @@ class Solution {
 			}
 		}
 		for(int l=0; l<finalarray.length-1; l++) {
-			System.out.println(finalarray[l]+ ",");
+			System.out.print(finalarray[l]+ ",");
 		}
 		System.out.println(finalarray[finalarray.length-1]);
 	}
