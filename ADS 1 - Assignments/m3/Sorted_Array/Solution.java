@@ -16,16 +16,16 @@ class Solution {
 		}
 
 		int i = 0;
-		int j=0;
-		int k=0;
-		int[] finalarray = new int[size1+size2];
-		while(k<size1+size2) {
-			if((i<size1)&&(j<size2)) {
-				if(array1[i] < array2[j]) {
+		int j = 0;
+		int k = 0;
+		int[] finalarray = new int[size1 + size2];
+		while (k < size1 + size2) {
+			if ((i < size1) && (j < size2)) {
+				if (array1[i] < array2[j]) {
 					finalarray[k] = array1[i];
 					i++;
 					k++;
-				} else if(array1[i] > array2[j]) {
+				} else if (array1[i] > array2[j]) {
 					finalarray[k] = array2[j];
 					j++;
 					k++;
@@ -40,24 +40,24 @@ class Solution {
 			} else {
 				break;
 			}
-		} 
-		if(i<size1) {
-			while (i<size1) {
+		}
+		if (i < size1) {
+			while (i < size1) {
 				finalarray[k] = array1[i];
 				i++;
 				k++;
 			}
 		}
-		if(j<size2) {
-			while(j<size2) {
+		if (j < size2) {
+			while (j < size2) {
 				finalarray[k] = array2[j];
 				j++;
 				k++;
 			}
 		}
-		for(int l=0; l<finalarray.length-1; l++) {
-			System.out.print(finalarray[l]+ ",");
+		for (int l = 0; l < finalarray.length - 1; l++) {
+			System.out.print(finalarray[l] + ",");
 		}
-		System.out.println(finalarray[finalarray.length-1]);
+		System.out.println(finalarray[finalarray.length - 1]);
 	}
 }
