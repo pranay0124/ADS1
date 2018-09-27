@@ -3,7 +3,6 @@
  * date : 27th September,2018.
  */
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * Class for solution.
  */
@@ -27,7 +26,8 @@ final class Solution {
             Stack stack = new Stack();
             boolean flag = false;
             for (int i = 0; i < tokens.length; i++) {
-                if (tokens[i].equals("{") || tokens[i].equals("[") || tokens[i].equals("(")) {
+                if (tokens[i].equals("{") || tokens[i].equals("[")
+                        || tokens[i].equals("(")) {
                     stack.push(tokens[i]);
                 }
 
