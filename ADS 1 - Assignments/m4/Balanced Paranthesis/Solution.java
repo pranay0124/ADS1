@@ -1,16 +1,16 @@
 import java.util.Scanner;
 import java.util.Arrays;
 class Stack {
-	String[] stack;
+	String[] array;
 	int size;
 	Stack() {
-		stack = new String[50];
+		array = new String[50];
 		size = 0;
 	}
 
 	void push(String element) {
 		try {
-			stack[size] = element;
+			array[size] = element;
 			size++;
 		} catch (Exception e) {
 			resize();
@@ -19,7 +19,7 @@ class Stack {
 	}
 
 	void resize() {
-		stack = Arrays.copyOf(stack, size * 2);
+		array = Arrays.copyOf(array, size * 2);
 	}
 
 	boolean isEmpty() {
@@ -27,8 +27,8 @@ class Stack {
 	}
 
 	String pop() {
-		String item = stack[size - 1];
-		stack[size - 1] = null;
+		String item = array[size - 1];
+		array[size - 1] = null;
 		size--;
 		return item;
 	}
