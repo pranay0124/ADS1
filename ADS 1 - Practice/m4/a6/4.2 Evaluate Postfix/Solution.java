@@ -6,6 +6,7 @@ class LinkedList {
 		Node next;
 		Node(int data) {
 			this.data = data;
+			next = null;
 		}
 	}
 
