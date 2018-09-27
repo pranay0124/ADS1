@@ -52,6 +52,7 @@ final class Solution {
                     b = list.pop();
                     list.push(a / b);
                     break;
+                default:
                 }
             }
         }
