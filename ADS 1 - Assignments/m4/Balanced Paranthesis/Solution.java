@@ -1,90 +1,74 @@
+/**
+ * @author : Pranay Kumar Y.
+ * date : 27th September,2018.
+ */
 import java.util.Scanner;
 import java.util.Arrays;
-class Stack {
-	String[] array;
-	int size;
-	Stack() {
-		array = new String[50];
-		size = 0;
-	}
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Zero Parameter Constructor.
+    }
+    /**
+     * Main Function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = Integer.parseInt(scan.nextLine());
+        while (scan.hasNext()) {
+            String[] tokens = scan.nextLine().split("");
+            Stack stack = new Stack();
+            boolean flag = false;
+            for (int i = 0; i < tokens.length; i++) {
+                if (tokens[i].equals("{") || tokens[i].equals("[") || tokens[i].equals("(")) {
+                    stack.push(tokens[i]);
+                }
 
-	void push(String element) {
-		try {
-			array[size] = element;
-			size++;
-		} catch (Exception e) {
-			resize();
-			push(element);
-		}
-	}
+                if (tokens[i].equals("}")) {
+                    String str;
+                    if (!stack.isEmpty()) {
+                        str = stack.pop();
+                        if (!str.equals("{")) {
+                            flag = true;
+                            break;
+                        }
+                    }
+                }
 
-	void resize() {
-		array = Arrays.copyOf(array, size * 2);
-	}
+                if (tokens[i].equals("]")) {
+                    String str;
+                    if (!stack.isEmpty()) {
+                        str = stack.pop();
+                        if (!str.equals("[")) {
+                            flag = true;
+                            break;
+                        }
+                    }
+                }
 
-	boolean isEmpty() {
-		return size == 0;
-	}
+                if (tokens[i].equals(")")) {
+                    String str;
+                    if (!stack.isEmpty()) {
+                        str = stack.pop();
+                        if (!str.equals("(")) {
+                            flag = true;
+                            break;
+                        }
+                    }
+                }
+            } if (!flag && stack.isEmpty()) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
 
-	String pop() {
-		String item = array[size - 1];
-		array[size - 1] = null;
-		size--;
-		return item;
-	}
-}
-
-class Solution {
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int n = Integer.parseInt(scan.nextLine());
-		while (scan.hasNext()) {
-			String[] tokens = scan.nextLine().split("");
-			Stack stack = new Stack();
-			boolean flag = false;
-			for (int i = 0; i < tokens.length; i++) {
-				if (tokens[i].equals("{") || tokens[i].equals("[") || tokens[i].equals("(")) {
-					stack.push(tokens[i]);
-				}
-
-				if (tokens[i].equals("}")) {
-					String str;
-					if (!stack.isEmpty()) {
-						str = stack.pop();
-						if (!str.equals("{")) {
-							flag = true;
-							break;
-						}
-					}
-				}
-
-				if (tokens[i].equals("]")) {
-					String str;
-					if (!stack.isEmpty()) {
-						str = stack.pop();
-						if (!str.equals("[")) {
-							flag = true;
-							break;
-						}
-					}
-				}
-
-				if (tokens[i].equals(")")) {
-					String str;
-					if (!stack.isEmpty()) {
-						str = stack.pop();
-						if (!str.equals("(")) {
-							flag = true;
-							break;
-						}
-					}
-				}
-			} if (!flag && stack.isEmpty()) {
-				System.out.println("YES");
-			} else {
-				System.out.println("NO");
-
-			}
-		}
-	}
+            }
+        }
+    }
 }
