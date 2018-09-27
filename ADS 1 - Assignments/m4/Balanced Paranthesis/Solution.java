@@ -43,7 +43,7 @@ class Solution {
 			Stack stack = new Stack();
 			boolean flag = false;
 			for (int i = 0; i < tokens.length; i++) {
-				if (tokens.equals("{") || tokens.equals("[") || tokens.equals("(")) {
+				if (tokens[i].equals("{") || tokens[i].equals("[") || tokens[i].equals("(")) {
 					stack.push(tokens[i]);
 				}
 
