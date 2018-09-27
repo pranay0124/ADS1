@@ -22,6 +22,14 @@ class LinkedList {
 		first = first.next;
 		return item;
 	}
+
+	void printList() {
+		Node newnode = first;
+		while(newnode != null) {
+			System.out.println(newnode.data + " ");
+			newnode = newnode.next;
+		}
+	}
 }
 class Solution {
 	public static void main(String[] args) {
@@ -59,6 +67,6 @@ class Solution {
 				}
 			}
 		}
-		System.out.println(list);
+		list.printList();
 	}
 }
