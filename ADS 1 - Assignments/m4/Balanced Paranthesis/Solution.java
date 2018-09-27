@@ -19,16 +19,16 @@ class Stack {
 	}
 
 	void resize() {
-		stack = Arrays.copyOf(stack, size *2);
+		stack = Arrays.copyOf(stack, size * 2);
 	}
 
 	boolean isEmpty() {
-		return size==0;
+		return size == 0;
 	}
 
 	String pop() {
-		String item = stack[size-1];
-		stack[size-1] = null;
+		String item = stack[size - 1];
+		stack[size - 1] = null;
 		size--;
 		return item;
 	}
@@ -38,52 +38,52 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
-		while(scan.hasNext()) {
+		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split("");
 			Stack stack = new Stack();
 			boolean flag = false;
-			for(int i=0;i<tokens.length;i++) {
-				if(tokens.equals("{") || tokens.equals("[") || tokens.equals("(")) {
+			for (int i = 0; i < tokens.length; i++) {
+				if (tokens.equals("{") || tokens.equals("[") || tokens.equals("(")) {
 					stack.push(tokens[i]);
 				}
 
-				if(tokens[i].equals("}")) {
+				if (tokens[i].equals("}")) {
 					String str;
-					if(!stack.isEmpty()) {
+					if (!stack.isEmpty()) {
 						str = stack.pop();
-						if(!str.equals("{")) {
+						if (!str.equals("{")) {
 							flag = true;
 							break;
 						}
 					}
 				}
 
-				if(tokens[i].equals("]")) {
+				if (tokens[i].equals("]")) {
 					String str;
-					if(!stack.isEmpty()) {
+					if (!stack.isEmpty()) {
 						str = stack.pop();
-						if(!str.equals("[")) {
+						if (!str.equals("[")) {
 							flag = true;
 							break;
 						}
 					}
 				}
 
-				if(tokens[i].equals(")")) {
+				if (tokens[i].equals(")")) {
 					String str;
-					if(!stack.isEmpty()) {
+					if (!stack.isEmpty()) {
 						str = stack.pop();
-						if(!str.equals("(")) {
+						if (!str.equals("(")) {
 							flag = true;
 							break;
 						}
 					}
 				}
-			}
-			if(!flag && stack.isEmpty()) {
+			} if (!flag && stack.isEmpty()) {
 				System.out.println("YES");
 			} else {
 				System.out.println("NO");
+
 			}
 		}
 	}
