@@ -11,26 +11,26 @@ class Solution {
 			} else {
 				switch (tokens[i]) {
 				case "+" :
-					int a = list.remove();
-					int b = list.remove();
+					int a = list.removeLast();
+					int b = list.removeLast();
 					list.add(a + b);
 					break;
 
 				case "-" :
-					a = list.remove();
-					b = list.remove();
+					a = list.removeLast();
+					b = list.removeLast();
 					list.add(a - b);
 					break;
 
 				case "*" :
-					a = list.remove();
-					b = list.remove();
+					a = list.removeLast();
+					b = list.removeLast();
 					list.add(a * b);
 					break;
 
 				case "/" :
-					a = list.remove();
-					b = list.remove();
+					a = list.removeLast();
+					b = list.removeLast();
 					list.add(a / b);
 					break;
 				}
