@@ -6,28 +6,21 @@ class LinkedList {
 		Node next;
 		Node(int data) {
 			this.data = data;
-			next = null;
 		}
 	}
 
-	private Node head, tail;
+	private Node first = null;
 
 	void push(int n) {
-		Node newhead = head;
-		while (newhead != null && newhead.next != null) {
-			newhead = newhead.next;
-		}
-		newhead.next = new Node(n);
+		Node newnode = new Node(n);
+		newnode.next = first;
+		first = newnode;
 	}
 
 	int pop() {
-		int data = tail.data;
-		Node newhead = head;
-		while (newhead.next != tail) {
-			newhead = newhead.next;
-		}
-		newhead.next = null;
-		return data;
+		int item = first.data;
+		first = first.next;
+		return item;
 	}
 }
 class Solution {
