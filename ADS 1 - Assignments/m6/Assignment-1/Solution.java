@@ -100,8 +100,6 @@ public class Solution {
         case "numberToDigits":
             LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
             LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
-            System.out.println("Here");
-
             System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
             System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
             break;
