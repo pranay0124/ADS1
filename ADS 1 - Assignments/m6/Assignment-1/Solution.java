@@ -86,11 +86,10 @@ class AddLargeNumbers {
         //     fl.push(a);
         // }
         // return fl;
-        fl.push(0);
         int place = 0;
         String result = "";
         while (!list1.isEmpty()) {
-            place = fl.pop() + list1.insertafter(list1.size) + list2.insertafter(list2.size);
+            place = list1.insertafter(list1.size) + list2.insertafter(list2.size);
             result =  (place % 10) + result;
             if (place > 9) {
                 fl.push(place / 10);
