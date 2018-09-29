@@ -1,87 +1,92 @@
 import java.util.Scanner;
 class LinkedList {
-    private class Node {
+    Node first = null;
+    int size = 0;
+    class Node {
         int data;
         Node next;
         Node() {}
         Node(int data) {
-            this(data, null);
-        }
-        Node(int data, Node next) {
             this.data = data;
-            this.next = next;
         }
     }
-
-    private Node head, tail;
-
-    void addAtHead(int data) {
-        Node node = new Node();
-        node.data = data;
-        node.next = head;
-        head = node;
-    }
-
-    public int popAtHead() {
-        int data = head.data;
-        head = head.next;
-        return data;
-    }
-
-    public void addAtTail(int data) {
-        Node newhead = head;
-        while (newhead != null && newhead.next != null) {
-            newhead = newhead.next;
+    boolean isEmpty() {
+        if (size == 0) {
+            return true;
         }
-        newhead.next = new Node(data);
+        return false;
     }
-
-    public int popAtTail() {
-        int data = tail.data;
-        Node newhead = head;
-        while (newhead.next != tail) {
-            newhead = newhead.next;
+    void push(int item) {
+        Node tnode = new Node(item);
+        tnode.next = first;
+        first = tnode;
+        size++;
+    }
+    int pop() {
+        int tdata = first.data;
+        first = first.next;
+        size--;
+        return tdata;
+    }
+    int newpop(int value) {
+        Node tnode = first;
+        int counter = 0;
+        while (counter < value - 1) {
+            tnode = tnode.next;
+            counter++;
         }
-        newhead.next = null;
-        return data;
+        int value1 = tnode.data;
+        size--;
+        return value1;
     }
-
-    public boolean isEmpty() {
-        return head == tail;
-    }
-
-    public int size() {
-        int count = 0;
-        while (head != tail) {
-            count ++;
+    String print() {
+        Node tnode = first;
+        String num = "";
+        while (tnode != null) {
+            num = num + tnode.data;
+            tnode = tnode.next;
         }
-        return count;
+        return num;
+    }
+    int size() {
+        return this.size;
     }
 }
 
-
 class AddLargeNumbers {
-    static LinkedList l1 = new LinkedList();
+    static LinkedList l1;
+    static LinkedList fl;
 
     public static LinkedList numberToDigits(String number) {
-        String[] digits = number.split("");
-        for (int i = 0; i < digits.length; i++) {
-            l1.addAtTail(Integer.parseInt(digits[i]));
+        l1 = new LinkedList();
+        for (int i = number.length() - 1; i >= 0 ; i--) {
+            String digit = "" + number.charAt(i);
+            l1.push(Integer.parseInt(digit));
         }
+        // l1.print();
         return l1;
     }
 
     public static String digitsToNumber(LinkedList list) {
-        String str = "";
-        for (int i = 0; i < list.size(); i++) {
-            int temp = list.popAtTail();
-            str = str + Integer.toString(temp);
-        }
-        return str;
+        return list.print();
+        // System.out.println("Present out");
+        // String str = "";
+        // for (int i = 0; i < list.size(); i++) {
+        //     System.out.println("Present in");
+        //     // System.out.println(temp);
+        //     str = str + Integer.toString(list.pop());
+        // }
+        // return str;
     }
 
     // public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
-
+    //     fl = new LinkedList();
+    //     // for (int i = 0; i < list1.size(); i++) {
+    //     //     int a = list1.pop() + list2.pop();
+    //     //     fl.push(a);
+    //     // }
+    //     // return fl;
+        
     // }
 }
 
@@ -91,22 +96,25 @@ public class Solution {
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
-        LinkedList l1 = new LinkedList();
         switch (input) {
         case "numberToDigits":
             LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
             LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
+            System.out.println("Here");
+
             System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
             System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
             break;
 
-            // case "addLargeNumbers":
-            //     pDigits = AddLargeNumbers.numberToDigits(p);
-            //     qDigits = AddLargeNumbers.numberToDigits(q);
-            //     LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
-            //     System.out.println(AddLargeNumbers.digitsToNumber(result));
-            //     break;
+        // case "addLargeNumbers":
+        //     pDigits = AddLargeNumbers.numberToDigits(p);
+        //     qDigits = AddLargeNumbers.numberToDigits(q);
+        //     LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+        //     System.out.println(AddLargeNumbers.digitsToNumber(result));
+        //     break;
         }
     }
 
 }
+
+
