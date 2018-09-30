@@ -36,7 +36,8 @@ final class Solution {
      * @param      queue   The queue
      * @param      person  The person
      */
-    public static void createCircle(final Deque<Integer> queue, final int person) {
+    public static void createCircle(final Deque<Integer> queue,
+                                    final int person) {
         for (int i = 0; i < person; i++) {
             queue.push(i);
         }
