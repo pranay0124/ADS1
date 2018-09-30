@@ -9,15 +9,15 @@ public class Solution {
 			case "pushRight":
 				queue.pushRight(Integer.parseInt(tokens[1]));
 				break;
-				// case "pushLeft":
-				// queue.pushLeft(Integer.parseInt(tokens[1]));
-				// break;
-			// case "popRight":
-			// 	queue.popRight();
-			// 	break;
-			// case "popLeft":
-			// 	queue.popLeft();
-			// 	break;
+			case "pushLeft":
+				queue.pushLeft(Integer.parseInt(tokens[1]));
+				break;
+			case "popRight":
+				queue.popRight();
+				break;
+			case "popLeft":
+				queue.popLeft();
+				break;
 			case "size":
 				System.out.println(queue.getSize());
 				break;
@@ -63,6 +63,61 @@ class Deque<Item> {
 		printList();
 	}
 
+	public Item popRight() {
+		if (size == 0) {
+			System.out.println("Deck is empty");
+			return null;
+		}
+		Item d  =  last.data;
+		if (isEmpty()) {
+			return null;
+		}
+		int s = 0;
+		Node get = first;
+
+		while (s < size - 2) {
+			get = get.next;
+			s++;
+		}
+		last = get;
+		get.next = null;
+		size--;
+		printList();
+		return d;
+	}
+
+	public void pushLeft(Item element) {
+		Node oldright = first;
+		first = new Node(element);
+		if (isEmpty()) {
+			last = first;
+			size++;
+			printList();
+			return;
+
+		}
+		first.next = oldright;
+		size++;
+		printList();
+	}
+
+	public Item popLeft() {
+		if (size == 0) {
+			System.out.println("Deck is empty");
+			return null;
+		}
+		Item d = first.data;
+		if (isEmpty()) {
+			return null;
+		}
+		first = first.next;
+		size--;
+		printList();
+		return d;
+
+	}
+
+
 	public void printList() {
 		if (size == 0) {
 			System.out.println("[]");
@@ -76,10 +131,10 @@ class Deque<Item> {
 		}
 		String[] str = s.split(",");
 		String pr = "[";
-		for(int i = 0;i<size-1;i++) {
+		for (int i = 0; i < size - 1; i++) {
 			pr += str[i] + ", ";
 		}
-		pr += str[size-1] + "]";
+		pr += str[size - 1] + "]";
 		System.out.println(pr);
 	}
 }
