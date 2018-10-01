@@ -64,6 +64,10 @@ class Steque {
 	}
 	/**/
 	void printList() {
+		if(size == 0) {
+			System.out.println("Steque is empty");
+			return;
+		}
 		Node tnode = head;
 		String s = "";
 		while (tnode != null) {
@@ -74,7 +78,9 @@ class Steque {
 		String pr = "";
 		for (int i = 0; i < size - 1; i++) {
 			pr += str[i] + ", ";
+			System.out.println(pr);
 		}
+		System.out.println(size-1);
 		pr += str[size - 1];
 		System.out.println(pr);
 	}
