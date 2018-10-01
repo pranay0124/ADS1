@@ -7,11 +7,30 @@ import java.util.Scanner;
  * Class for steque.
  */
 final class Steque {
+	/**
+	 * { starting node of list }
+	 */
 	private Node head = null;
+	/**
+	 * { ending node of list }
+	 */
 	private Node tail = null;
+	/**
+	 * { size of the list }
+	 */
 	private int size = 0;
+
+	/**
+	 * Class for node.
+	 */
 	class Node {
+		/**
+		 * { variable to access data }
+		 */
 		private int data;
+		/**
+		 * { vaiable for accessing next node }
+		 */
 		private Node next;
 		Node() {}
 		Node(int data) {
