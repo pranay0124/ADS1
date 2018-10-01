@@ -21,10 +21,10 @@ class Steque {
 	void pushLeft(int element) {
 		Node oldright = head;
 		head = new Node(element);
-		if (size == 0) {
-			head = tail;
-			printList();
+		if (isEmpty()) {
+			tail = head;
 			size++;
+			printList();
 			return;
 		}
 		head.next = oldright;
@@ -50,10 +50,11 @@ class Steque {
 	void pushRight(int element) {
 		Node oldtail = tail;
 		tail = new Node(element);
-		if (size == 0) {
+		if (isEmpty()) {
 			head = tail;
 			tail.next = null;
 			size++;
+			printList();
 			return;
 		}
 		tail.next = null;
