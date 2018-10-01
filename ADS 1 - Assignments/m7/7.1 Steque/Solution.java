@@ -67,10 +67,16 @@ class Steque {
 		Node tnode = head;
 		String str = "";
 		while (tnode != null) {
-			str += tnode.data + ", ";
+			str += tnode.data + ",";
 			tnode = tnode.next;
 		}
-		System.out.println(str.substring(0, str.length() - 1));
+		String[] s = str.split(",");
+		String finalstr = "";
+		for (int i = 0; i < size - 1; i++) {
+			finalstr += s[i] + ", ";
+		}
+		finalstr += s[size - 1];
+		System.out.println(finalstr);
 	}
 }
 
