@@ -49,8 +49,8 @@ final class Steque {
     /**
      * Determines if empty.
      * Time Complexity : Best Case - O(1)
-     * 				Average Case - O(1)
-     * 				Worst Case - O(1)
+     *              Average Case - O(1)
+     *              Worst Case - O(1)
      *
      * @return     True if empty, False otherwise.
      */
@@ -61,8 +61,8 @@ final class Steque {
     /**
      * Gives the size of list.
      * Time Complexity : Best Case - O(1)
-     * 					 Average Case - O(1)
-     * 					 Worst Case - O(1)
+     *                   Average Case - O(1)
+     *                   Worst Case - O(1)
      *
      * @return     { description_of_the_return_value }
      */
@@ -73,8 +73,8 @@ final class Steque {
     /**
      * Adds the element to the left of the list.
      * Time Complexity : Best Case - O(1)
-     * 					 Average Case - O(1)
-     * 					 Worst Case - O(1)
+     *                   Average Case - O(1)
+     *                   Worst Case - O(1)
      *
      * @param      element  The element
      */
@@ -95,8 +95,8 @@ final class Steque {
     /**
      * Removes the element from the left of the list.
      * Time Complexity : Best Case - O(1)
-     * 				 	 Average Case - O(1)
-     * 					 Worst Case - O(1)
+     *                   Average Case - O(1)
+     *                   Worst Case - O(1)
      *
      * @return     { description_of_the_return_value }
      */
@@ -118,8 +118,8 @@ final class Steque {
     /**
      * Adds the element to the right of the list.
      * Time Complexity : Best Case - O(1)
-     * 					 Average Case - O(1)
-     * 					 Worst Case - O(1)
+     *                   Average Case - O(1)
+     *                   Worst Case - O(1)
      *
      * @param      element  The element
      */
@@ -142,8 +142,8 @@ final class Steque {
     /**
      * Function to print the list.
      * Time Complexity : Best Case - O(N)
-     * 					 Average Case - O(N)
-     * 					 Worst Case - O(N)
+     *                   Average Case - O(N)
+     *                   Worst Case - O(N)
      */
     public void printList() {
         if (size == 0) {
