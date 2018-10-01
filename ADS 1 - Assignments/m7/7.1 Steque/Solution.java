@@ -65,7 +65,7 @@ class Steque {
 	/**/
 	void printList() {
 		if(size == 0) {
-			System.out.println("Steque is empty");
+			System.out.println("Steque is empty.");
 			return;
 		}
 		Node tnode = head;
