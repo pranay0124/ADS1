@@ -128,7 +128,7 @@ final class Steque {
         size++;
         printList();
     }
-    
+
     /**
      * Function to print the list.
      * Complexity : N
