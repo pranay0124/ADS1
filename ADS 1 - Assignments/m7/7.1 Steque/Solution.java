@@ -7,8 +7,8 @@ import java.util.Scanner;
  * Class for steque.
  */
 final class Steque {
-	Node head = null;
-	Node tail = null;
+	private Node head = null;
+	private Node tail = null;
 	int size = 0;
 	class Node {
 		int data;
