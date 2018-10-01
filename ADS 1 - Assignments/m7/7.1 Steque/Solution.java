@@ -12,7 +12,7 @@ class Steque {
 		}
 	}
 	boolean isEmpty() {
-		return head == tail;
+		return size == 0;
 	}
 	int getsize() {
 		return size;
