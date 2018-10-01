@@ -35,14 +35,14 @@ final class Steque {
         /**
          * No Parameter Constructor.
          */
-        Node(){ }
+        Node() { }
         /**
          * Constructs the object.
          *
          * @param      data  The data
          */
-        Node(int data) {
-            this.data = data;
+        Node(final int nodedata) {
+            this.data = nodedata;
         }
     }
     /**
