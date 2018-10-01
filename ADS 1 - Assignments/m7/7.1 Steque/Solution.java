@@ -66,7 +66,7 @@ final class Steque {
      *
      * @param      element  The element
      */
-    public void push(int element) {
+    public void push(final int element) {
         Node oldright = head;
         head = new Node(element);
         if (isEmpty()) {
@@ -103,7 +103,7 @@ final class Steque {
      *
      * @param      element  The element
      */
-    public void enqueue(int element) {
+    public void enqueue(final int element) {
         Node oldtail = tail;
         tail = new Node(element);
         if (isEmpty()) {
@@ -145,7 +145,7 @@ final class Steque {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -157,7 +157,7 @@ class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int testcases = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < testcases; i++) {
