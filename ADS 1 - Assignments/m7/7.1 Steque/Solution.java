@@ -1,5 +1,12 @@
+/**
+ * @author : Pranay Kumar Y.
+ * date : 1st October,2018.
+ */
 import java.util.Scanner;
-class Steque {
+/**
+ * Class for steque.
+ */
+final class Steque {
 	Node head = null;
 	Node tail = null;
 	int size = 0;
