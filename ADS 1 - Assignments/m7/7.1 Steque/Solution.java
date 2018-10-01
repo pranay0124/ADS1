@@ -75,7 +75,7 @@ class Steque {
 		for (int i = 0; i < size - 1; i++) {
 			finalstr += s[i] + ", ";
 		}
-		finalstr += s[size - 1];
+		finalstr += s[size];
 		System.out.println(finalstr);
 	}
 }
