@@ -35,7 +35,7 @@ final class Steque {
         /**
          * No Parameter Constructor.
          */
-        Node() {}
+        Node(){ }
         /**
          * Constructs the object.
          *
