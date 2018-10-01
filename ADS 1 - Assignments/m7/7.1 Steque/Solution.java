@@ -9,23 +9,23 @@ import java.util.Scanner;
 final class Steque {
 	private Node head = null;
 	private Node tail = null;
-	int size = 0;
+	private int size = 0;
 	class Node {
-		int data;
-		Node next;
+		private int data;
+		private Node next;
 		Node() {}
 		Node(int data) {
 			this.data = data;
 		}
 	}
-	boolean isEmpty() {
+	public boolean isEmpty() {
 		return size == 0;
 	}
-	int getsize() {
+	public int getsize() {
 		return size;
 	}
 	/**/
-	void pushLeft(int element) {
+	public void pushLeft(int element) {
 		Node oldright = head;
 		head = new Node(element);
 		if (isEmpty()) {
@@ -39,7 +39,7 @@ final class Steque {
 		printList();
 	}
 	/**/
-	int popLeft() {
+	public int popLeft() {
 		if (size == 0) {
 			System.out.println("Steque is empty.");
 			return -1;
@@ -54,7 +54,7 @@ final class Steque {
 		return removedData;
 	}
 	/**/
-	void pushRight(int element) {
+	public void pushRight(int element) {
 		Node oldtail = tail;
 		tail = new Node(element);
 		if (isEmpty()) {
@@ -70,8 +70,8 @@ final class Steque {
 		printList();
 	}
 	/**/
-	void printList() {
-		if(size == 0) {
+	public void printList() {
+		if (size == 0) {
 			System.out.println("Steque is empty.");
 			return;
 		}
