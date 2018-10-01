@@ -39,7 +39,7 @@ final class Steque {
         /**
          * Constructs the object.
          *
-         * @param      data  The data
+         * @param      nodedata  The nodedata
          */
         Node(final int nodedata) {
             this.data = nodedata;
