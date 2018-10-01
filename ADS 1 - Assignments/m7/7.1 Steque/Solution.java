@@ -70,7 +70,7 @@ class Steque {
 			str += tnode.data + ", ";
 			tnode = tnode.next;
 		}
-		System.out.println(str);
+		System.out.println(str.substring(0, str.length() - 1));
 	}
 }
 
