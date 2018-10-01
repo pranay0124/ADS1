@@ -45,24 +45,30 @@ final class Steque {
             this.data = nodedata;
         }
     }
+
     /**
      * Determines if empty.
+     * Complexity : 1
      *
      * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return size == 0;
     }
+
     /**
      * Gives the size of list.
+     * Complexity : 1
      *
      * @return     { description_of_the_return_value }
      */
     public int getsize() {
         return size;
     }
+
     /**
      * Adds the element to the left of the list.
+     * Complexity : 1
      *
      * @param      element  The element
      */
@@ -79,8 +85,10 @@ final class Steque {
         size++;
         printList();
     }
+
     /**
      * Removes the element from the left of the list.
+     * Complexity : 1
      *
      * @return     { description_of_the_return_value }
      */
@@ -98,8 +106,10 @@ final class Steque {
         printList();
         return removedData;
     }
+
     /**
      * Adds the element to the right of the list.
+     * Complexity : 1
      *
      * @param      element  The element
      */
@@ -118,8 +128,10 @@ final class Steque {
         size++;
         printList();
     }
+    
     /**
      * Function to print the list.
+     * Complexity : N
      */
     public void printList() {
         if (size == 0) {
@@ -154,6 +166,7 @@ final class Solution {
     }
     /**
      * Main Function.
+     * Complexity : N^2.
      *
      * @param      args  The arguments
      */
