@@ -38,6 +38,9 @@ class Steque {
 			return -1;
 		}
 		int removedData = head.data;
+		if (isEmpty()) {
+			return -1;
+		}
 		head = head.next;
 		size--;
 		printList();
