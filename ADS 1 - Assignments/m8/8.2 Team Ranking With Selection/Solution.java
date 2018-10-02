@@ -22,9 +22,9 @@ class SelectionSort {
 			exch(array, i, min);
 		}
 		for (int i = 0; i < array.length - 1; i++) {
-			System.out.println(array[i].teamname + ",");
+			System.out.print(array[i].teamname + ",");
 		}
-		System.out.println(array[array.length - 1].teamname);
+		System.out.print(array[array.length - 1].teamname);
 	}
 }
 
