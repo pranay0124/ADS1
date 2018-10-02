@@ -52,22 +52,22 @@ class SelectionSort {
      *              Worst Case : O(n^2)
      * @param      array  The array
      */
-    void sort(TeamData[] array) {
-		int n = array.length;
-		for (int i = 0; i < n; i++) {
-			int min = i;
-			for (int j = i + 1; j < n; j++) {
-				if (greater(array[j], array[min])) {
-					min = j;
-				}
-			}
-			exch(array, i, min);
-		}
-		for (int i = 0; i < array.length - 1; i++) {
-			System.out.print(array[i].getTeamname() + ",");
-		}
-		System.out.print(array[array.length - 1].getTeamname());
-	}
+    void sort(final TeamData[] array) {
+        int n = array.length;
+        for (int i = 0; i < n; i++) {
+            int min = i;
+            for (int j = i + 1; j < n; j++) {
+                if (greater(array[j], array[min])) {
+                    min = j;
+                }
+            }
+            exch(array, i, min);
+        }
+        for (int i = 0; i < array.length - 1; i++) {
+            System.out.print(array[i].getTeamname() + ",");
+        }
+        System.out.print(array[array.length - 1].getTeamname());
+    }
 }
 
 
