@@ -87,11 +87,11 @@ class TeamData implements Comparable<TeamData> {
 	 * @param      losses    The losses
 	 * @param      draws     The draws
 	 */
-	TeamData(String teamname, int wins, int losses, int draws) {
-		this.teamname = teamname;
-		this.wins = wins;
-		this.losses = losses;
-		this.draws = draws;
+	TeamData(String name, int win, int loss, int draw) {
+		this.teamname = name;
+		this.wins = win;
+		this.losses = loss;
+		this.draws = draw;
 	}
 	// public String getTeamname() {
 	// 	return teamname;
