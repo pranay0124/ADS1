@@ -52,7 +52,7 @@ class InsertionSort {
 	 * 				Worst Case : O(n^2)
 	 * @param      array  The array
 	 */
-	void Sort(final TeamData[] array) {
+	void sort(final TeamData[] array) {
 		int n = array.length;
 		for (int i = 1; i < n; i++) {
 			for (int j = i; j > 0; j--) {
@@ -64,9 +64,9 @@ class InsertionSort {
 			}
 		}
 		for (int i = 0; i < array.length - 1; i++) {
-			System.out.print(array[i].teamname + ",");
+			System.out.print(array[i].getTeamname() + ",");
 		}
-		System.out.print(array[array.length - 1].teamname);
+		System.out.print(array[array.length - 1].getTeamname());
 	}
 }
 
@@ -75,10 +75,10 @@ class InsertionSort {
  * Class for team data.
  */
 class TeamData implements Comparable<TeamData> {
-	String teamname;
-	int wins;
-	int losses;
-	int draws;
+	private String teamname;
+	private int wins;
+	private int losses;
+	private int draws;
 	/**
 	 * Constructs the object.
 	 *
@@ -93,9 +93,14 @@ class TeamData implements Comparable<TeamData> {
 		this.losses = loss;
 		this.draws = draw;
 	}
-	// public String getTeamname() {
-	// 	return teamname;
-	// }
+	/**
+	 * Gets the teamname.
+	 *
+	 * @return     The teamname.
+	 */
+	public String getTeamname() {
+		return teamname;
+	}
 	// public int getWins() {
 	// 	return wins;
 	// }
@@ -164,6 +169,6 @@ final class Solution {
 			count++;
 		}
 		data = Arrays.copyOf(data, count);
-		sortobj.Sort(data);
+		sortobj.sort(data);
 	}
 }
