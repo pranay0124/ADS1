@@ -99,7 +99,8 @@ class TeamData implements Comparable<TeamData> {
 	 * @param      loss  The loss
 	 * @param      dra  The draw
 	 */
-	TeamData(final String name, final int win, final int loss, final int dra) {
+	TeamData(final String name, final int win, final int loss,
+	         final int dra) {
 		this.teamname = name;
 		this.wins = win;
 		this.losses = loss;
@@ -178,9 +179,9 @@ final class Solution {
 			String line = scan.nextLine();
 			String[] token = line.split(",");
 			TeamData team = new TeamData(token[0],
-				Integer.parseInt(token[1]),
-				Integer.parseInt(token[2]),
-				Integer.parseInt(token[2 + 1]));
+			                             Integer.parseInt(token[1]),
+			                             Integer.parseInt(token[2]),
+			                             Integer.parseInt(token[2 + 1]));
 			data[count] = team;
 			count++;
 		}
