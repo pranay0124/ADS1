@@ -10,8 +10,8 @@ import java.util.Arrays;
 class InsertionSort {
 	/**
 	 * { Function which gives the greater boolean }.
-	 * 
-	 * Complexity : 
+	 *
+	 * Complexity :
 	 * 				Best Case : O(1)
 	 * 				Average Case : O(1)
 	 * 				Worst Case : O(1)
@@ -28,7 +28,7 @@ class InsertionSort {
 	/**
 	 * { function for exchange }.
 	 *
-	 *Complexity : 
+	 *Complexity :
 	 *				Best Case : O(1)
 	 * 				Average Case : O(1)
 	 * 				Worst Case : O(1)
@@ -42,16 +42,16 @@ class InsertionSort {
 		a[i] = temp;
 	}
 
-    /**
-     * { function for sorting elements }.
-     * { here we used Insertion sorting method }.
-     *
-     * Complexity :
-     * 				Best Case : O(n)
+	/**
+	 * { function for sorting elements }.
+	 * { here we used Insertion sorting method }.
+	 *
+	 * Complexity :
+	 * 				Best Case : O(n)
 	 * 				Average Case : O(n^2)
 	 * 				Worst Case : O(n^2)
-     * @param      array  The array
-     */
+	 * @param      array  The array
+	 */
 	void Sort(TeamData[] array) {
 		int n = array.length;
 		for (int i = 1; i < n; i++) {
@@ -62,13 +62,14 @@ class InsertionSort {
 					break;
 				}
 			}
-			for (int k = 0; k < array.length - 1; i++) {
-				System.out.print(array[k].teamname + ",");
-			}
-			System.out.print(array[array.length - 1].teamname);
 		}
+		for (int k = 0; k < array.length - 1; k++) {
+			System.out.print(array[k].teamname + ",");
+		}
+		System.out.print(array[array.length - 1].teamname);
 	}
 }
+
 
 /**
  * Class for team data.
@@ -104,7 +105,7 @@ class TeamData implements Comparable<TeamData> {
 	// public int getDraws() {
 	// 	return draws;
 	// }
-	
+
 	/**
 	 * { function for comparing }
 	 *
