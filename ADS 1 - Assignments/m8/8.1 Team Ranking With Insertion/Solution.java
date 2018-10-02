@@ -99,11 +99,11 @@ class TeamData implements Comparable<TeamData> {
 	 * @param      loss  The loss
 	 * @param      draw  The draw
 	 */
-	TeamData(final String name, final int win, final int loss, final int draw) {
+	TeamData(final String name, final int win, final int loss, final int dra) {
 		this.teamname = name;
 		this.wins = win;
 		this.losses = loss;
-		this.draws = draw;
+		this.draws = dra;
 	}
 	/**
 	 * Gets the teamname.
@@ -124,7 +124,7 @@ class TeamData implements Comparable<TeamData> {
 	// }
 
 	/**
-	 * { function for comparing }
+	 * { function for comparing }.
 	 *
 	 * @param      that  The that
 	 *
