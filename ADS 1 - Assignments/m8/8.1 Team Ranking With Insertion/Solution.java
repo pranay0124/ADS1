@@ -21,7 +21,7 @@ class InsertionSort {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	boolean greater(TeamData u, TeamData v) {
+	boolean greater(final TeamData u, final TeamData v) {
 		return u.compareTo(v) == 1;
 	}
 
@@ -36,7 +36,7 @@ class InsertionSort {
 	 * @param      i     { parameter_description }
 	 * @param      j     { parameter_description }
 	 */
-	void exch(TeamData[] a, int i, int j) {
+	void exch(final TeamData[] a, final int i, final int j) {
 		TeamData temp = a[j];
 		a[j] = a[i];
 		a[i] = temp;
@@ -52,7 +52,7 @@ class InsertionSort {
 	 * 				Worst Case : O(n^2)
 	 * @param      array  The array
 	 */
-	void Sort(TeamData[] array) {
+	void Sort(final TeamData[] array) {
 		int n = array.length;
 		for (int i = 1; i < n; i++) {
 			for (int j = i; j > 0; j--) {
@@ -113,7 +113,7 @@ class TeamData implements Comparable<TeamData> {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int compareTo(TeamData that) {
+	public int compareTo(final TeamData that) {
 		if (this.wins > that.wins) {
 			return 1;
 		}
@@ -139,7 +139,7 @@ class TeamData implements Comparable<TeamData> {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
 	/**
 	 * Constructs the object.
 	 */
@@ -151,7 +151,7 @@ class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		TeamData[] data = new TeamData[10];
 		int count = 0;
