@@ -65,11 +65,8 @@ class InsertionSort {
 		}
 		for (int i = 0; i < array.length - 1; i++) {
 			System.out.print(array[i].teamname + ",");
-			System.out.println();
-			System.out.println();
 		}
 		System.out.print(array[array.length - 1].teamname);
-		System.out.println("here");
 	}
 }
 
@@ -158,7 +155,7 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 		TeamData[] data = new TeamData[10];
 		int count = 0;
-		SelectionSort sortobj = new SelectionSort();
+		InsertionSort sortobj = new InsertionSort();
 		while (scan.hasNext()) {
 			String line = scan.nextLine();
 			String[] tokens = line.split(",");
