@@ -75,9 +75,21 @@ class InsertionSort {
  * Class for team data.
  */
 class TeamData implements Comparable<TeamData> {
+	/**
+	 * { var for team name }.
+	 */
 	private String teamname;
+	/**
+	 * { var for wins }.
+	 */
 	private int wins;
+	/**
+	 * { var for losses }.
+	 */
 	private int losses;
+	/**
+	 * { var for draws }.
+	 */
 	private int draws;
 	/**
 	 * Constructs the object.
