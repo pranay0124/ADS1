@@ -170,13 +170,15 @@ final class Solution {
 	 */
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
-		TeamData[] data = new TeamData[10];
+		final int ten = 10;
+		TeamData[] data = new TeamData[ten];
 		int count = 0;
 		InsertionSort sortobj = new InsertionSort();
 		while (scan.hasNext()) {
 			String line = scan.nextLine();
 			String[] tokens = line.split(",");
-			TeamData team = new TeamData(tokens[0], Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]));
+			TeamData team = new TeamData(tokens[0], Integer.parseInt(tokens[1]),
+				Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]));
 			data[count] = team;
 			count++;
 		}
