@@ -63,8 +63,8 @@ class InsertionSort {
 				}
 			}
 		}
-		for (int k = 0; k < array.length - 1; k++) {
-			System.out.print(array[k].teamname + ",");
+		for (int i = 0; i < array.length - 1; i++) {
+			System.out.print(array[i].teamname + ",");
 		}
 		System.out.print(array[array.length - 1].teamname);
 	}
