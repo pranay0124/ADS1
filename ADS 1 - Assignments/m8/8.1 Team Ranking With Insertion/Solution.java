@@ -177,8 +177,10 @@ final class Solution {
 		while (scan.hasNext()) {
 			String line = scan.nextLine();
 			String[] token = line.split(",");
-			TeamData team = new TeamData(token[0], Integer.parseInt(token[1]),
-				Integer.parseInt(token[2]), Integer.parseInt(token[2 + 1]));
+			TeamData team = new TeamData(token[0],
+				Integer.parseInt(token[1]),
+				Integer.parseInt(token[2]),
+				Integer.parseInt(token[2 + 1]));
 			data[count] = team;
 			count++;
 		}
