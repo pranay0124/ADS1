@@ -6,12 +6,12 @@ import java.util.Arrays;
 class InsertionSort {
     /**
      * { less function to check for minimum }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(1)
      *              Average Case : O(1)
      *              Worst Case : O(1)
-     *              
+     *
      * @param      inputone  The inputone
      * @param      inputtwo  The inputtwo
      *
@@ -25,12 +25,12 @@ class InsertionSort {
     }
     /**
      * { function for exchange }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(1)
      *              Average Case : O(1)
      *              Worst Case : O(1)
-     *              
+     *
      * @param      inputarray  The inputarray
      * @param      bigindex    The bigindex
      * @param      smallindex  The smallindex
@@ -51,12 +51,12 @@ class InsertionSort {
     }
     /**
      * { sort function }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(n)
      *              Average Case : O(n^2)
      *              Worst Case : O(n^2)
-     *              
+     *
      * @param      inputarray  The inputarray
      * @param      start       The start
      * @param      end         The end
@@ -82,7 +82,7 @@ class InsertionSort {
 class Mergesort {
     /**
      * { function for less }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(1)
      *              Average Case : O(1)
@@ -101,7 +101,7 @@ class Mergesort {
     }
     /**
      * { merge function }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(n)
      *              Average Case : O(n)
@@ -131,7 +131,7 @@ class Mergesort {
     }
     /**
      * { sort function }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(nlog(n))
      *              Average Case : O(nlog(n))
