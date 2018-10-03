@@ -49,15 +49,29 @@ class InsertionSort {
 	}
 }
 class Mergesort {
-	// boolean issorted() {
-
-	// }
+	/**
+	 * { function for less }.
+	 *
+	 * @param      inputone  The inputone
+	 * @param      inputtwo  The inputtwo
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	boolean less(final  String inputone, final String inputtwo) {
 
 		//checks for the greatness using compareTo function
 
 		return inputone.compareTo(inputtwo) < 0;
 	}
+	/**
+	 * { merge function }.
+	 *
+	 * @param      inputarray    The inputarray
+	 * @param      storingarray  The storingarray
+	 * @param      first         The first
+	 * @param      middle        The middle
+	 * @param      last          The last
+	 */
 	void merge(String[] inputarray, String[] storingarray, int first, int middle, int last) {
 		int subarr1 = first;
 		int subarr2 = middle + 1;
@@ -73,6 +87,14 @@ class Mergesort {
 			}
 		}
 	}
+	/**
+	 * { sort function }.
+	 *
+	 * @param      inputarray    The inputarray
+	 * @param      storingarray  The storingarray
+	 * @param      first         The first
+	 * @param      last          The last
+	 */
 	void sort(String[] inputarray, String[] storingarray, int first, int last) {
 		// System.out.println(Arrays.toString(inputarray) + "called");
 		InsertionSort insertion = new InsertionSort();
@@ -95,11 +117,22 @@ class Mergesort {
 	}
 }
 
-class Solution {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
 		//unused
 	}
-	public static void main(String[] args) {
+	/**
+	 * { main function }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		Mergesort sortobj = new Mergesort();
 		while (scan.hasNext()) {
