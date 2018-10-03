@@ -71,7 +71,8 @@ class Mergesort {
      * @param      middle        The middle
      * @param      last          The last
      */
-    void merge(String[] inputarray, String[] storingarray, int first, int middle, int last) {
+    void merge(final String[] inputarray, final String[] storingarray,
+        final int first, final int middle, final int last) {
         int subarr1 = first;
         int subarr2 = middle + 1;
         for (int k = first; k <= last; k++) {
@@ -94,10 +95,12 @@ class Mergesort {
      * @param      first         The first
      * @param      last          The last
      */
-    void sort(String[] inputarray, String[] storingarray, int first, int last) {
+    void sort(final String[] inputarray, final String[] storingarray,
+        final int first, final int last) {
         // System.out.println(Arrays.toString(inputarray) + "called");
         InsertionSort insertion = new InsertionSort();
-        if (last - first <= 7) {
+        final int seven = 7;
+        if (last - first <= seven) {
             insertion.sort(storingarray, first, last);
             System.out.println("Insertion sort method invoked...");
             return;
@@ -110,7 +113,7 @@ class Mergesort {
                 storingarray[i] = inputarray[i];
             }
             System.out.println("Array is already sorted."
-                +" So, skipped the call to merge...");
+                + " So, skipped the call to merge...");
             return;
         }
         merge(inputarray, storingarray, first, middle, last);
