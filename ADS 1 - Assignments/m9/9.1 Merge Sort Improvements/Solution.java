@@ -18,6 +18,13 @@ class InsertionSort {
 
         return inputone.compareTo(inputtwo) < 0;
     }
+    /**
+     * { function for exchange }.
+     *
+     * @param      inputarray  The inputarray
+     * @param      bigindex    The bigindex
+     * @param      smallindex  The smallindex
+     */
     void exchange(final String[] inputarray,
                   final int bigindex,
                   final int smallindex) {
@@ -32,6 +39,13 @@ class InsertionSort {
 
         inputarray[smallindex] = temp;
     }
+    /**
+     * { sort function }.
+     *
+     * @param      inputarray  The inputarray
+     * @param      start       The start
+     * @param      end         The end
+     */
     void sort(final String[] inputarray, final int start, final int end) {
         for (int i = start; i <= end; i++) {
             for (int j = i; j > start; j--) {
@@ -47,6 +61,9 @@ class InsertionSort {
         }
     }
 }
+/**
+ * Class for mergesort.
+ */
 class Mergesort {
     /**
      * { function for less }.
