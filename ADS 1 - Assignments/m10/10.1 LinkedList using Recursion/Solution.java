@@ -7,24 +7,57 @@ import java.util.Scanner;
  * Class for linkedlist.
  */
 class Linkedlist {
-	Node head = null;
-	Node test;
-	Node prev;
-	Node temp;
-	int size = 0;
+	/**
+	 * { var for head node }.
+	 */
+	private Node head = null;
+	/**
+	 * { var for test node }.
+	 */
+	private Node test;
+	/**
+	 * { var for previous node }.
+	 */
+	private Node prev;
+	/**
+	 * { var for temp node }.
+	 */
+	private Node temp;
+	/**
+	 * { var for size }.
+	 */
+	private int size = 0;
+
+	/**
+	 * Class for node.
+	 */
 	class Node {
 		int nodedata;
 		Node next;
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      data  The data
+		 */
 		Node(int data) {
 			this.nodedata = data;
 		}
 	}
-	void insertAt(int index, int inputdata) throws Exception {
-		if (index > size || index < 0) {
+	/**
+	 * { function for inserting element at specific index }.
+	 *
+	 * @param      index      The index
+	 * @param      inputdata  The inputdata
+	 *
+	 * @throws     Exception  { exception_description }
+	 */
+	void insertAt(final int index, final int inputdata) throws Exception {
+		int in = index;
+		if (in > size || in < 0) {
 			throw new Exception("Can't insert at this position.");
 			// return;
 		}
-		if (index == 1) {
+		if (in == 1) {
 			Node newnode = new Node(inputdata);
 			newnode.next = test.next;
 			test.next = newnode;
@@ -32,7 +65,7 @@ class Linkedlist {
 			size++;
 			return;
 		}
-		if (index == 0) {
+		if (in == 0) {
 			Node newnode = new Node(inputdata);
 			newnode.next = test;
 			head = newnode;
@@ -41,9 +74,14 @@ class Linkedlist {
 			return;
 		}
 		test = test.next;
-		index--;
-		insertAt(index, inputdata);
+		in--;
+		insertAt(in, inputdata);
 	}
+	/**
+	 * { function for reverse }.
+	 *
+	 * @throws     Exception  { exception_description }
+	 */
 	void reverse() throws Exception {
 		if (size == 0) {
 			throw new Exception("No elements to reverse.");
@@ -61,6 +99,9 @@ class Linkedlist {
 		prev = temp;
 		reverse();
 	}
+	/**
+	 * { function for printing }.
+	 */
 	void print() {
 		String str = "";
 		Node newtest = head;
@@ -72,8 +113,23 @@ class Linkedlist {
 		System.out.println(str);
 	}
 }
-class Solution {
-	public static void main(String[] args) {
+
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//Zero parameter constructor.
+	}
+	/**
+	 * { main function }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		Linkedlist linked = new Linkedlist();
 		while (scan.hasNext()) {
