@@ -1,4 +1,11 @@
+/**
+ * @author : Pranay Kumar Y.
+ * Date : 4th October,2018.
+ */
 import java.util.Scanner;
+/**
+ * Class for linkedlist.
+ */
 class Linkedlist {
 	Node head = null;
 	Node test;
