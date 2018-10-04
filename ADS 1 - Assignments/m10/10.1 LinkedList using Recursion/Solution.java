@@ -52,6 +52,10 @@ class Linkedlist {
     /**
      * { function for inserting element at specific index }.
      *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(n)
+     *              Worst Case : O(n)
      * @param      index      The index
      * @param      inputdata  The inputdata
      *
@@ -86,6 +90,10 @@ class Linkedlist {
     /**
      * { function for reverse }.
      *
+     * Complexity :
+     *              Best Case : O(n)
+     *              Average Case : O(n)
+     *              Worst Case : O(n)
      * @throws     Exception  { exception_description }
      */
     void reverse() throws Exception {
