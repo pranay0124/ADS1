@@ -23,15 +23,19 @@ class InsertionSort {
 	}
 }
 class QuickSort {
+	boolean less(Comparable u, Comparable v) {
+		return u.compareTo(v) < 0;
+	}
 	void swap(Comparable[] array, int a , int b) {
 		Comparable temp = array[a];
 		array[a] = array[b];
 		array[b] = temp;
 	}
+
 	void sort(Comparable[] array, int start, int end, int cutoff) {
 		if (start < end) {
 			int pivot = partition(array, start, end);
-			if (end - start + 1 <= cutoff) {
+			if (end <= start + cutoff - 1) {
 				InsertionSort is = new InsertionSort();
 				is.sort(array);
 				return;
@@ -42,16 +46,37 @@ class QuickSort {
 		}
 	}
 	int partition(Comparable[] array, int start, int end) {
-		Comparable pivot = array[start];
-		int i = start - 1;
-		for (int j = start; j < end + 1; j++) {
-			if (array[j].compareTo(pivot) <= 0) {
-				i++;
-				swap(array, i, j);
+		// Comparable pivot = array[start];
+		// int i = start - 1;
+		// for (int j = start; j < end + 1; j++) {
+		// 	if (array[j].compareTo(pivot) <= 0) {
+		// 		i++;
+		// 		swap(array, i, j);
+		// 	}
+		// }
+		// swap(array, i , start);
+		// return i;
+		int i = start;
+		int j = end + 1;
+		while (true) {
+			while (less(array[++i], array[start])) {
+				if (i == end) {
+					break;
+				}
 			}
+			while (less(array[start], array[--j])) {
+				if (j == start) {
+					break;
+				}
+			}
+			if (i >= j) {
+				break;
+			}
+			swap(array, i, j);
 		}
-		swap(array, i , start);
-		return i;
+		swap(array, start, j);
+		// System.out.println(toString(array));
+		return j;
 	}
 }
 class Solution {
