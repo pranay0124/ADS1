@@ -96,24 +96,23 @@ class Solution {
 		}
 		data = Arrays.copyOf(data, count);
 		sortobj.sort(data);
-		System.out.println();
 		Student[] seatallotment = new Student[vacancies];
 		int j = 0;
 		while (vacancies != 0) {
-			for (int i = 0; i <data.length; i++) {
-				if ((data[i].getReservation()).equals("BC") && bc != 0) {
+			for (int i = 0; i < data.length; i++) {
+				if (((data[i].getReservation()).equals("BC") && bc != 0) || unreserved != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					bc--;
 				}
-				if ((data[i].getReservation()).equals("SC") && sc != 0) {
+				if (((data[i].getReservation()).equals("SC") && sc != 0) || unreserved != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					sc--;
 				}
-				if ((data[i].getReservation()).equals("ST") && st != 0) {
+				if (((data[i].getReservation()).equals("ST") && st != 0) || unreserved != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
