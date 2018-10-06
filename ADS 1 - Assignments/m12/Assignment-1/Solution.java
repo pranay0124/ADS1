@@ -20,11 +20,9 @@ class SelectionSort {
 			}
 			exch(array, i, min);
 		}
-		System.out.println(Arrays.toString(array));
-		// for (int i = 0; i < array.length - 1; i++) {
-		//     System.out.print(array[i].getTeamname() + ",");
-		// }
-		// System.out.print(array[array.length - 1].getTeamname());
+		for (int i = 0; i < array.length; i++) {
+			System.out.println(array[i].getStudentName() + "," + array[i].getTotalMarks() + "," + array[i].getReservation());
+		}
 	}
 }
 class Student implements Comparable<Student> {
@@ -43,6 +41,15 @@ class Student implements Comparable<Student> {
 		this.sub3marks = sub3marks;
 		this.totalMarks = totalMarks;
 		this.reservation = reservation;
+	}
+	String getStudentName() {
+		return studentname;
+	}
+	int getTotalMarks() {
+		return totalMarks;
+	}
+	String getReservation() {
+		return reservation;
 	}
 	public int compareTo(Student that) {
 		if (this.totalMarks > that.totalMarks) {
@@ -79,10 +86,8 @@ class Solution {
 		int st = Integer.parseInt(scan.nextLine());
 		SelectionSort sortobj = new SelectionSort();
 		while (scan.hasNext()) {
-            String line = scan.nextLine();
-            System.out.println(line);
-            String[] tokens = line.split(",");
-			System.out.println(Arrays.toString(tokens) + "input");
+			String line = scan.nextLine();
+			String[] tokens = line.split(",");
 			Student studentdetails = new Student(tokens[0], tokens[1], Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]), Integer.parseInt(tokens[4]), Integer.parseInt(tokens[5]), tokens[6]);
 			data[count] = studentdetails;
 			count++;
