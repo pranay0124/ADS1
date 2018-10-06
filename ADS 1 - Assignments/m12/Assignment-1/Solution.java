@@ -30,6 +30,9 @@ class SelectionSort {
 class Student implements Comparable<Student> {
 	String studentname;
 	String dob;
+	int day;
+	int month;
+	int year;
 	int sub1marks;
 	int sub2marks;
 	int sub3marks;
@@ -37,7 +40,10 @@ class Student implements Comparable<Student> {
 	String reservation;
 	Student(String studentname, String dob, int sub1marks, int sub2marks, int sub3marks, int totalMarks, String reservation) {
 		this.studentname = studentname;
-		this.dob = dob;
+		String[] d = dob.split("-");
+		// this.date = Integer.parseInt(d[0]);
+		this.month = Integer.parseInt(d[1]);
+		this.year = Integer.parseInt(d[2]);
 		this.sub1marks = sub1marks;
 		this.sub2marks = sub2marks;
 		this.sub3marks = sub3marks;
@@ -72,12 +78,30 @@ class Student implements Comparable<Student> {
 		if (this.sub2marks < that.sub2marks) {
 			return -1;
 		}
-		if ((this.dob).compareTo(that.dob) > 0) {
+		// if ((this.dob).compareTo(that.dob) > 0) {
+		// 	return 1;
+		// }
+		// if((this.dob).compareTo(that.dob) > 0) {
+		// 	return -1;
+		// }
+		if (this.year > that.year) {
 			return 1;
 		}
-		if((this.dob).compareTo(that.dob) > 0) {
+		if (this.year < that.year) {
 			return -1;
 		}
+		if (this.month > that.month) {
+			return 1;
+		}
+		if (this.month < that.month) {
+			return -1;
+		}
+		// if (this.date > that.date) {
+		// 	return 1;
+		// }
+		// if (this.date < that.date) {
+		// 	return -1;
+		// }
 		return 0;
 	}
 }
@@ -111,27 +135,27 @@ class Solution {
 			unreserved--;
 			count++;
 			vacancies--;
-		
-		for (int j = count; j < data.length  && vacancies > 0; i++) {
-			if (data[j].getReservation().equals("BC") && bc > 0) {
-				seatallotment.add(data[j]);
+		}
+		for (int i = count; i < data.length  && vacancies > 0; i++) {
+			if (data[i].getReservation().equals("BC") && bc > 0) {
+				seatallotment.add(data[i]);
 				bc--;
 				count++;
 				vacancies--;
 			}
-			if (data[j].getReservation().equals("ST") && st > 0) {
-				seatallotment.add(data[j]);
+			if (data[i].getReservation().equals("ST") && st > 0) {
+				seatallotment.add(data[i]);
 				st--;
 				count++;
 				vacancies--;
 			}
-			if (data[j].getReservation().equals("SC") && sc > 0 ) {
-				seatallotment.add(data[j]);
+			if (data[i].getReservation().equals("SC") && sc > 0 ) {
+				seatallotment.add(data[i]);
 				sc--;
 				count++;
 				vacancies--;
 			}
-		}}
+		}
 		// while (vacancies != 0) {
 		// 	for (int i = 0; i < data.length; i++) {
 		// 		if (((data[i].getReservation()).equals("BC") && bc != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
