@@ -106,19 +106,19 @@ class Solution {
 					vacancies--;
 					bc--;
 				}
-				if ((data[i].getReservation()).equals("SC") && sc != 0) {
+				else if ((data[i].getReservation()).equals("SC") && sc != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					sc--;
 				}
-				if ((data[i].getReservation()).equals("ST") && st != 0) {
+				else if ((data[i].getReservation()).equals("ST") && st != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					st--;
 				}
-				if (((data[i].getReservation()).equals("Open") || (data[i].getReservation()).equals("ST") ||(data[i].getReservation()).equals("BC")||(data[i].getReservation()).equals("SC")) && unreserved != 0) {
+				else if (((data[i].getReservation()).equals("Open") || (data[i].getReservation()).equals("ST") ||(data[i].getReservation()).equals("BC")||(data[i].getReservation()).equals("SC")) && unreserved != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
