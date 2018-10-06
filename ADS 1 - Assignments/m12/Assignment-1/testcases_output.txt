@@ -31,7 +31,7 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-[]
+[]input
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:85)
 ----------------------------------------
@@ -77,7 +77,7 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-[]
+[]input
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:85)
 ----------------------------------------
@@ -98,7 +98,7 @@ divya,99,Open
 Aditya,80,ST
 priya,76,SC
 Your Output: 
-[]
+[]input
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:85)
 ----------------------------------------
@@ -122,7 +122,7 @@ priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
 Your Output: 
-[]
+[]input
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:85)
 ----------------------------------------
@@ -173,7 +173,7 @@ Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 Your Output: 
-[]
+[]input
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:85)
 ----------------------------------------
@@ -226,7 +226,7 @@ rahul,73,Open
 priya,72,SC
 varsha,66,BC
 Your Output: 
-[]
+[]input
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:85)
 ----------------------------------------

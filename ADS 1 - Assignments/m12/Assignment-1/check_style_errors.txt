@@ -59,6 +59,7 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:69:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:70:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:70:33: Parameter args should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:73:46: '50' is a magic number. [MagicNumber]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:81:22: 'while' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:85: Line is longer than 80 characters (found 204). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:85:72: ',' is not followed by whitespace. [WhitespaceAfter]
@@ -72,4 +73,4 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:85:194: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:85:201: '6' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 72 errors.
+Checkstyle ends with 73 errors.

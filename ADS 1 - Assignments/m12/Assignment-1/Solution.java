@@ -70,7 +70,7 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int qualifiedStudents = scan.nextInt();
-		Student[] data = new Student[qualifiedStudents];
+		Student[] data = new Student[50];
 		int count = 0;
 		int vacancies = scan.nextInt();
 		int unreserved = scan.nextInt();
@@ -81,7 +81,7 @@ class Solution {
 		while(scan.hasNext()) {
 			String line = scan.nextLine();
 			String[] tokens = line.split(",");
-			System.out.println(Arrays.toString(tokens));
+			System.out.println(Arrays.toString(tokens) + "input");
 			Student studentdetails = new Student(tokens[0],tokens[1],Integer.parseInt(tokens[2]),Integer.parseInt(tokens[3]),Integer.parseInt(tokens[4]),Integer.parseInt(tokens[5]),tokens[6]);
 			data[count] = studentdetails;
 			count++;
