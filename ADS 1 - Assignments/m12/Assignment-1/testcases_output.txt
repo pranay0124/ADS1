@@ -54,8 +54,6 @@ Manoj,39,SC
 Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
-
-Student@2ed94a8b
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -129,8 +127,6 @@ Manoj,39,SC
 Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
-
-Student@2ed94a8b
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -159,8 +155,6 @@ Amit,70,Open
 Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
-
-Student@2ed94a8b
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -192,8 +186,6 @@ Amit,70,Open
 Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
-
-Student@2ed94a8b
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -272,8 +264,6 @@ Anjali,38,Open
 Aryan,32,Open
 shyam,23,Open
 Shreya,23,Open
-
-Student@2ed94a8b
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -354,6 +344,4 @@ Anjali,38,SC
 Manoj,32,SC
 Aryan,32,ST
 Shreya,23,SC
-
-Student@2ed94a8b
 ----------------------------------------

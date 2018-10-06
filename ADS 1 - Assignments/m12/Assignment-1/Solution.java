@@ -96,14 +96,16 @@ class Solution {
 		}
 		data = Arrays.copyOf(data, count);
 		sortobj.sort(data);
-		System.out.println(data[0]);
-		// Student[] seatallotment = new Student[vacancies];
-		// while(vacancies>0) {
-		// 	for(int i=0;i<data.length;i++) {
-		// 		int j=0;
-		// 		if(data[i])
-		// 		seatallotment[j] = data[i]; 
-		// 	}
-		// }
+		Student[] seatallotment = new Student[vacancies];
+		while (vacancies > 0) {
+			for (int i = 0; i < data.length; i++) {
+				int j = 0;
+				if((data[i].getReservation()).equals("Open")) {
+					seatallotment[j]=data[i];
+					j++;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(seatallotment));
 	}
 }
