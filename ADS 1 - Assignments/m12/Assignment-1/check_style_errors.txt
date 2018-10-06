@@ -51,13 +51,12 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:93:166: '4' is a magic number. [MagicNumber]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:93:195: '5' is a magic number. [MagicNumber]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:93:207: '6' is a magic number. [MagicNumber]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:103: Line is longer than 80 characters (found 157). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:108: Line is longer than 80 characters (found 164). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:114: Line is longer than 80 characters (found 164). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:119: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:124:40: Must have at least one statement. [EmptyBlock]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:124:41: '{' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:124:41: '}' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:129: Line is longer than 80 characters (found 161). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:103: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:122:76: ')' is preceded with whitespace. [ParenPad]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:131: Line is longer than 80 characters (found 157). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:136: Line is longer than 80 characters (found 164). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:142: Line is longer than 80 characters (found 164). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:147: Line is longer than 80 characters (found 109). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:158: Line is longer than 80 characters (found 173). [LineLength]
 Audit done.
-Checkstyle ends with 60 errors.
+Checkstyle ends with 59 errors.

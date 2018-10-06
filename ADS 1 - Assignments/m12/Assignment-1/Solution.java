@@ -80,7 +80,7 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 		int qualifiedStudents = Integer.parseInt(scan.nextLine());
 		Student[] data = new Student[qualifiedStudents];
-		int count = 0;
+		int count1 = 0;
 		int vacancies = Integer.parseInt(scan.nextLine());
 		int unreserved = Integer.parseInt(scan.nextLine());
 		int bc = Integer.parseInt(scan.nextLine());
@@ -91,42 +91,71 @@ class Solution {
 			String line = scan.nextLine();
 			String[] tokens = line.split(",");
 			Student studentdetails = new Student(tokens[0], tokens[1], Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]), Integer.parseInt(tokens[4]), Integer.parseInt(tokens[5]), tokens[6]);
-			data[count] = studentdetails;
-			count++;
+			data[count1] = studentdetails;
+			count1++;
 		}
-		data = Arrays.copyOf(data, count);
+		data = Arrays.copyOf(data, count1);
 		sortobj.sort(data);
-		Student[] seatallotment = new Student[vacancies];
+		// Student[] seatallotment = new Student[vacancies];
 		int j = 0;
-		while (vacancies != 0) {
-			for (int i = 0; i < data.length; i++) {
-				if (((data[i].getReservation()).equals("BC") && bc != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
-					seatallotment[j] = data[i];
-					j++;
-					vacancies--;
-					bc--;
-				} else if (((data[i].getReservation()).equals("SC") && sc != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
-					seatallotment[j] = data[i];
-
-					j++;
-					vacancies--;
-					sc--;
-				} else if (((data[i].getReservation()).equals("ST") && st != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
-					seatallotment[j] = data[i];
-					j++;
-					vacancies--;
-					st--;
-				} else if (((data[i].getReservation()).equals("Open")  && unreserved != 0)) {
-					seatallotment[j] = data[i];
-					j++;
-					vacancies--;
-					unreserved--;
-				} else {}
+		ArrayList<Student> seatallotment = new ArrayList<Student>();
+		int count = 0;
+		for (int i = 0; i < data.length && unreserved > 0 && vacancies > 0; i++) {
+			seatallotment.add(data[i]);
+			unreserved--;
+			count++;
+			vacancies--;
+		}
+		for (int i = count; i < data.length  && vacancies > 0; i++) {
+			if (data[i].getReservation().equals("BC") && bc > 0) {
+				seatallotment.add(data[i]);
+				bc--;
+				count++;
+				vacancies--;
+			}
+			if (data[i].getReservation().equals("ST") && st > 0) {
+				seatallotment.add(data[i]);
+				st--;
+				count++;
+				vacancies--;
+			}
+			if (data[i].getReservation().equals("SC") && sc > 0 ) {
+				seatallotment.add(data[i]);
+				sc--;
+				count++;
+				vacancies--;
 			}
 		}
+		// while (vacancies != 0) {
+		// 	for (int i = 0; i < data.length; i++) {
+		// 		if (((data[i].getReservation()).equals("BC") && bc != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
+		// 			seatallotment[j] = data[i];
+		// 			j++;
+		// 			vacancies--;
+		// 			bc--;
+		// 		} else if (((data[i].getReservation()).equals("SC") && sc != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
+		// 			seatallotment[j] = data[i];
 
-		for (int i = 0; i < seatallotment.length; i++) {
-			System.out.println(seatallotment[i].getStudentName() + "," + seatallotment[i].getTotalMarks() + "," + seatallotment[i].getReservation());
+		// 			j++;
+		// 			vacancies--;
+		// 			sc--;
+		// 		} else if (((data[i].getReservation()).equals("ST") && st != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
+		// 			seatallotment[j] = data[i];
+		// 			j++;
+		// 			vacancies--;
+		// 			st--;
+		// 		} else if (((data[i].getReservation()).equals("Open")  && unreserved != 0)) {
+		// 			seatallotment[j] = data[i];
+		// 			j++;
+		// 			vacancies--;
+		// 			unreserved--;
+		// 		} else {}
+		// 	}
+		// }
+
+
+		for (int i = 0; i < seatallotment.size(); i++) {
+			System.out.println(seatallotment.get(i).getStudentName() + "," + seatallotment.get(i).getTotalMarks() + "," + seatallotment.get(i).getReservation());
 		}
 	}
 }
