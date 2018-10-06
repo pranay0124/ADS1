@@ -56,9 +56,8 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
-Aryan,32,ST
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:112)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 23
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -134,9 +133,8 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
-Aryan,32,ST
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:112)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 30
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -167,9 +165,8 @@ Tanya,66,BC
 Abhishek,60,BC
 
 ---------------------------------------
-Aditya,80,ST
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:112)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -203,9 +200,8 @@ Tanya,66,BC
 Abhishek,60,BC
 
 ---------------------------------------
-tanvi,90,ST
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:112)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -286,6 +282,8 @@ shyam,23,Open
 Shreya,23,Open
 
 ---------------------------------------
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 30
+	at Solution.main(Solution.java:104)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -368,7 +366,6 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
-Aryan,32,ST
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:112)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 30
+	at Solution.main(Solution.java:104)
 ----------------------------------------
