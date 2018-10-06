@@ -103,7 +103,7 @@ class Solution {
 		data = Arrays.copyOf(data, count1);
 		sortobj.sort(data);
 		// Student[] seatallotment = new Student[vacancies];
-		int j = 0;
+		// int j = 0;
 		ArrayList<Student> seatallotment = new ArrayList<Student>();
 		int count = 0;
 		for (int i = 0; i < data.length && unreserved > 0 && vacancies > 0; i++) {
@@ -111,27 +111,27 @@ class Solution {
 			unreserved--;
 			count++;
 			vacancies--;
-		}
-		for (int i = count; i < data.length  && vacancies > 0; i++) {
-			if (data[i].getReservation().equals("BC") && bc > 0) {
-				seatallotment.add(data[i]);
+		
+		for (int j = count; j < data.length  && vacancies > 0; i++) {
+			if (data[j].getReservation().equals("BC") && bc > 0) {
+				seatallotment.add(data[j]);
 				bc--;
 				count++;
 				vacancies--;
 			}
-			if (data[i].getReservation().equals("ST") && st > 0) {
-				seatallotment.add(data[i]);
+			if (data[j].getReservation().equals("ST") && st > 0) {
+				seatallotment.add(data[j]);
 				st--;
 				count++;
 				vacancies--;
 			}
-			if (data[i].getReservation().equals("SC") && sc > 0 ) {
-				seatallotment.add(data[i]);
+			if (data[j].getReservation().equals("SC") && sc > 0 ) {
+				seatallotment.add(data[j]);
 				sc--;
 				count++;
 				vacancies--;
 			}
-		}
+		}}
 		// while (vacancies != 0) {
 		// 	for (int i = 0; i < data.length; i++) {
 		// 		if (((data[i].getReservation()).equals("BC") && bc != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
