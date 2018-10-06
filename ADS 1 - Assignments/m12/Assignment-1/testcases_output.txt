@@ -56,9 +56,6 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
-rahul,73,Open
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:131)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -134,9 +131,6 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
-rahul,73,Open
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:131)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -167,9 +161,6 @@ Tanya,66,BC
 Abhishek,60,BC
 
 ---------------------------------------
-Aditya,80,ST
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:131)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -203,9 +194,6 @@ Tanya,66,BC
 Abhishek,60,BC
 
 ---------------------------------------
-tanvi,90,ST
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:131)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -368,7 +356,4 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
-varsha,66,BC
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:131)
 ----------------------------------------

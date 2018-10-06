@@ -98,8 +98,8 @@ class Solution {
 		sortobj.sort(data);
 		System.out.println("---------------------------------------");
 		Student[] seatallotment = new Student[vacancies];
-		while (vacancies > 0) {
-			for (int i = data.length - 1; i > 0; i--) {
+		for (int i = data.length - 1; i > 0; i--) {
+			while (vacancies > 0) {
 				int j = 0;
 				if ((data[i].getReservation()).equals("BC") && bc != 0) {
 					seatallotment[j] = data[i];
