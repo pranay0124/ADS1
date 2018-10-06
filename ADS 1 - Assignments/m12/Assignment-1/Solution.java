@@ -72,6 +72,12 @@ class Student implements Comparable<Student> {
 		if (this.sub2marks < that.sub2marks) {
 			return -1;
 		}
+		if ((this.dob).compareTo(that.dob) > 0) {
+			return 1;
+		}
+		if((this.dob).compareTo(that.dob) > 0) {
+			return -1;
+		}
 		return 0;
 	}
 }
