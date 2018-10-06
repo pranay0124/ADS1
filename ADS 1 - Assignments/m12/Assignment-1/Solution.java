@@ -96,6 +96,7 @@ class Solution {
 		}
 		data = Arrays.copyOf(data, count);
 		sortobj.sort(data);
+		System.out.println("---------------------------------------");
 		Student[] seatallotment = new Student[vacancies];
 		while (vacancies > 0) {
 			for (int i = 0; i < data.length; i++) {
@@ -105,6 +106,7 @@ class Solution {
 					j++;
 				}
 			}
+			vacancies--;
 		}
 		System.out.println(Arrays.toString(seatallotment));
 	}
