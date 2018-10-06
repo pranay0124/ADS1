@@ -130,10 +130,11 @@ class Student implements Comparable<Student> {
 	        int sub3marks1, int totalMarks1,
 	        String reservation1) {
 		this.studentname = studentname1;
-		String[] d = dob.split("-");
+		this.dob = dob;
+		// String[] d = dob.split("-");
 		// this.date = Integer.parseInt(d[0]);
-		this.month = Integer.parseInt(d[1]);
-		this.year = Integer.parseInt(d[2]);
+		// this.month = Integer.parseInt(d[1]);
+		// this.year = Integer.parseInt(d[2]);
 		this.sub1marks = sub1marks1;
 		this.sub2marks = sub2marks1;
 		this.sub3marks = sub3marks1;
@@ -190,24 +191,24 @@ class Student implements Comparable<Student> {
 		if (this.sub2marks < that.sub2marks) {
 			return -1;
 		}
-		// if ((this.dob).compareTo(that.dob) > 0) {
+		if ((this.dob).compareTo(that.dob) > 0) {
+			return 1;
+		}
+		if((this.dob).compareTo(that.dob) > 0) {
+			return -1;
+		}
+		// if (this.year > that.year) {
 		// 	return 1;
 		// }
-		// if((this.dob).compareTo(that.dob) > 0) {
+		// if (this.year < that.year) {
 		// 	return -1;
 		// }
-		if (this.year > that.year) {
-			return 1;
-		}
-		if (this.year < that.year) {
-			return -1;
-		}
-		if (this.month > that.month) {
-			return 1;
-		}
-		if (this.month < that.month) {
-			return -1;
-		}
+		// if (this.month > that.month) {
+		// 	return 1;
+		// }
+		// if (this.month < that.month) {
+		// 	return -1;
+		// }
 		// if (this.date > that.date) {
 		// 	return 1;
 		// }
