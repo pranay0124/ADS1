@@ -99,25 +99,31 @@ class Solution {
 		System.out.println("---------------------------------------");
 		Student[] seatallotment = new Student[vacancies];
 		while (vacancies > 0) {
-			for (int i = data.length; i > 0; i--) {
+			for (int i = data.length - 1; i > 0; i--) {
 				int j = 0;
-				if ((data[i].getReservation()).equals("BC") && unreserved != 0) {
+				if ((data[i].getReservation()).equals("BC") && bc != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					bc--;
 				}
-				if ((data[i].getReservation()).equals("SC") && unreserved != 0) {
+				if ((data[i].getReservation()).equals("SC") && sc != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					sc--;
 				}
-				if ((data[i].getReservation()).equals("ST") && unreserved != 0) {
+				if ((data[i].getReservation()).equals("ST") && st != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					st--;
+				}
+				if ((data[i].getReservation()).equals("Open") && unreserved != 0) {
+					seatallotment[j] = data[i];
+					j++;
+					vacancies--;
+					unreserved--;
 				}
 			}
 		}
