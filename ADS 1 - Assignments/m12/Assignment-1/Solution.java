@@ -105,31 +105,28 @@ class Solution {
 					j++;
 					vacancies--;
 					bc--;
-				} 
-				else if (((data[i].getReservation()).equals("SC") && sc != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
+				} else if (((data[i].getReservation()).equals("SC") && sc != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
 					seatallotment[j] = data[i];
 
 					j++;
 					vacancies--;
 					sc--;
-				} 
-				else if (((data[i].getReservation()).equals("ST") && st != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
+				} else if (((data[i].getReservation()).equals("ST") && st != 0) || ((data[i].getReservation()).equals("Open") && unreserved != 0)) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					st--;
-				} 
-				else if (((data[i].getReservation()).equals("Open")  && unreserved != 0)) {
+				} else if (((data[i].getReservation()).equals("Open")  && unreserved != 0)) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					unreserved--;
-				} 
-				else {}
+				} else {}
 			}
-			for (int i = 0; i < seatallotment.length; i++) {
-				System.out.println(seatallotment[i].getStudentName() + "," + seatallotment[i].getTotalMarks() + "," + seatallotment[i].getReservation());
-			}
+		}
+
+		for (int i = 0; i < seatallotment.length; i++) {
+			System.out.println(seatallotment[i].getStudentName() + "," + seatallotment[i].getTotalMarks() + "," + seatallotment[i].getReservation());
 		}
 	}
 }
