@@ -56,6 +56,12 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
+Shreya,23,SC
+Aryan,32,ST
+Aishwarya,48,Open
+vani,50,Open
+Priyanka,70,Open
+rahul,73,Open
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -131,6 +137,14 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
+Shreya,23,SC
+Aryan,32,ST
+Aishwarya,48,Open
+vani,50,Open
+Ankit,58,BC
+Priyanka,70,Open
+Amit,70,Open
+rahul,73,Open
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -161,6 +175,9 @@ Tanya,66,BC
 Abhishek,60,BC
 
 ---------------------------------------
+Priyanka,70,Open
+priya,76,SC
+Aditya,80,ST
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -194,6 +211,12 @@ Tanya,66,BC
 Abhishek,60,BC
 
 ---------------------------------------
+Abhishek,60,BC
+Priyanka,70,Open
+Amit,70,Open
+rahul,73,Open
+priya,76,SC
+tanvi,90,ST
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -356,4 +379,19 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
+Shreya,23,SC
+Aryan,32,ST
+Aishwarya,48,Open
+vani,50,Open
+yash,61,Open
+varsha,66,BC
+Priyanka,70,Open
+rahul,73,Open
+Arjun,75,Open
+Ajay,76,Open
+Amit,76,Open
+mahesh,87,BC
+Raj,87,BC
+tanvi,90,BC
+varsha,66,BC
 ----------------------------------------
