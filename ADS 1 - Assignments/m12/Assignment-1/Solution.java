@@ -23,6 +23,8 @@ class SelectionSort {
 		for (int i = 0; i < array.length; i++) {
 			System.out.println(array[i].getStudentName() + "," + array[i].getTotalMarks() + "," + array[i].getReservation());
 		}
+		System.out.println();
+
 	}
 }
 class Student implements Comparable<Student> {
@@ -77,7 +79,7 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int qualifiedStudents = Integer.parseInt(scan.nextLine());
-		Student[] data = new Student[50];
+		Student[] data = new Student[qualifiedStudents];
 		int count = 0;
 		int vacancies = Integer.parseInt(scan.nextLine());
 		int unreserved = Integer.parseInt(scan.nextLine());
@@ -94,5 +96,14 @@ class Solution {
 		}
 		data = Arrays.copyOf(data, count);
 		sortobj.sort(data);
+		System.out.println(data[0]);
+		// Student[] seatallotment = new Student[vacancies];
+		// while(vacancies>0) {
+		// 	for(int i=0;i<data.length;i++) {
+		// 		int j=0;
+		// 		if(data[i])
+		// 		seatallotment[j] = data[i]; 
+		// 	}
+		// }
 	}
 }
