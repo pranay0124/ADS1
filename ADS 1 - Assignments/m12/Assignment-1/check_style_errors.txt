@@ -52,7 +52,7 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:93:166: '4' is a magic number. [MagicNumber]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:93:195: '5' is a magic number. [MagicNumber]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:93:207: '6' is a magic number. [MagicNumber]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:104:35: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:104:35: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:105:57: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:105:58: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:112: Line is longer than 80 characters (found 161). [LineLength]

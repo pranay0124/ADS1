@@ -101,7 +101,7 @@ class Solution {
 		while (vacancies > 0) {
 			for (int i = 0; i < data.length; i++) {
 				int j = 0;
-				if((data[i].getReservation()).equals("Open")) {
+				if((data[i].getReservation()).equals("ST")) {
 					seatallotment[j]=data[i];
 					j++;
 					vacancies--;
