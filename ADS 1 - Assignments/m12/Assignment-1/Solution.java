@@ -104,10 +104,12 @@ class Solution {
 				if((data[i].getReservation()).equals("Open")) {
 					seatallotment[j]=data[i];
 					j++;
+					vacancies--;
 				}
 			}
-			vacancies--;
 		}
-		System.out.println(Arrays.toString(seatallotment));
+		for (int i = 0; i < seatallotment.length; i++) {
+			System.out.println(seatallotment[i].getStudentName() + "," + seatallotment[i].getTotalMarks() + "," + seatallotment[i].getReservation());
+		}
 	}
 }

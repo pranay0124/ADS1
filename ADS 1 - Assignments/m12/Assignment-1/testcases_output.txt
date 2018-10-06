@@ -56,7 +56,9 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
-[Student@2ed94a8b, null, null, null, null, null]
+Aishwarya,48,Open
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:112)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -132,7 +134,9 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
-[Student@2ed94a8b, null, null, null, null, null, null, null]
+Aishwarya,48,Open
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:112)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -163,7 +167,9 @@ Tanya,66,BC
 Abhishek,60,BC
 
 ---------------------------------------
-[Student@2ed94a8b, null, null]
+Priyanka,70,Open
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:112)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -197,7 +203,9 @@ Tanya,66,BC
 Abhishek,60,BC
 
 ---------------------------------------
-[Student@2ed94a8b, null, null, null, null, null]
+Priyanka,70,Open
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:112)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -278,7 +286,9 @@ shyam,23,Open
 Shreya,23,Open
 
 ---------------------------------------
-[Student@2ed94a8b, null, null, null, null, null, null, null, null, null, null, null, null]
+Shreya,23,Open
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:112)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -361,5 +371,7 @@ Aryan,32,ST
 Shreya,23,SC
 
 ---------------------------------------
-[Student@2ed94a8b, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
+Aishwarya,48,Open
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:112)
 ----------------------------------------
