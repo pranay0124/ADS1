@@ -80,6 +80,7 @@ class Solution {
 		SelectionSort sortobj = new SelectionSort();
 		while(scan.hasNext()) {
 			String line = scan.nextLine();
+			System.out.println(line);
 			String[] tokens = line.split(",");
 			System.out.println(Arrays.toString(tokens) + "input");
 			Student studentdetails = new Student(tokens[0],tokens[1],Integer.parseInt(tokens[2]),Integer.parseInt(tokens[3]),Integer.parseInt(tokens[4]),Integer.parseInt(tokens[5]),tokens[6]);
