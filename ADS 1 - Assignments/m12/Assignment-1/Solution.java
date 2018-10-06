@@ -69,14 +69,14 @@ class Student implements Comparable<Student> {
 class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int qualifiedStudents = scan.nextInt();
+		int qualifiedStudents = Integer.parseInt(scan.nextLine());
 		Student[] data = new Student[50];
 		int count = 0;
-		int vacancies = scan.nextInt();
-		int unreserved = scan.nextInt();
-		int bc = scan.nextInt();
-		int sc = scan.nextInt();
-		int st = scan.nextInt();
+		int vacancies = Integer.parseInt(scan.nextLine());
+		int unreserved = Integer.parseInt(scan.nextLine());
+		int bc = Integer.parseInt(scan.nextLine());
+		int sc = Integer.parseInt(scan.nextLine());
+		int st = Integer.parseInt(scan.nextLine());
 		SelectionSort sortobj = new SelectionSort();
 		while (scan.hasNext()) {
             String line = scan.nextLine();

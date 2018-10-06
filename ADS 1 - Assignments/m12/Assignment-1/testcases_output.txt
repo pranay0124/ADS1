@@ -31,10 +31,53 @@ tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-
-[]input
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+Ajay,12-06-1993,32,33,11,76,Open
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]input
+priya,13-08-1993,21,40,11,72,SC
+[priya, 13-08-1993, 21, 40, 11, 72, SC]input
+rahul,22-10-1993,34,19,20,73,Open
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]input
+Abhishek,06-05-1993,08,37,15,60,BC
+[Abhishek, 06-05-1993, 08, 37, 15, 60, BC]input
+Priyanka,09-12-1993,18,40,12,70,Open
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]input
+Aditya,18-01-1994,26,34,20,80,ST
+[Aditya, 18-01-1994, 26, 34, 20, 80, ST]input
+divya,29-07-1993,40,39,20,99,ST
+[divya, 29-07-1993, 40, 39, 20, 99, ST]input
+tanvi,22-01-1994,38,33,19,90,BC
+[tanvi, 22-01-1994, 38, 33, 19, 90, BC]input
+vani,13-06-1993,11,23,16,50,Open
+[vani, 13-06-1993, 11, 23, 16, 50, Open]input
+yash,18-08-1994,19,29,13,61,BC
+[yash, 18-08-1994, 19, 29, 13, 61, BC]input
+Anjali,16-03-1993,06,12,20,38,SC
+[Anjali, 16-03-1993, 06, 12, 20, 38, SC]input
+Ankit,29-04-1993,08,34,16,58,BC
+[Ankit, 29-04-1993, 08, 34, 16, 58, BC]input
+Shreya,19-02-1993,12,11,0,23,SC
+[Shreya, 19-02-1993, 12, 11, 0, 23, SC]input
+shyam,21-11-1993,28,23,20,71,ST
+[shyam, 21-11-1993, 28, 23, 20, 71, ST]input
+riya,18-12-1994,32,31,20,83,Open
+[riya, 18-12-1994, 32, 31, 20, 83, Open]input
+Deepak,18-10-1994,40,38,20,98,Open
+[Deepak, 18-10-1994, 40, 38, 20, 98, Open]input
+Aryan,12-12-1992,10,10,12,32,ST
+[Aryan, 12-12-1992, 10, 10, 12, 32, ST]input
+Aishwarya,11-11-1994,20,14,14,48,Open
+[Aishwarya, 11-11-1994, 20, 14, 14, 48, Open]input
+Raj,16-08-1994,34,33,20,87,BC
+[Raj, 16-08-1994, 34, 33, 20, 87, BC]input
+Arjun,16-07-1992,21,34,20,75,Open
+[Arjun, 16-07-1992, 21, 34, 20, 75, Open]input
+varsha,01-07-1993,26,27,13,66,BC
+[varsha, 01-07-1993, 26, 27, 13, 66, BC]input
+Manoj,18-11-1995,09,24,06,39,SC
+[Manoj, 18-11-1995, 09, 24, 06, 39, SC]input
+Ira,16-07-1993,33,40,20,93,ST
+[Ira, 16-07-1993, 33, 40, 20, 93, ST]input
+[Student@96532d6, Student@3796751b, Student@67b64c45, Student@4411d970, Student@6442b0a6, Student@60f82f98, Student@35f983a6, Student@7f690630, Student@edf4efb, Student@2f7a2457, Student@566776ad, Student@6108b2d7, Student@1554909b, Student@6bf256fa, Student@6cd8737, Student@22f71333, Student@13969fbe, Student@6aaa5eb0, Student@3498ed, Student@1a407d53, Student@3d8c7aca, Student@5ebec15, Student@21bcffb5]
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -78,10 +121,67 @@ Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 Your Output: 
-
-[]input
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+Ajay,12-06-1993,32,33,11,76,Open
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]input
+priya,13-08-1993,21,40,11,72,SC
+[priya, 13-08-1993, 21, 40, 11, 72, SC]input
+rahul,22-10-1993,34,19,20,73,Open
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]input
+Tanya,21-01-1993,20,26,20,66,BC
+[Tanya, 21-01-1993, 20, 26, 20, 66, BC]input
+Abhishek,06-05-1993,08,37,15,60,BC
+[Abhishek, 06-05-1993, 08, 37, 15, 60, BC]input
+Priyanka,09-12-1993,18,40,12,70,Open
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]input
+Aditya,18-01-1994,26,34,20,80,ST
+[Aditya, 18-01-1994, 26, 34, 20, 80, ST]input
+divya,29-07-1993,40,39,20,99,ST
+[divya, 29-07-1993, 40, 39, 20, 99, ST]input
+Amit,30-01-1993,36,20,14,70,Open
+[Amit, 30-01-1993, 36, 20, 14, 70, Open]input
+tanvi,22-01-1994,38,33,19,90,BC
+[tanvi, 22-01-1994, 38, 33, 19, 90, BC]input
+mahesh,16-02-1993,38,39,10,87,Open
+[mahesh, 16-02-1993, 38, 39, 10, 87, Open]input
+Ishita,19-05-1993,40,40,19,99,Open
+[Ishita, 19-05-1993, 40, 40, 19, 99, Open]input
+ROHIT,24-12-1992,26,26,18,70,SC
+[ROHIT, 24-12-1992, 26, 26, 18, 70, SC]input
+vani,13-06-1993,11,23,16,50,Open
+[vani, 13-06-1993, 11, 23, 16, 50, Open]input
+yash,18-08-1994,19,29,13,61,BC
+[yash, 18-08-1994, 19, 29, 13, 61, BC]input
+Anjali,16-03-1993,06,12,20,38,SC
+[Anjali, 16-03-1993, 06, 12, 20, 38, SC]input
+Ankit,29-04-1993,08,34,16,58,BC
+[Ankit, 29-04-1993, 08, 34, 16, 58, BC]input
+Shreya,19-02-1993,12,11,0,23,SC
+[Shreya, 19-02-1993, 12, 11, 0, 23, SC]input
+shyam,21-11-1993,28,23,20,71,ST
+[shyam, 21-11-1993, 28, 23, 20, 71, ST]input
+riya,18-12-1994,32,31,20,83,Open
+[riya, 18-12-1994, 32, 31, 20, 83, Open]input
+Deepak,18-10-1994,40,38,20,98,Open
+[Deepak, 18-10-1994, 40, 38, 20, 98, Open]input
+Sneha,12-06-1992,30,06,14,50,SC
+[Sneha, 12-06-1992, 30, 06, 14, 50, SC]input
+Aryan,12-12-1992,10,10,12,32,ST
+[Aryan, 12-12-1992, 10, 10, 12, 32, ST]input
+Aishwarya,11-11-1994,20,14,14,48,Open
+[Aishwarya, 11-11-1994, 20, 14, 14, 48, Open]input
+Raj,16-08-1994,34,33,20,87,BC
+[Raj, 16-08-1994, 34, 33, 20, 87, BC]input
+Gayatri,09-09-1993,36,12,10,58,SC
+[Gayatri, 09-09-1993, 36, 12, 10, 58, SC]input
+Arjun,16-07-1992,21,34,20,75,Open
+[Arjun, 16-07-1992, 21, 34, 20, 75, Open]input
+varsha,01-07-1993,26,27,13,66,BC
+[varsha, 01-07-1993, 26, 27, 13, 66, BC]input
+Manoj,18-11-1995,09,24,06,39,SC
+[Manoj, 18-11-1995, 09, 24, 06, 39, SC]input
+Ira,16-07-1993,33,40,20,93,ST
+[Ira, 16-07-1993, 33, 40, 20, 93, ST]input
+[Student@96532d6, Student@3796751b, Student@67b64c45, Student@4411d970, Student@6442b0a6, Student@60f82f98, Student@35f983a6, Student@7f690630, Student@edf4efb, Student@2f7a2457, Student@566776ad, Student@6108b2d7, Student@1554909b, Student@6bf256fa, Student@6cd8737, Student@22f71333, Student@13969fbe, Student@6aaa5eb0, Student@3498ed, Student@1a407d53, Student@3d8c7aca, Student@5ebec15, Student@21bcffb5, Student@380fb434, Student@668bc3d5, Student@3cda1055, Student@7a5d012c, Student@3fb6a447, Student@79b4d0f, Student@6b2fad11]
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -100,10 +200,27 @@ divya,99,Open
 Aditya,80,ST
 priya,76,SC
 Your Output: 
-
-[]input
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+Ajay,12-06-1993,32,33,11,76,Open
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]input
+priya,13-08-1993,32,33,11,76,SC
+[priya, 13-08-1993, 32, 33, 11, 76, SC]input
+rahul,22-10-1993,34,19,20,73,Open
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]input
+Tanya,21-01-1993,20,26,20,66,BC
+[Tanya, 21-01-1993, 20, 26, 20, 66, BC]input
+Abhishek,06-05-1993,08,37,15,60,BC
+[Abhishek, 06-05-1993, 08, 37, 15, 60, BC]input
+Priyanka,09-12-1993,18,40,12,70,Open
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]input
+Aditya,18-01-1994,26,34,20,80,ST
+[Aditya, 18-01-1994, 26, 34, 20, 80, ST]input
+divya,29-07-1993,40,39,20,99,Open
+[divya, 29-07-1993, 40, 39, 20, 99, Open]input
+Amit,30-01-1993,36,20,14,70,Open
+[Amit, 30-01-1993, 36, 20, 14, 70, Open]input
+tanvi,22-01-1994,38,33,19,90,Open
+[tanvi, 22-01-1994, 38, 33, 19, 90, Open]input
+[Student@96532d6, Student@3796751b, Student@67b64c45, Student@4411d970, Student@6442b0a6, Student@60f82f98, Student@35f983a6, Student@7f690630, Student@edf4efb, Student@2f7a2457]
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -125,10 +242,27 @@ priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
 Your Output: 
-
-[]input
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+Ajay,12-06-1993,32,33,11,76,Open
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]input
+priya,13-08-1993,32,33,11,76,SC
+[priya, 13-08-1993, 32, 33, 11, 76, SC]input
+rahul,22-10-1993,34,19,20,73,Open
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]input
+Tanya,21-01-1993,20,26,20,66,BC
+[Tanya, 21-01-1993, 20, 26, 20, 66, BC]input
+Abhishek,06-05-1993,08,37,15,60,BC
+[Abhishek, 06-05-1993, 08, 37, 15, 60, BC]input
+Priyanka,09-12-1993,18,40,12,70,Open
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]input
+Aditya,18-01-1994,26,34,20,80,Open
+[Aditya, 18-01-1994, 26, 34, 20, 80, Open]input
+divya,29-07-1993,40,39,20,99,Open
+[divya, 29-07-1993, 40, 39, 20, 99, Open]input
+Amit,30-01-1993,36,20,14,70,Open
+[Amit, 30-01-1993, 36, 20, 14, 70, Open]input
+tanvi,22-01-1994,38,33,19,90,ST
+[tanvi, 22-01-1994, 38, 33, 19, 90, ST]input
+[Student@96532d6, Student@3796751b, Student@67b64c45, Student@4411d970, Student@6442b0a6, Student@60f82f98, Student@35f983a6, Student@7f690630, Student@edf4efb, Student@2f7a2457]
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -177,10 +311,67 @@ Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 Your Output: 
-
-[]input
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+Ajay,12-06-1993,32,33,11,76,Open
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]input
+priya,13-08-1993,25,40,11,76,Open
+[priya, 13-08-1993, 25, 40, 11, 76, Open]input
+rahul,22-10-1993,34,19,20,73,Open
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]input
+Tanya,21-01-1993,20,26,20,72,Open
+[Tanya, 21-01-1993, 20, 26, 20, 72, Open]input
+Abhishek,06-05-1993,08,37,15,60,Open
+[Abhishek, 06-05-1993, 08, 37, 15, 60, Open]input
+Priyanka,09-12-1993,18,40,12,70,Open
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]input
+Aditya,18-01-1994,26,34,20,80,Open
+[Aditya, 18-01-1994, 26, 34, 20, 80, Open]input
+divya,29-07-1993,40,39,20,99,Open
+[divya, 29-07-1993, 40, 39, 20, 99, Open]input
+Amit,30-01-1993,36,29,11,76,Open
+[Amit, 30-01-1993, 36, 29, 11, 76, Open]input
+tanvi,22-01-1994,40,40,19,99,Open
+[tanvi, 22-01-1994, 40, 40, 19, 99, Open]input
+mahesh,16-02-1993,38,39,10,87,Open
+[mahesh, 16-02-1993, 38, 39, 10, 87, Open]input
+Ishita,19-05-1993,40,40,19,99,Open
+[Ishita, 19-05-1993, 40, 40, 19, 99, Open]input
+ROHIT,24-12-1992,26,26,18,70,Open
+[ROHIT, 24-12-1992, 26, 26, 18, 70, Open]input
+vani,13-06-1993,11,23,16,50,Open
+[vani, 13-06-1993, 11, 23, 16, 50, Open]input
+yash,18-08-1994,19,29,13,61,Open
+[yash, 18-08-1994, 19, 29, 13, 61, Open]input
+Anjali,16-03-1993,06,12,20,38,Open
+[Anjali, 16-03-1993, 06, 12, 20, 38, Open]input
+Ankit,29-04-1993,08,34,16,58,Open
+[Ankit, 29-04-1993, 08, 34, 16, 58, Open]input
+Shreya,19-02-1993,12,11,0,23,Open
+[Shreya, 19-02-1993, 12, 11, 0, 23, Open]input
+shyam,21-11-1993,12,11,0,23,Open
+[shyam, 21-11-1993, 12, 11, 0, 23, Open]input
+riya,18-12-1994,32,31,20,83,Open
+[riya, 18-12-1994, 32, 31, 20, 83, Open]input
+Deepak,18-10-1994,40,38,20,98,Open
+[Deepak, 18-10-1994, 40, 38, 20, 98, Open]input
+Sneha,12-06-1992,30,06,14,50,Open
+[Sneha, 12-06-1992, 30, 06, 14, 50, Open]input
+Aryan,12-12-1992,10,10,12,32,Open
+[Aryan, 12-12-1992, 10, 10, 12, 32, Open]input
+Aishwarya,11-11-1994,20,14,14,48,Open
+[Aishwarya, 11-11-1994, 20, 14, 14, 48, Open]input
+Raj,16-08-1994,34,33,20,87,Open
+[Raj, 16-08-1994, 34, 33, 20, 87, Open]input
+Gayatri,09-09-1993,36,12,10,58,Open
+[Gayatri, 09-09-1993, 36, 12, 10, 58, Open]input
+Arjun,16-07-1992,21,34,20,75,Open
+[Arjun, 16-07-1992, 21, 34, 20, 75, Open]input
+varsha,01-07-1993,26,27,13,66,Open
+[varsha, 01-07-1993, 26, 27, 13, 66, Open]input
+Manoj,18-11-1995,09,24,06,39,Open
+[Manoj, 18-11-1995, 09, 24, 06, 39, Open]input
+Ira,16-07-1993,33,40,20,93,Open
+[Ira, 16-07-1993, 33, 40, 20, 93, Open]input
+[Student@96532d6, Student@3796751b, Student@67b64c45, Student@4411d970, Student@6442b0a6, Student@60f82f98, Student@35f983a6, Student@7f690630, Student@edf4efb, Student@2f7a2457, Student@566776ad, Student@6108b2d7, Student@1554909b, Student@6bf256fa, Student@6cd8737, Student@22f71333, Student@13969fbe, Student@6aaa5eb0, Student@3498ed, Student@1a407d53, Student@3d8c7aca, Student@5ebec15, Student@21bcffb5, Student@380fb434, Student@668bc3d5, Student@3cda1055, Student@7a5d012c, Student@3fb6a447, Student@79b4d0f, Student@6b2fad11]
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -231,8 +422,65 @@ rahul,73,Open
 priya,72,SC
 varsha,66,BC
 Your Output: 
-
-[]input
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:86)
+Ajay,12-06-1993,32,33,11,76,Open
+[Ajay, 12-06-1993, 32, 33, 11, 76, Open]input
+priya,13-08-1993,21,40,11,72,SC
+[priya, 13-08-1993, 21, 40, 11, 72, SC]input
+rahul,22-10-1993,34,19,20,73,Open
+[rahul, 22-10-1993, 34, 19, 20, 73, Open]input
+Tanya,21-01-1993,20,26,20,66,SC
+[Tanya, 21-01-1993, 20, 26, 20, 66, SC]input
+Abhishek,06-05-1993,08,37,15,60,SC
+[Abhishek, 06-05-1993, 08, 37, 15, 60, SC]input
+Priyanka,09-12-1993,18,40,12,70,Open
+[Priyanka, 09-12-1993, 18, 40, 12, 70, Open]input
+Aditya,18-01-1994,26,34,20,80,ST
+[Aditya, 18-01-1994, 26, 34, 20, 80, ST]input
+divya,29-07-1993,40,39,20,99,ST
+[divya, 29-07-1993, 40, 39, 20, 99, ST]input
+Amit,30-01-1993,32,33,11,76,Open
+[Amit, 30-01-1993, 32, 33, 11, 76, Open]input
+tanvi,22-01-1994,38,33,19,90,BC
+[tanvi, 22-01-1994, 38, 33, 19, 90, BC]input
+mahesh,16-02-1993,38,39,10,87,BC
+[mahesh, 16-02-1993, 38, 39, 10, 87, BC]input
+Ishita,19-05-1993,40,40,19,99,Open
+[Ishita, 19-05-1993, 40, 40, 19, 99, Open]input
+ROHIT,24-12-1992,26,26,18,70,SC
+[ROHIT, 24-12-1992, 26, 26, 18, 70, SC]input
+vani,13-06-1993,11,23,16,50,Open
+[vani, 13-06-1993, 11, 23, 16, 50, Open]input
+yash,18-08-1994,19,29,13,61,Open
+[yash, 18-08-1994, 19, 29, 13, 61, Open]input
+Anjali,16-03-1993,06,12,20,38,SC
+[Anjali, 16-03-1993, 06, 12, 20, 38, SC]input
+Ankit,29-04-1993,08,34,16,58,SC
+[Ankit, 29-04-1993, 08, 34, 16, 58, SC]input
+Shreya,19-02-1993,12,11,0,23,SC
+[Shreya, 19-02-1993, 12, 11, 0, 23, SC]input
+shyam,21-11-1993,28,23,20,71,ST
+[shyam, 21-11-1993, 28, 23, 20, 71, ST]input
+riya,18-12-1994,32,31,20,83,Open
+[riya, 18-12-1994, 32, 31, 20, 83, Open]input
+Deepak,18-10-1994,40,40,19,99,Open
+[Deepak, 18-10-1994, 40, 40, 19, 99, Open]input
+Sneha,12-06-1992,30,06,14,50,SC
+[Sneha, 12-06-1992, 30, 06, 14, 50, SC]input
+Aryan,12-12-1992,10,10,12,32,ST
+[Aryan, 12-12-1992, 10, 10, 12, 32, ST]input
+Aishwarya,11-11-1994,20,14,14,48,Open
+[Aishwarya, 11-11-1994, 20, 14, 14, 48, Open]input
+Raj,16-08-1994,34,33,20,87,BC
+[Raj, 16-08-1994, 34, 33, 20, 87, BC]input
+Gayatri,09-09-1993,36,12,10,58,SC
+[Gayatri, 09-09-1993, 36, 12, 10, 58, SC]input
+Arjun,16-07-1992,21,34,20,75,Open
+[Arjun, 16-07-1992, 21, 34, 20, 75, Open]input
+varsha,01-07-1993,26,27,13,66,BC
+[varsha, 01-07-1993, 26, 27, 13, 66, BC]input
+Manoj,18-11-1995,09,11,12,32,SC
+[Manoj, 18-11-1995, 09, 11, 12, 32, SC]input
+Ira,16-07-1993,33,40,20,93,ST
+[Ira, 16-07-1993, 33, 40, 20, 93, ST]input
+[Student@96532d6, Student@3796751b, Student@67b64c45, Student@4411d970, Student@6442b0a6, Student@60f82f98, Student@35f983a6, Student@7f690630, Student@edf4efb, Student@2f7a2457, Student@566776ad, Student@6108b2d7, Student@1554909b, Student@6bf256fa, Student@6cd8737, Student@22f71333, Student@13969fbe, Student@6aaa5eb0, Student@3498ed, Student@1a407d53, Student@3d8c7aca, Student@5ebec15, Student@21bcffb5, Student@380fb434, Student@668bc3d5, Student@3cda1055, Student@7a5d012c, Student@3fb6a447, Student@79b4d0f, Student@6b2fad11]
 ----------------------------------------
