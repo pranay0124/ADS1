@@ -1,14 +1,55 @@
-import java.util.*;
+/**
+ * @author : Pranay Kumar Y.
+ * date : 06th october,2018.
+ */
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.ArrayList;
+/**
+ * Class for selection sort.
+ */
 class SelectionSort {
+	/**
+	 * { function for greater }.
+	 * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+	 *
+	 * @param      u     { parameter_description }
+	 * @param      v     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	boolean greater(final Student u, final Student v) {
 		return u.compareTo(v) == 1;
 	}
 
+	/**
+	 * { function for exchange }.
+	 * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+	 *
+	 * @param      a     { parameter_description }
+	 * @param      i     { parameter_description }
+	 * @param      j     { parameter_description }
+	 */
 	void exch(final Student[] a, final int i, final int j) {
 		Student temp = a[j];
 		a[j] = a[i];
 		a[i] = temp;
 	}
+	/**
+	 * { sort function }.
+	 * Complexity :
+     *              Best Case : O(n)
+     *              Average Case : O(n)
+     *              Worst Case : O(n)
+	 *
+	 * @param      array  The array
+	 */
 	void sort(final Student[] array) {
 		int n = array.length;
 		for (int i = 0; i < n; i++) {
@@ -27,38 +68,109 @@ class SelectionSort {
 
 	}
 }
+
+/*=========================================================================*/
+/**
+ * Class for student.
+ */
 class Student implements Comparable<Student> {
-	String studentname;
-	String dob;
-	int day;
-	int month;
-	int year;
-	int sub1marks;
-	int sub2marks;
-	int sub3marks;
-	int totalMarks;
-	String reservation;
-	Student(String studentname, String dob, int sub1marks, int sub2marks, int sub3marks, int totalMarks, String reservation) {
-		this.studentname = studentname;
+	/**
+	 * student name.
+	 */
+	private String studentname;
+	/**
+	 * dob.
+	 */
+	private String dob;
+	/**
+	 * day
+	 */
+	private int day;
+	/**
+	 * month.
+	 */
+	private int month;
+	/**
+	 * year.
+	 */
+	private int year;
+	/**
+	 * marks1.
+	 */
+	private int sub1marks;
+	/**
+	 * marks2.
+	 */
+	private int sub2marks;
+	/**
+	 * marks3.
+	 */
+	private int sub3marks;
+	/**
+	 * tot marks.
+	 */
+	private int totalMarks;
+	/**
+	 * reservation.
+	 */
+	private String reservation;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      studentname1  The studentname 1
+	 * @param      dob1          The dob 1
+	 * @param      sub1marks1    The sub 1 marks 1
+	 * @param      sub2marks1    The sub 2 marks 1
+	 * @param      sub3marks1    The sub 3 marks 1
+	 * @param      totalMarks1   The total marks 1
+	 * @param      reservation1  The reservation 1
+	 */
+	Student(String studentname1, String dob1,
+	        int sub1marks1, int sub2marks1,
+	        int sub3marks1, int totalMarks1,
+	        String reservation1) {
+		this.studentname = studentname1;
 		String[] d = dob.split("-");
 		// this.date = Integer.parseInt(d[0]);
 		this.month = Integer.parseInt(d[1]);
 		this.year = Integer.parseInt(d[2]);
-		this.sub1marks = sub1marks;
-		this.sub2marks = sub2marks;
-		this.sub3marks = sub3marks;
-		this.totalMarks = totalMarks;
-		this.reservation = reservation;
+		this.sub1marks = sub1marks1;
+		this.sub2marks = sub2marks1;
+		this.sub3marks = sub3marks1;
+		this.totalMarks = totalMarks1;
+		this.reservation = reservation1;
 	}
+	/**
+	 * Gets the student name.
+	 *
+	 * @return     The student name.
+	 */
 	String getStudentName() {
 		return studentname;
 	}
+	/**
+	 * Gets the total marks.
+	 *
+	 * @return     The total marks.
+	 */
 	int getTotalMarks() {
 		return totalMarks;
 	}
+	/**
+	 * Gets the reservation.
+	 *
+	 * @return     The reservation.
+	 */
 	String getReservation() {
 		return reservation;
 	}
+	/**
+	 * compareTo function.
+	 * 
+	 * @param      that  The that
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int compareTo(Student that) {
 		if (this.totalMarks > that.totalMarks) {
 			return 1;
@@ -105,8 +217,21 @@ class Student implements Comparable<Student> {
 		return 0;
 	}
 }
-class Solution {
-	public static void main(String[] args) {
+/*=========================================================================*/
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {}
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int qualifiedStudents = Integer.parseInt(scan.nextLine());
 		Student[] data = new Student[qualifiedStudents];
