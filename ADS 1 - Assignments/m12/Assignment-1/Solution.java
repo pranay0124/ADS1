@@ -99,26 +99,26 @@ class Solution {
 		Student[] seatallotment = new Student[vacancies];
 		int j = 0;
 		while (vacancies != 0) {
-			for (int i = 0; i < data.length; i++) {
-				if (((data[i].getReservation()).equals("BC") && bc != 0) || unreserved != 0) {
+			for (int i = 0; i <data.length; i++) {
+				if (((data[i].getReservation()).equals("BC") && bc != 0)) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					bc--;
 				}
-				if (((data[i].getReservation()).equals("SC") && sc != 0) || unreserved != 0) {
+				if ((data[i].getReservation()).equals("SC") && sc != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					sc--;
 				}
-				if (((data[i].getReservation()).equals("ST") && st != 0) || unreserved != 0) {
+				if ((data[i].getReservation()).equals("ST") && st != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;
 					st--;
 				}
-				if ((data[i].getReservation()).equals("Open") && unreserved != 0) {
+				if (((data[i].getReservation()).equals("Open") || (data[i].getReservation()).equals("ST") ||(data[i].getReservation()).equals("BC")||(data[i].getReservation()).equals("SC")) && unreserved != 0) {
 					seatallotment[j] = data[i];
 					j++;
 					vacancies--;

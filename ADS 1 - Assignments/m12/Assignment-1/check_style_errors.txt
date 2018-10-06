@@ -52,10 +52,14 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:93:166: '4' is a magic number. [MagicNumber]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:93:195: '5' is a magic number. [MagicNumber]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:93:207: '6' is a magic number. [MagicNumber]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:103: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:109: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:115: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:121: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:102:44: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:103: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:109: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:115: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:121: Line is longer than 80 characters (found 227). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:121:125: '||' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:121:164: '||' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:121:166: '||' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m12\Assignment-1\Solution.java:130: Line is longer than 80 characters (found 161). [LineLength]
 Audit done.
-Checkstyle ends with 58 errors.
+Checkstyle ends with 62 errors.
