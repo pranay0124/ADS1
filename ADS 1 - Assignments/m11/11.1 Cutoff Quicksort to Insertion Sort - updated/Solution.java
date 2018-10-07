@@ -1,4 +1,11 @@
-import java.util.*;
+/**
+ * @author : Pranay Kumar Y.
+ * Date 5th October,2018.
+ */
+import java.util.Scanner;
+/*==========================================================================*/
+/*               Class for insertion sort.                                                           */
+/*==========================================================================*/
 class InsertionSort {
 	boolean less(Comparable u, Comparable v) {
 		return u.compareTo(v) < 0;
@@ -17,7 +24,9 @@ class InsertionSort {
 		}
 	}
 }
-
+/*==========================================================================*/
+/*                                                                          */
+/*==========================================================================*/
 class QuickSort {
 	boolean less(Comparable u, Comparable v) {
 		return u.compareTo(v) < 0;
@@ -86,6 +95,9 @@ class QuickSort {
 		return s;
 	}
 }
+/*==========================================================================*/
+/*                                                                          */
+/*==========================================================================*/
 class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
