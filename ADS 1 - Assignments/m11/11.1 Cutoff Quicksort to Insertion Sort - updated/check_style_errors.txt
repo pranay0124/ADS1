@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:71:52: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:101:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:159:25: '{' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:159:25: '}' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 4 errors.

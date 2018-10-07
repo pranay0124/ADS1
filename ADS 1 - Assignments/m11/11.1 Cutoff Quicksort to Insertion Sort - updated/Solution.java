@@ -68,7 +68,7 @@ class QuickSort {
      * @param      a      { parameter_description }
      * @param      b      { parameter_description }
      */
-    void swap(final Comparable[] array, final int a , final int b) {
+    void swap(final Comparable[] array, final int a, final int b) {
         Comparable temp = array[a];
         array[a] = array[b];
         array[b] = temp;
@@ -97,7 +97,15 @@ class QuickSort {
         sort(array, start, pivot - 1, cutoff);
         sort(array, pivot + 1, end, cutoff);
     }
-    // }
+    /**
+     * { partition function }.
+     *
+     * @param      array  The array
+     * @param      start  The start
+     * @param      end    The end
+     *
+     * @return     { description_of_the_return_value }
+     */
     int partition(final Comparable[] array, final int start, final int end) {
         // Comparable pivot = array[start];
         // int i = start - 1;
@@ -156,7 +164,7 @@ final class Solution {
     /**
      * Constructs the object.
      */
-    private Solution() {}
+    private Solution() { }
     /**
      * { main function }.
      *
