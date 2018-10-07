@@ -10,12 +10,6 @@ class InsertionSort {
 	}
 	void sort(Comparable[] array, int low, int high) {
 		System.out.println("insertionSort called");
-		// int n = high + 1;
-		// for (int i = low + 1; i < n; i++) {
-		// 	for (int j = i; j > low && less(array[i], array[j - 1]); j--) {
-		// 		exch(array, j, j - 1);
-		// 	}
-		// }
 		for (int i = low; i <= high; i++) {
 			for (int j = i; j > low && less(array[j], array[j - 1]); j--) {
 				exch(array, j, j - 1);
@@ -59,32 +53,9 @@ class QuickSort {
 		// }
 		// swap(array, i , start);
 		// return i;
-		//
-		// int i = start;
-		// int j = end + 1;
-		// while (true) {
-		// 	while (end >= start && less(array[++i], array[start])) {
-		// 		if (i == end) {
-		// 			break;
-		// 		}
-		// 	}
-		// 	while (start <= end && less(array[start], array[--j])) {
-		// 		if (j == start) {
-		// 			break;
-		// 		}
-		// 	}
-		// 	if (i >= j) {
-		// 		break;
-		// 	}
-		// 	swap(array, i, j);
-		// }
-		// swap(array, start, j);
-		// System.out.println(toString(array));
-		// return j;
 		Comparable pivot = array[start];
 		int p1 = start;
 		int p2 = end;
-
 		while (true) {
 			while (p2 >= start && array[p2].compareTo(pivot) > 0) {
 				p2--;
@@ -129,7 +100,7 @@ class Solution {
 			} else {
 				Comparable[] array = line.split(" ");
 				qs.sort(array, 0, array.length - 1, cutoff);
-				System.out.println(Arrays.toString(array));
+				System.out.println(qs.toString(array));
 			}
 		}
 	}
