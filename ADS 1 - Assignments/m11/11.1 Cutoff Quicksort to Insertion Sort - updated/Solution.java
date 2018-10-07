@@ -57,12 +57,12 @@ class QuickSort {
 		int i = start;
 		int j = end + 1;
 		while (true) {
-			while (less(array[++i], array[start])) {
+			while (end >= start && less(array[++i], array[start])) {
 				if (i == end) {
 					break;
 				}
 			}
-			while (less(array[start], array[--j])) {
+			while (start <= end && less(array[start], array[--j])) {
 				if (j == start) {
 					break;
 				}
