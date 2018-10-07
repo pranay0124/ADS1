@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 [P, O, R, E, E, L, A, M, S, X, T]
 [A, O, M, E, E, L, P, R, S, X, T]
@@ -48,9 +48,9 @@ insertionSort called
 insertionSort called
 insertionSort called
 insertionSort called
-[A, E, E, I, N, O, S, S, Q, T, U, Y]
+[A, E, E, I, N, O, Q, S, S, T, U, Y]
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 [1, 2, 3, 4, 5, 6, 7]
 insertionSort called
@@ -126,11 +126,11 @@ insertionSort called
 insertionSort called
 [gig, joy, owl, rap, wee]
 insertionSort called
-[wad, fee, tap, tar, was]
+[fee, tap, tar, wad, was]
 insertionSort called
-[dug, all, bad, jam, yet]
+[all, bad, dug, jam, yet]
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 [bed, bug, dad, yes, zoo]
 insertionSort called
@@ -162,9 +162,9 @@ insertionSort called
 insertionSort called
 [bed, bug, dad, yes, zoo]
 insertionSort called
-[for, now, ilk, dim, tip]
+[dim, for, ilk, now, tip]
 insertionSort called
-[jot, sob, nob, sky, tag]
+[jot, nob, sky, sob, tag]
 [001, 100, 1, 010, 100, 110, 101]
 [001, 100, 1, 010, 100, 110, 101]
 insertionSort called
@@ -176,7 +176,7 @@ insertionSort called
 [122, 112, 121, 123, 132, 133, 131]
 insertionSort called
 insertionSort called
-[112, 121, 122, 123, 132, 131, 133]
+[112, 121, 122, 123, 131, 132, 133]
 ----------------------------------------
 ########## Testcase 3: Passed ##########
 Expected Output: 

@@ -4,15 +4,20 @@ class InsertionSort {
 		return u.compareTo(v) < 0;
 	}
 	void exch(Comparable[] a, int i, int j) {
-		Comparable temp = a[j];
-		a[j] = a[i];
-		a[i] = temp;
+		Comparable temp = a[i];
+		a[i] = a[j];
+		a[j] = temp;
 	}
 	void sort(Comparable[] array, int low, int high) {
 		System.out.println("insertionSort called");
-		int n = high + 1;
-		for (int i = low + 1; i < n; i++) {
-			for (int j = i; j > low && less(array[i], array[j - 1]); j--) {
+		// int n = high + 1;
+		// for (int i = low + 1; i < n; i++) {
+		// 	for (int j = i; j > low && less(array[i], array[j - 1]); j--) {
+		// 		exch(array, j, j - 1);
+		// 	}
+		// }
+		for (int i = low; i <= high; i++) {
+			for (int j = i; j > low && less(array[j], array[j - 1]); j--) {
 				exch(array, j, j - 1);
 			}
 		}
