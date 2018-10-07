@@ -9,9 +9,9 @@ class InsertionSort {
 		a[i] = temp;
 	}
 	void sort(Comparable[] array, int low, int high) {
-		// System.out.println("insertionSort called");
-		int n = array.length;
-		for (int i = low; i <= high; i++) {
+		System.out.println("insertionSort called");
+		int n = high + 1;
+		for (int i = low + 1; i < n; i++) {
 			for (int j = i; j > low && less(array[i], array[j - 1]); j--) {
 				exch(array, j, j - 1);
 			}
@@ -30,19 +30,19 @@ class QuickSort {
 	}
 
 	void sort(Comparable[] array, int start, int end, int cutoff) {
-		if (start < end) {
-			if (end <= start + cutoff - 1) {
-				InsertionSort is = new InsertionSort();
-				is.sort(array, start, end);
-				System.out.println("insertionSort called");
-				return;
-			}
-			int pivot = partition(array, start, end);
-			// System.out.println(Arrays.toString(array));
-			sort(array, start, pivot - 1, cutoff);
-			sort(array, pivot + 1, end, cutoff);
+		// if (start < end) {
+		if (end - start < cutoff) {
+			InsertionSort is = new InsertionSort();
+			is.sort(array, start, end);
+			// System.out.println("insertionSort called");
+			return;
 		}
+		int pivot = partition(array, start, end);
+		// System.out.println(Arrays.toString(array));
+		sort(array, start, pivot - 1, cutoff);
+		sort(array, pivot + 1, end, cutoff);
 	}
+	// }
 	int partition(Comparable[] array, int start, int end) {
 		// Comparable pivot = array[start];
 		// int i = start - 1;
@@ -93,9 +93,15 @@ class Solution {
 		for (int i = 0; i < test; i++) {
 			QuickSort qs = new QuickSort();
 			int cutoff = Integer.parseInt(scan.nextLine());
-			Comparable[] inptarray = scan.nextLine().split(" ");
-			qs.sort(inptarray, 0, inptarray.length - 1, cutoff);
-			System.out.println(Arrays.toString(inptarray));
+			String line = scan.nextLine();
+
+			if (line.equals("")) {
+				System.out.println("[]");
+			} else {
+				Comparable[] array = line.split(" ");
+				qs.sort(array, 0, array.length - 1, cutoff);
+				System.out.println(Arrays.toString(array));
+			}
 		}
 	}
 }
