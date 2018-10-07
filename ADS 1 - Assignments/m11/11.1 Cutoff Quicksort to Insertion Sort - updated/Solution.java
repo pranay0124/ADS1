@@ -26,7 +26,7 @@ class InsertionSort {
     }
     /**
      * { swaps the elements }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(1)
      *              Average Case : O(1)
@@ -43,7 +43,7 @@ class InsertionSort {
     }
     /**
      * { sorts the array }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(nlogn)
      *              Average Case : O(nlogn)
@@ -68,7 +68,7 @@ class InsertionSort {
 class QuickSort {
     /**
      * { function for less }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(1)
      *              Average Case : O(1)
@@ -84,7 +84,7 @@ class QuickSort {
     }
     /**
      * { swaps the element }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(1)
      *              Average Case : O(1)
@@ -101,7 +101,7 @@ class QuickSort {
     }
     /**
      * { sorts the array }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(nlogn)
      *              Average Case : O(nlogn)
@@ -130,7 +130,7 @@ class QuickSort {
     }
     /**
      * { partition function }.
-     * 
+     *
      * Complexity :
      *              Best Case : O(n)
      *              Average Case : O(n^2)
