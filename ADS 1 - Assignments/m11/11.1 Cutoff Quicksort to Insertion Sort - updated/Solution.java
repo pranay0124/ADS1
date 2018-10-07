@@ -21,7 +21,7 @@ class InsertionSort {
 
 class QuickSort {
 	boolean less(Comparable u, Comparable v) {
-		return u.compareTo(v) < 0;
+		return u.compareTo(v) <= 0;
 	}
 	void swap(Comparable[] array, int a , int b) {
 		Comparable temp = array[a];
