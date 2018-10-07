@@ -8,7 +8,13 @@ import java.util.Scanner;
  *==========================================================================*/
 class InsertionSort {
     /**
+     *
      * { function for less }.
+     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @param      u     { parameter_description }
      * @param      v     { parameter_description }
@@ -20,6 +26,11 @@ class InsertionSort {
     }
     /**
      * { swaps the elements }.
+     * 
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @param      a     { parameter_description }
      * @param      i     { parameter_description }
@@ -32,6 +43,11 @@ class InsertionSort {
     }
     /**
      * { sorts the array }.
+     * 
+     * Complexity :
+     *              Best Case : O(nlogn)
+     *              Average Case : O(nlogn)
+     *              Worst Case : O(nlogn)
      *
      * @param      array  The array
      * @param      low    The low
@@ -52,6 +68,11 @@ class InsertionSort {
 class QuickSort {
     /**
      * { function for less }.
+     * 
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @param      u     { parameter_description }
      * @param      v     { parameter_description }
@@ -63,6 +84,11 @@ class QuickSort {
     }
     /**
      * { swaps the element }.
+     * 
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @param      array  The array
      * @param      a      { parameter_description }
@@ -75,6 +101,11 @@ class QuickSort {
     }
     /**
      * { sorts the array }.
+     * 
+     * Complexity :
+     *              Best Case : O(nlogn)
+     *              Average Case : O(nlogn)
+     *              Worst Case : O(nlogn)
      *
      * @param      array   The array
      * @param      start   The start
@@ -99,6 +130,11 @@ class QuickSort {
     }
     /**
      * { partition function }.
+     * 
+     * Complexity :
+     *              Best Case : O(n)
+     *              Average Case : O(n^2)
+     *              Worst Case : O(n^2)
      *
      * @param      array  The array
      * @param      start  The start
