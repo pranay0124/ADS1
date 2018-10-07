@@ -33,11 +33,11 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:46:23: Parameter array should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:46:43: Parameter start should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:46:54: Parameter end should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:79:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:79:32: Parameter array should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:89: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:89:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:90:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:90:33: Parameter args should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:103:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:103:32: Parameter array should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:113: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:113:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:114:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:114:33: Parameter args should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 40 errors.

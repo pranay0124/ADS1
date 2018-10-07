@@ -37,14 +37,18 @@ insertionSort called
 insertionSort called
 insertionSort called
 [A, E, E, L, M, O, P, R, S, T, X]
-[A, E, S, Y, Q, U, E, S, T, I, O, N]
+[E, A, E, Y, Q, U, S, S, T, I, O, N]
 insertionSort called
-[A, E, I, N, Q, O, E, S, S, T, U, Y]
-[A, E, E, I, Q, O, N, S, S, T, U, Y]
+[A, E, E, N, Q, U, S, S, T, I, O, Y]
+[A, E, E, I, N, U, S, S, T, Q, O, Y]
+insertionSort called
+[A, E, E, I, N, O, S, S, T, Q, U, Y]
+[A, E, E, I, N, O, S, S, T, Q, U, Y]
 insertionSort called
 insertionSort called
 insertionSort called
-[A, E, E, I, O, N, Q, S, S, T, U, Y]
+insertionSort called
+[A, E, E, I, N, O, S, S, Q, T, U, Y]
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -161,11 +165,11 @@ insertionSort called
 [for, now, ilk, dim, tip]
 insertionSort called
 [jot, sob, nob, sky, tag]
-[010, 1, 001, 100, 110, 101, 100]
-[001, 010, 1, 100, 110, 101, 100]
+[001, 100, 1, 010, 100, 110, 101]
+[001, 100, 1, 010, 100, 110, 101]
 insertionSort called
+[001, 010, 1, 100, 100, 110, 101]
 insertionSort called
-[001, 010, 1, 100, 100, 101, 110]
 insertionSort called
 insertionSort called
 [001, 010, 1, 100, 100, 101, 110]
