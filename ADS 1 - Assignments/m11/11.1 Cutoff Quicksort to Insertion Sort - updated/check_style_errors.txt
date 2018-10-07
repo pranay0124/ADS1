@@ -1,6 +1,5 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:7: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:9: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:7: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:10:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:10:22: Parameter u should be final. [FinalParameters]
@@ -39,4 +38,4 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:102:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m11\11.1 Cutoff Quicksort to Insertion Sort - updated\Solution.java:102:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 39 errors.
+Checkstyle ends with 38 errors.
