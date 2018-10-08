@@ -27,7 +27,7 @@ class MinHeap<E extends Comparable<E>> {
      * @param      size  The size
      */
     MinHeap(final int size) {
-        heaparray = (E[])new Comparable[size];
+        heaparray = (E[]) new Comparable[size];
         count = 0;
         flag = 0;
     }
@@ -50,9 +50,9 @@ class MinHeap<E extends Comparable<E>> {
      *
      * @return     { description_of_the_return_value }
      */
-    boolean swim(final E[] heaparray, int nodeval) {
+    boolean swim(final E[] heaparr, int nodeval) {
         while (nodeval > 1) {
-            if (less(heaparray[nodeval], heaparray[(nodeval - 1) / 2])) {
+            if (less(heaparr[nodeval], heaparr[(nodeval - 1) / 2])) {
                 return false;
             } else {
                 nodeval = (nodeval - 1) / 2;

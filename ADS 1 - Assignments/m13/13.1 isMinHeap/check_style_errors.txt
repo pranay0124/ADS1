@@ -1,7 +1,7 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:30:26: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:53:28: 'heaparray' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:53:39: Parameter nodeval should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:48:8: Unused @param tag for 'heaparray'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:53:28: Expected @param tag for 'heaparr'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:53:37: Parameter nodeval should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:114: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:116: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:128: Line is longer than 80 characters (found 84). [LineLength]
