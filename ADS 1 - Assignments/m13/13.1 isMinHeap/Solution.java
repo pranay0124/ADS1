@@ -45,7 +45,7 @@ class MinHeap<E extends Comparable<E>> {
     /**
      * { Swim function }.
      *
-     * @param      heaparray  The heaparray
+     * @param      heaparr  The heaparray
      * @param      nodeval    The nodeval
      *
      * @return     { description_of_the_return_value }
@@ -111,9 +111,9 @@ final class Solution {
                 break;
             case "Integer":
                 tokens = scan.nextLine().split(",");
-                MinHeap<Integer> integerobj = new MinHeap<Integer>(tokens.length);
+                MinHeap<Integer> intobj = new MinHeap<Integer>(tokens.length);
                 for (int j = 0; j < tokens.length; j++) {
-                    int returnval = integerobj.insert(Integer.parseInt(tokens[j]));
+                    int returnval = intobj.insert(Integer.parseInt(tokens[j]));
                     if (returnval == 1) {
                         System.out.println("false");
                         break outerloop;
@@ -125,7 +125,8 @@ final class Solution {
                 tokens = scan.nextLine().split(",");
                 MinHeap<Double> doubleobj = new MinHeap<Double>(tokens.length);
                 for (int j = 0; j < tokens.length; j++) {
-                    int returnval = doubleobj.insert(Double.parseDouble(tokens[j]));
+                    int returnval = doubleobj.insert(
+                                        Double.parseDouble(tokens[j]));
                     if (returnval == 1) {
                         System.out.println("false");
                         break outerloop;
@@ -135,20 +136,21 @@ final class Solution {
                 break;
             case "Float":
                 tokens = scan.nextLine().split(",");
-                if(tokens[0].equals("")) {
+                if (tokens[0].equals("")) {
                     System.out.println("false");
                     break;
                 }
                 MinHeap<Float> floatobj = new MinHeap<Float>(tokens.length);
                 for (int j = 0; j < tokens.length; j++) {
-                    int returnval = floatobj.insert(Float.parseFloat(tokens[j]));
+                    int returnval = floatobj.insert(
+                                        Float.parseFloat(tokens[j]));
                     if (returnval == 1) {
                         System.out.println("false");
                         break outerloop;
                     }
                 }
                 System.out.println("true");
-                break;      
+                break;
             default:
                 break;
             }
