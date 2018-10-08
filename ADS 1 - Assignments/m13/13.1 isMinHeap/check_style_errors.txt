@@ -1,4 +1,5 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:53:37: Parameter nodeval should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:49:8: Unused @param tag for 'nodeval'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m13\13.1 isMinHeap\Solution.java:53:47: Expected @param tag for 'node'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 2 errors.

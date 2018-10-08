@@ -50,7 +50,8 @@ class MinHeap<E extends Comparable<E>> {
      *
      * @return     { description_of_the_return_value }
      */
-    boolean swim(final E[] heaparr, int nodeval) {
+    boolean swim(final E[] heaparr, final int node) {
+        int nodeval = node;
         while (nodeval > 1) {
             if (less(heaparr[nodeval], heaparr[(nodeval - 1) / 2])) {
                 return false;
