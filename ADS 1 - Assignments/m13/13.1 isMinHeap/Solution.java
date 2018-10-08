@@ -43,10 +43,10 @@ class MinHeap<E extends Comparable<E>> {
         return valueone.compareTo(valuetwo) < 0;
     }
     /**
-     * { Swim function }.
+     * { Swim Function }.
      *
-     * @param      heaparr  The heaparray
-     * @param      nodeval    The nodeval
+     * @param      heaparr  The heaparr
+     * @param      node     The node
      *
      * @return     { description_of_the_return_value }
      */
