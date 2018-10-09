@@ -13,14 +13,18 @@ Expected Output:
 Your Output: 
 0
 0
-1
-1
-1
-1
-1
-1
-1
-1
+0
+0
+0
+0
+0
+0
+0
+0
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at Median.insertmin(Solution.java:56)
+	at Median.insert(Solution.java:48)
+	at Solution.main(Solution.java:115)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -100026,25 +100030,22 @@ Expected Output:
 50402.0
 Your Output: 
 0
-0
+40075
 20793
-20793
-20793
-20793
-29233
-29233
-29233
-29233
-29233
-29233
-29233
-29233
-29233
-29233
-29233
-29233
-29233
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 11
+23069
+23069
+23069
+23069
+23069
+21078
+21078
+21078
+21078
+21078
+21078
+13781
+13781
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
 	at Median.insertmin(Solution.java:56)
 	at Median.insert(Solution.java:48)
 	at Solution.main(Solution.java:115)
@@ -200053,22 +200054,18 @@ Expected Output:
 49703.0
 Your Output: 
 0
-0
+45292
 36810
-36810
-36810
-36810
-36810
-36810
-36810
-36810
-45375
-45375
-45375
-45375
-45375
-45375
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 11
+34736
+33369
+33369
+33369
+33369
+30642
+32668
+32668
+27036
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
 	at Median.insertmin(Solution.java:56)
 	at Median.insert(Solution.java:48)
 	at Solution.main(Solution.java:115)
@@ -201077,19 +201074,16 @@ Expected Output:
 51034.0
 Your Output: 
 0
-0
-30929
-30929
-30929
-30929
-30929
-30929
-30929
-30929
-30929
-30929
-30929
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 11
+14844
+14844
+14844
+14844
+14844
+14844
+14844
+14844
+14844
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
 	at Median.insertmin(Solution.java:56)
 	at Median.insert(Solution.java:48)
 	at Solution.main(Solution.java:115)

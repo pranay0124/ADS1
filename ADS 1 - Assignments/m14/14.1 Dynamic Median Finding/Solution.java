@@ -24,8 +24,8 @@ class Median {
 		median = 0;
 		i = 0;
 		j = 0;
-		minarray = new int[11];
-		maxarray = new int[11];
+		minarray = new int[10];
+		maxarray = new int[10];
 	}
 	boolean less(int[] array, int i, int j) {
 		return array[i] >= array[j];
@@ -36,9 +36,9 @@ class Median {
 		array[j] = temp;
 	}
 	void swim(int[] array, int k) {
-		while (k > 1 && less(array, ((k / 2) + 1), (k / 2) + 2)) {
-			exch(array, (k / 2) + 1, (k / 2) + 2);
-			k = (k - 1) / 2;
+		while (k > 1 && less(array, k / 2, k)) {
+			exch(array, k, k / 2);
+			k = k / 2;
 		}
 	}
 	void insert(int x) {
@@ -53,14 +53,14 @@ class Median {
 	void insertmin(int x) {
 		// int median = median(minarray, maxarray, i, j);
 		// if (x > median) {
-		minarray[i++] = x;
+		minarray[++i] = x;
 		swim(minarray, i);
 		// } else {
 
 		// }
 	}
 	void insertmax(int x) {
-		maxarray[j++] = x;
+		maxarray[++j] = x;
 		swim(maxarray, j);
 	}
 	void sink(int[] array, int k) {
