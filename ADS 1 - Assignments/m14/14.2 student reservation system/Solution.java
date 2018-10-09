@@ -367,14 +367,15 @@ class HeapSort {
 			                   + "," + students[i].getCategory());
 		}
 	}
-	/**.
-	 * function for vacancy2.
+	
+	/**
+	 * vacancy2 function.
 	 *
-	 * @param      n     { parameter_description }
-	 * @param      n1    The n 1
+	 * @param      a     { parameter_description }
+	 * @param      b     { parameter_description }
+	 * @param      c     { parameter_description }
+	 * @param      d     { parameter_description }
 	 */
-	// time complexity of this method is O(N). It iterates through the array to
-	// print all the objects in array.
 	public void vacancy2(int a, int b, int c, int d) {
 		int n = a;
 		int n1 = b;
