@@ -111,7 +111,7 @@ class MaxPQ<Key> implements Iterable<Key> {
      * using the given comparator.
      *
      * @param      initCapacity  The initialize capacity
-     * @param      comparator    The comparator
+     * @param      comparator1    The comparator
      */
     MaxPQ(final int initCapacity, final Comparator<Key> comparator1) {
         this.comparator = comparator1;
@@ -122,7 +122,7 @@ class MaxPQ<Key> implements Iterable<Key> {
     /**
      * Initializes an empty priority queue using the given comparator.
      *
-     * @param      comparator  The comparator
+     * @param      comparator1  The comparator
      */
     MaxPQ(final Comparator<Key> comparator1) {
         this(1, comparator1);

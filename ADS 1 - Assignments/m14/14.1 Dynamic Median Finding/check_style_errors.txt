@@ -1,10 +1,6 @@
 Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:97:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:114:8: Unused @param tag for 'comparator'. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:116:57: Expected @param tag for 'comparator1'. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:125:8: Unused @param tag for 'comparator'. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:127:33: Expected @param tag for 'comparator1'. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:449:8: Unused @param tag for 'comparator'. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:451:57: Expected @param tag for 'comparator1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 3 errors.
