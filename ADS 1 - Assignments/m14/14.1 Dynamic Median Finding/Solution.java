@@ -94,7 +94,7 @@ class MaxPQ<Key> implements Iterable<Key> {
      *
      * @param      initCapacity  The initialize capacity
      */
-    public MaxPQ(final int initCapacity) {
+    MaxPQ(final int initCapacity) {
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
@@ -446,7 +446,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * using the given comparator.
      *
      * @param      initCapacity  The initialize capacity
-     * @param      comparator    The comparator
+     * @param      comparator1    The comparator
      */
     MinPQ(final int initCapacity, final Comparator<Key> comparator1) {
         this.comparator = comparator1;
