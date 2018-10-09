@@ -13,7 +13,7 @@ public final class Solution {
     /**
      * Constructs the object.
      */
-    private Solution () {
+    private Solution() {
     }
     /**
      * Main Function.
@@ -76,8 +76,17 @@ public final class Solution {
  * @param      <Key>  The key
  */
 class MaxPQ<Key> implements Iterable<Key> {
+    /**
+     * pq array.
+     */
     private Key[] pq;                    // store items at indices 1 to n
+    /**
+     * n.
+     */
     private int n;                       // number of items on priority queue
+    /**
+     * Comparator.
+     */
     private Comparator<Key> comparator;  // optional comparator
 
     /**
@@ -397,8 +406,17 @@ class MaxPQ<Key> implements Iterable<Key> {
  * @param      <Key>  The key
  */
 class MinPQ<Key> implements Iterable<Key> {
+    /**
+     * pq array.
+     */
     private Key[] pq;                    // store items at indices 1 to n
+    /**
+     * n.
+     */
     private int n;                       // number of items on priority queue
+    /**
+     * comparator.
+     */
     private Comparator<Key> comparator;  // optional comparator
 
     /**
