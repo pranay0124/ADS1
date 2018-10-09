@@ -543,6 +543,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * @return     { description_of_the_return_value }
      */
     public Key delMin() {
+        int four = 4;
         if (isEmpty()) {
             throw new NoSuchElementException(
                 "Priority queue underflow");
@@ -551,7 +552,7 @@ class MinPQ<Key> implements Iterable<Key> {
         exch(1, n--);
         sink(1);
         pq[n + 1] = null;   // to avoid loiterig and help with garbage collection
-        if ((n > 0) && (n == (pq.length - 1) / 4)) {
+        if ((n > 0) && (n == (pq.length - 1) / four)) {
             resize(pq.length / 2);
         }
         assert isMinHeap();
@@ -559,9 +560,9 @@ class MinPQ<Key> implements Iterable<Key> {
     }
 
 
-    /***************************************************************************
+    /**********************************************************************
      * Helper functions to restore the heap invariant.
-     ***************************************************************************/
+     ***********************************************************************/
     /**
      * swim function.
      *
@@ -595,9 +596,9 @@ class MinPQ<Key> implements Iterable<Key> {
         }
     }
 
-    /***************************************************************************
+    /***********************************************************************
      * Helper functions for compares and swaps.
-     ***************************************************************************/
+     ***********************************************************************/
     /**
      * greater function.
      *
@@ -615,7 +616,7 @@ class MinPQ<Key> implements Iterable<Key> {
     }
 
     /**
-     * exchange function
+     * exchange function.
      *
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
@@ -682,7 +683,7 @@ class MinPQ<Key> implements Iterable<Key> {
          * add all items to copy of heap.
          * takes linear time since already in heap order so no keys move
          */
-        public HeapIterator() {
+        HeapIterator() {
             if (comparator == null) {
                 copy = new MinPQ<Key>(size());
             } else {

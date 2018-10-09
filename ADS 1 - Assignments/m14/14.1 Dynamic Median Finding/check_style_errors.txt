@@ -17,11 +17,7 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:457:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:457:40: 'comparator' hides a field. [HiddenField]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:466:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:553: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:554:48: '4' is a magic number. [MagicNumber]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:564: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:600: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:617: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:685:9: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:546:20: '4' is a magic number. [MagicNumber]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:554: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 20 errors.
