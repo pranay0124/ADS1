@@ -318,10 +318,10 @@ class HeapSort {
      * @param      j     { parameter_description }
      * @param      min   The minimum
      */
-    public void swap(final Student[] students, final int j, final int min) {
-        Student temp = students[j - 1];
-        students[j - 1] = students[min - 1];
-        students[min - 1] = temp;
+    public void swap(final Student[] students1, final int j, final int min) {
+        Student temp = students1[j - 1];
+        students1[j - 1] = students1[min - 1];
+        students1[min - 1] = temp;
     }
     /**
      * Returns a string representation of the object.
@@ -332,8 +332,8 @@ class HeapSort {
         // System.out.println("in print");
         String str = "";
         for (int i = 0; i < size; i++) {
-            str += students[i].getName() + "," + students[i].getTotal() +
-                   "," + students[i].getCategory() + "\n";
+            str += students[i].getName() + "," + students[i].getTotal()
+                   + "," + students[i].getCategory() + "\n";
         }
         return str;
     }
@@ -344,7 +344,7 @@ class HeapSort {
      * @param      s     { parameter_description }.
      *
      * @return     { description_of_the_return_value }.
-     * // time complexity of this method is O(N). It iterates through the array to
+     * // time complexity of this method is O(N).
      */
     public boolean contains(final int[] arr, final int s) {
         for (int i : arr) {
@@ -376,7 +376,7 @@ class HeapSort {
      * @param      c     { parameter_description }
      * @param      d     { parameter_description }
      */
-    public void vacancy2(int a, int b, int c, int d) {
+    public void vacancy2(final int a, final int b, final int c, final int d) {
         int n = a;
         int n1 = b;
         int n2 = c;
