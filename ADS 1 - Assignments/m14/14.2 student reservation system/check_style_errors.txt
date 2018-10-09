@@ -1,9 +1,4 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:279:8: Unused @param tag for 'k'. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:285:38: 'students' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:285:58: Expected @param tag for 'k1'. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:310:41: 'students' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:317:8: Unused @param tag for 'students'. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:321:38: Expected @param tag for 'students1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.

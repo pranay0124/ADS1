@@ -276,7 +276,7 @@ class HeapSort {
      * Sink Function.
      *
      * @param      students  The students
-     * @param      k         { parameter_description }.
+     * @param      k1         { parameter_description }.
      * @param      n         { parameter_description }.
      *
      * time complexity of this method is O(log N).
@@ -299,7 +299,7 @@ class HeapSort {
     /**
      * Less FUnction.
      *
-     * @param      students  The students
+     * @param      students1  The students
      * @param      i         { parameter_description }
      * @param      j         { parameter_description }
      *
@@ -307,14 +307,14 @@ class HeapSort {
      *
      * // time complexity of this method is O(1).
      */
-    public boolean less(final Student[] students, final int i, final int j) {
-        return students[i - 1].compareTo(students[j - 1]) >= 0;
+    public boolean less(final Student[] students1, final int i, final int j) {
+        return students1[i - 1].compareTo(students1[j - 1]) >= 0;
     }
     // time complexity of this method is O(1). It swaps the elements only once.
     /**.
      * Swap function.
      *
-     * @param      students  The students
+     * @param      students1  The students
      * @param      j     { parameter_description }
      * @param      min   The minimum
      */
