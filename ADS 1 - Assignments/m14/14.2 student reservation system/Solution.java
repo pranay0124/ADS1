@@ -275,24 +275,24 @@ class HeapSort {
     /**
      * Sink Function.
      *
-     * @param      students  The students
+     * @param      students1  The students
      * @param      k1         { parameter_description }.
      * @param      n         { parameter_description }.
      *
      * time complexity of this method is O(log N).
      * It access the array elements twice
      */
-    public void sink(final Student[] students, final int k1, final int n) {
+    public void sink(final Student[] students1, final int k1, final int n) {
         int k = k1;
         while (2 * k <= n) {
             int j = 2 * k;
-            if (j < n && less(students, j, j + 1))  {
+            if (j < n && less(students1, j, j + 1))  {
                 j++;
             }
-            if (!less(students, k, j)) {
+            if (!less(students1, k, j)) {
                 break;
             }
-            swap(students, k, j);
+            swap(students1, k, j);
             k = j;
         }
     }

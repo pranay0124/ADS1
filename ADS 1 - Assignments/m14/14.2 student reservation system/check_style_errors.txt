@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:285:38: 'students' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 1 errors.
