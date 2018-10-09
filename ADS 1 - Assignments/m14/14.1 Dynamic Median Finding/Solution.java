@@ -443,7 +443,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * @param      initCapacity  The initialize capacity
      * @param      comparator    The comparator
      */
-    public MinPQ(final int initCapacity, final Comparator<Key> comparator) {
+    MinPQ(final int initCapacity, final Comparator<Key> comparator) {
         this.comparator = comparator;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
@@ -454,8 +454,8 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      comparator  The comparator
      */
-    public MinPQ(final Comparator<Key> comparator) {
-        this(1, comparator);
+    MinPQ(final Comparator<Key> comparator1) {
+        this(1, comparator1);
     }
 
     /**
@@ -463,7 +463,7 @@ class MinPQ<Key> implements Iterable<Key> {
      *
      * @param      keys  The keys
      */
-    public MinPQ(final Key[] keys) {
+    MinPQ(final Key[] keys) {
         n = keys.length;
         pq = (Key[]) new Object[keys.length + 1];
         for (int i = 0; i < n; i++) {
@@ -543,7 +543,7 @@ class MinPQ<Key> implements Iterable<Key> {
      * @return     { description_of_the_return_value }
      */
     public Key delMin() {
-        int four = 4;
+        final int four = 4;
         if (isEmpty()) {
             throw new NoSuchElementException(
                 "Priority queue underflow");
@@ -551,7 +551,7 @@ class MinPQ<Key> implements Iterable<Key> {
         Key min = pq[1];
         exch(1, n--);
         sink(1);
-        pq[n + 1] = null;   // to avoid loiterig and help with garbage collection
+        pq[n + 1] = null;
         if ((n > 0) && (n == (pq.length - 1) / four)) {
             resize(pq.length / 2);
         }

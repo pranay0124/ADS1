@@ -12,12 +12,8 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:359:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:427:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:435:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:446:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:446:64: 'comparator' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:457:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:457:40: 'comparator' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:466:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:546:20: '4' is a magic number. [MagicNumber]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:554: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:446:57: 'comparator' hides a field. [HiddenField]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:455:8: Unused @param tag for 'comparator'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.1 Dynamic Median Finding\Solution.java:457:33: Expected @param tag for 'comparator1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 16 errors.
