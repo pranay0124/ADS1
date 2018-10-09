@@ -367,7 +367,7 @@ class HeapSort {
 			                   + "," + students[i].getCategory());
 		}
 	}
-	
+
 	/**
 	 * vacancy2 function.
 	 *

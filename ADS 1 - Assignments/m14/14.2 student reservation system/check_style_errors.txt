@@ -18,7 +18,6 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:335:85: '+' should be on a new line. [OperatorWrap]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:347: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:362: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:370: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:379:30: Parameter a should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:379:37: Parameter b should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:379:44: Parameter c should be final. [FinalParameters]
@@ -29,4 +28,4 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:410: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m14\14.2 student reservation system\Solution.java:420: Line is longer than 80 characters (found 89). [LineLength]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 28 errors.
