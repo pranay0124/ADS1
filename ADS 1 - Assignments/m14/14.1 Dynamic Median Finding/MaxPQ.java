@@ -152,9 +152,10 @@ public class MaxPQ<Key> implements Iterable<Key> {
     /**
      * Swim Function.
      *
-     * @param      k     { parameter_description }
+     * @param      k1     { parameter_description }
      */
-    private void swim(int k) {
+    private void swim(final int k1) {
+        int k = k1;
         while (k > 1 && less(k / 2, k)) {
             exch(k, k / 2);
             k = k / 2;
@@ -164,9 +165,10 @@ public class MaxPQ<Key> implements Iterable<Key> {
     /**
      * Sink Function.
      *
-     * @param      k     { parameter_description }
+     * @param      k1     { parameter_description }
      */
-    private void sink(int k) {
+    private void sink(final int k1) {
+        int k = k1;
         while (2 * k <= n) {
             int j = 2 * k;
             if (j < n && less(j, j + 1)) {
@@ -223,11 +225,12 @@ public class MaxPQ<Key> implements Iterable<Key> {
     /**
      * Determines if maximum heap.
      *
-     * @param      k     { parameter_description }
+     * @param      k1     { parameter_description }
      *
      * @return     True if maximum heap, False otherwise.
      */
-    private boolean isMaxHeap(int k) {
+    private boolean isMaxHeap(final int k1) {
+        int k = k1;
         if (k > n) {
             return true;
         }
