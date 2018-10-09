@@ -78,7 +78,10 @@ class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Returns true if this priority queue is empty.
-     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
@@ -87,7 +90,10 @@ class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Returns the number of keys on this priority queue.
-     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      * @return     { description_of_the_return_value }
      */
     public int size() {
@@ -96,7 +102,10 @@ class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Returns a smallest key on this priority queue.
-     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      * @return     { description_of_the_return_value }
      */
     public Key min() {
@@ -109,7 +118,10 @@ class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * helper function to double the size of the heap array.
-     *
+     * Complexity :
+     *              Best Case : O(n)
+     *              Average Case : O(n)
+     *              Worst Case : O(n)
      * @param      capacity  The capacity
      */
     private void resize(final int capacity) {
@@ -123,7 +135,10 @@ class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Adds a new key to this priority queue.
-     *
+     * Complexity :
+     *              Best Case : O(logn)
+     *              Average Case : O(logn)
+     *              Worst Case : O(logn)
      * @param      x     { parameter_description }
      */
     public void insert(final Key x) {
@@ -140,7 +155,10 @@ class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Removes and returns a smallest key on this priority queue.
-     *
+     * Complexity :
+     *              Best Case : O(logn)
+     *              Average Case : O(logn)
+     *              Worst Case : O(logn)
      * @return     { description_of_the_return_value }
      */
     public Key delMin() {
@@ -166,7 +184,10 @@ class MinPQ<Key> implements Iterable<Key> {
      ***********************************************************************/
     /**
      * swim function.
-     *
+     * Complexity :
+     *              Best Case : O(logn)
+     *              Average Case : O(logn)
+     *              Worst Case : O(logn)
      * @param      k1     { parameter_description }
      */
     private void swim(final int k1) {
@@ -179,7 +200,10 @@ class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Sink Function.
-     *
+     * Complexity :
+     *              Best Case : O(logn)
+     *              Average Case : O(logn)
+     *              Worst Case : O(logn)
      * @param      k1     { parameter_description }
      */
     private void sink(final int k1) {
@@ -202,7 +226,10 @@ class MinPQ<Key> implements Iterable<Key> {
      ***********************************************************************/
     /**
      * greater function.
-     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      *
@@ -218,7 +245,10 @@ class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * exchange function.
-     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
@@ -230,7 +260,10 @@ class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Determines if minimum heap.
-     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      * @return     True if minimum heap, False otherwise.
      */
     private boolean isMinHeap() {
@@ -239,7 +272,10 @@ class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Determines if minimum heap.
-     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      * @param      k1     { parameter_description }
      *
      * @return     True if minimum heap, False otherwise.
