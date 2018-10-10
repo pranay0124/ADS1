@@ -1,14 +1,41 @@
+/**
+ * @author : Pranay Kumar Y.
+ * Date : 10th October,2018.
+ */
 import java.util.Scanner;
+/**
+ * Class for binary search st.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class BinarySearchST<Key extends Comparable<Key>, Value> {
+    /**
+     * { array for keys }.
+     */
     private Key[] keys;
+    /**
+     * { array for values }.
+     */
     private Value[]vals;
+    /**
+     * { variable for size }.
+     */
     private int size = 0;
-
+    /**
+     * Constructs the object.
+     */
     public BinarySearchST() {
         keys = (Key[]) new Comparable[20];
         vals = (Value[]) new Object[20];
     }
 
+    /**
+     * { function for put }.
+     *
+     * @param      key    The key
+     * @param      value  The value
+     */
     public void put(final Key key, final Value value) {
         if (key == null) {
             System.out.println("key is null");
@@ -31,6 +58,13 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         size++;
     }
 
+    /**
+     * { returns the index of the key }.
+     *
+     * @param      key   The key
+     *
+     * @return     { index }
+     */
     public int rank(final Key key) {
         if (key == null) {
             System.out.println("key is null");
@@ -51,6 +85,13 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         return low;
     }
 
+    /**
+     * { return true if the given key is in the symboltable }.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean contains(final Key key) {
         if (key == null) {
             System.out.println("key is null");
@@ -58,6 +99,13 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         return get(key) != null;
     }
 
+    /**
+     * { return value paired with Key }.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Value get(final Key key) {
         if (key == null) {
             System.out.println("key is null");
@@ -72,17 +120,35 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         return null;
     }
 
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return size == 0;
     }
 
+    /**
+     * { return largest key }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key max() {
         if (isEmpty()) {
-            System.out.println("No elements are available in the Symbol table");
+            System.out.println(
+                "No elements are available in the Symbol table");
         }
         return keys[size - 1];
     }
 
+    /**
+     * { return largest key less than or equal to key }.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key floor(final Key key) {
         int i = rank(key);
         if (i < size && key.compareTo(keys[i]) == 0) {
@@ -95,6 +161,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
     }
 
+    /**
+     * { delete smallest key }.
+     */
     public void deleteMin() {
         if (isEmpty()) {
             System.out.println("No elements are available in the Symbol table to perform deletion");
@@ -102,6 +171,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         delete(min());
     }
 
+    /**
+     * { Finds the minimum element }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key min() {
         if (isEmpty()) {
             System.out.println("empty symbol table");
@@ -109,6 +183,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         return keys[0];
     }
 
+    /**
+     * { deletes the key }.
+     *
+     * @param      key   The key
+     */
     public void delete(final Key key) {
         if (key == null) {
             System.out.println("key is null");
@@ -127,6 +206,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         vals[size] = null;
     }
 
+    /**
+     * { return all keys, in sorted order }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String keys() {
         String str = "";
         int i = 0;
@@ -140,9 +224,20 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 }
 
+/**
+ * Class for Solution.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
     }
+    /**
+     * Main Function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         BinarySearchST bs = new BinarySearchST();
@@ -183,4 +278,3 @@ final class Solution {
         }
     }
 }
-
