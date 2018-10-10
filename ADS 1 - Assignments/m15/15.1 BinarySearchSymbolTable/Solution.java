@@ -25,7 +25,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     /**
      * variable.
      */
-    final int twenty = 20;
+    private int twenty = 20;
     /**
      * Constructs the object.
      */
@@ -202,8 +202,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public void deleteMin() {
         if (isEmpty()) {
-            System.out.println(
-                "No elements are available in the Symbol table to perform deletion");
+            System.out.println("No elements are available in the"
+                               + " Symbol table to perform deletion");
         }
         delete(min());
     }

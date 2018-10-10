@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:28:15: Variable 'twenty' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:206: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:28:26: '20' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
