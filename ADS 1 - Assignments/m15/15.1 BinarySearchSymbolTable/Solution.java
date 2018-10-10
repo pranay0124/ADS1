@@ -26,7 +26,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * Constructs the object.
      */
     BinarySearchST() {
-        int twenty = 20;
+        final int twenty = 20;
         keys = (Key[]) new Comparable[twenty];
         vals = (Value[]) new Object[twenty];
     }
