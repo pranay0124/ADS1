@@ -1,4 +1,4 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:28:26: '20' is a magic number. [MagicNumber]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:29:22: '20' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 1 errors.

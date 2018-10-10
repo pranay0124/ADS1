@@ -23,13 +23,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     private int size = 0;
     /**
-     * variable.
-     */
-    private int twenty = 20;
-    /**
      * Constructs the object.
      */
     BinarySearchST() {
+        int twenty = 20;
         keys = (Key[]) new Comparable[twenty];
         vals = (Value[]) new Object[twenty];
     }
