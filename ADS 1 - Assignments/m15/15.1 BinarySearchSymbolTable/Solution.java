@@ -32,6 +32,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * { function for put }.
+     * Complexity :
+     *              Best Case : O(logn)
+     *              Average Case : O(logn)
+     *              Worst Case : O(logn)
      *
      * @param      key    The key
      * @param      value  The value
@@ -60,6 +64,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * { returns the index of the key }.
+     * Complexity :
+     *              Best Case : O(logn)
+     *              Average Case : O(logn)
+     *              Worst Case : O(logn)
      *
      * @param      key   The key
      *
@@ -87,6 +95,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * { return true if the given key is in the symboltable }.
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @param      key   The key
      *
@@ -101,6 +113,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * { return value paired with Key }.
+     * Complexity :
+     *              Best Case : O(logn)
+     *              Average Case : O(logn)
+     *              Worst Case : O(logn)
      *
      * @param      key   The key
      *
@@ -122,6 +138,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * Determines if empty.
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @return     True if empty, False otherwise.
      */
@@ -131,6 +151,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * { return largest key }.
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @return     { description_of_the_return_value }
      */
@@ -144,6 +168,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * { return largest key less than or equal to key }.
+     * Complexity :
+     *              Best Case : O(logn)
+     *              Average Case : O(logn)
+     *              Worst Case : O(logn)
      *
      * @param      key   The key
      *
@@ -163,6 +191,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * { delete smallest key }.
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      */
     public void deleteMin() {
         if (isEmpty()) {
@@ -173,6 +205,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * { Finds the minimum element }.
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @return     { description_of_the_return_value }
      */
@@ -185,6 +221,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * { deletes the key }.
+     * Complexity :
+     *              Best Case : O(logn)
+     *              Average Case : O(logn)
+     *              Worst Case : O(logn)
      *
      * @param      key   The key
      */
@@ -208,6 +248,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     /**
      * { return all keys, in sorted order }.
+     * Complexity :
+     *              Best Case : O(n)
+     *              Average Case : O(n)
+     *              Worst Case : O(n)
      *
      * @return     { description_of_the_return_value }
      */
