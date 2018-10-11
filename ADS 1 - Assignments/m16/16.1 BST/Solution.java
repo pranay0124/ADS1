@@ -36,7 +36,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		root = put(root, key, value);
 	}
 	Node put(Node root, Book key, Value value) {
-		if (key == null) {
+		if (root == null) {
 			return new Node(key, value);
 		}
 		int cmp = key.getName().compareTo(root.key.getName());

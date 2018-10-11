@@ -1,11 +1,8 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 1
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchTree.put(Solution.java:42)
-	at BinarySearchTree.put(Solution.java:36)
-	at Solution.main(Solution.java:81)
+1
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -14,18 +11,16 @@ Expected Output:
 7
 2
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchTree.put(Solution.java:42)
-	at BinarySearchTree.put(Solution.java:36)
-	at Solution.main(Solution.java:81)
+null
+null
+7
+null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 null
 7
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchTree.put(Solution.java:42)
-	at BinarySearchTree.put(Solution.java:36)
-	at Solution.main(Solution.java:81)
+null
+null
 ----------------------------------------
