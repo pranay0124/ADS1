@@ -50,8 +50,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		return root;
 	}
 	String get(Book key) {
-		Node x = root;
-		while (x != null) {
+		// Node x = root;
+		while (root != null) {
 			int cmp = key.getName().compareTo(root.key.getName());
 			// System.out.println(cmp + "see me");
 			if (cmp > 0) {
