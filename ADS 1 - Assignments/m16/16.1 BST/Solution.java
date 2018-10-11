@@ -90,7 +90,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     /**
      * { variable for root }.
      */
-    Node root;
+    private Node root;
     /**
      * Constructs the object.
      */
@@ -173,12 +173,16 @@ final class Solution {
             String[] tokens = scan.nextLine().split(",");
             switch (tokens[0]) {
             case "get" :
-                book = new Book(tokens[1], tokens[2], Double.parseDouble(tokens[2 + 1]));
+                book = new Book(tokens[1], tokens[2],
+                                Double.parseDouble(tokens[2 + 1]));
                 System.out.println(bt.get(book));
                 break;
             case "put" :
-                book = new Book(tokens[1], tokens[2], Double.parseDouble(tokens[2 + 1]));
+                book = new Book(tokens[1], tokens[2],
+                                Double.parseDouble(tokens[2 + 1]));
                 bt.put(book, tokens[2 + 2]);
+                break;
+            default:
                 break;
             }
         }

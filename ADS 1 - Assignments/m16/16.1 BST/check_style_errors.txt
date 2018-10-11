@@ -1,8 +1,4 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m16\16.1 BST\Solution.java:93:10: Variable 'root' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m16\16.1 BST\Solution.java:116:25: 'root' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m16\16.1 BST\Solution.java:174: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m16\16.1 BST\Solution.java:176: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m16\16.1 BST\Solution.java:180: Line is longer than 80 characters (found 89). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
