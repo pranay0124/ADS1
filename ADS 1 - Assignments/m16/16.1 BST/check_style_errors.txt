@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m16\16.1 BST\Solution.java:117:14: 'root' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 1 errors.

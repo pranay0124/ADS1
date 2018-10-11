@@ -107,26 +107,25 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     /**
      * { adds the element into the tree }.
      *
-     * @param      root1   The root
+     * @param      obj   The root
      * @param      key    The key
      * @param      value  The value
      *
      * @return     { description_of_the_return_value }
      */
-    Node put(final Node root1, final Book key, final Value value) {
-        Node root = root1; //for check style
-        if (root == null) {
+    Node put(final Node obj, final Book key, final Value value) {
+        if (obj == null) {
             return new Node(key, value);
         }
-        int cmp = key.getName().compareTo(root.key.getName());
+        int cmp = key.getName().compareTo(obj.key.getName());
         if (cmp > 0) {
-            root.right = put(root.right, key, value);
+            obj.right = put(obj.right, key, value);
         } else if (cmp < 0) {
-            root.left = put(root.left, key, value);
+            obj.left = put(obj.left, key, value);
         } else {
-            root.value = value;
+            obj.value = value;
         }
-        return root;
+        return obj;
     }
     /**
      * { gets the element }.
