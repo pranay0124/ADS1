@@ -1,7 +1,8 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 1
 Your Output: 
+0see me
 1
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -11,9 +12,13 @@ Expected Output:
 7
 2
 Your Output: 
+11see me
 null
+-1see me
 null
+0see me
 7
+1see me
 null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -21,6 +26,8 @@ Expected Output:
 null
 7
 Your Output: 
+4see me
 null
+-1see me
 null
 ----------------------------------------

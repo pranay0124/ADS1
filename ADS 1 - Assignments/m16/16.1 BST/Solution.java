@@ -52,6 +52,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 	String get(Book key) {
 		Node x = root;
 		int cmp = key.getName().compareTo(root.key.getName());
+		System.out.println(cmp + "see me");
 		if (cmp > 0) {
 			root = root.right;
 		} else if (cmp < 0) {
