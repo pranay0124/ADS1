@@ -1,4 +1,6 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m16\16.1 BST\Solution.java:116:25: 'root' hides a field. [HiddenField]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m16\16.1 BST\Solution.java:110:8: Unused @param tag for 'root'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m16\16.1 BST\Solution.java:116:25: Expected @param tag for 'root1'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m16\16.1 BST\Solution.java:117:14: 'root' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 3 errors.

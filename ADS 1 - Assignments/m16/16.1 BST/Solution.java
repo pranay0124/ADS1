@@ -113,7 +113,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    Node put(final Node root, final Book key, final Value value) {
+    Node put(final Node root1, final Book key, final Value value) {
+        Node root = root1; //for check style
         if (root == null) {
             return new Node(key, value);
         }
