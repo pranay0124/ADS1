@@ -1,0 +1,31 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+1
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at BinarySearchTree.put(Solution.java:42)
+	at BinarySearchTree.put(Solution.java:36)
+	at Solution.main(Solution.java:81)
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+6
+5
+7
+2
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at BinarySearchTree.put(Solution.java:42)
+	at BinarySearchTree.put(Solution.java:36)
+	at Solution.main(Solution.java:81)
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+null
+7
+Your Output: 
+Exception in thread "main" java.lang.NullPointerException
+	at BinarySearchTree.put(Solution.java:42)
+	at BinarySearchTree.put(Solution.java:36)
+	at Solution.main(Solution.java:81)
+----------------------------------------
