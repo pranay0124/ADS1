@@ -91,7 +91,7 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = 1000;
+        final int n = 1000;
         while (sc.hasNextLine()) {
             String[] input = sc.nextLine().split(" ");
             int a = Integer.parseInt(input[0]);

@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:94:17: '1000' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 1 errors.
