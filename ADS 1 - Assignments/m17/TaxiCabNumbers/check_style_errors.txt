@@ -1,15 +1,14 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:13:9: Variable 'i' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:13:12: Variable 'j' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:17:10: Variable 'sum' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:24:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:24:30: 'i' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:24:43: 'j' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:36:26: Parameter that should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:37: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:38: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:39: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:70:21: '1000' is a magic number. [MagicNumber]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:93: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:40:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:40:30: 'i' hides a field. [HiddenField]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:40:43: 'j' hides a field. [HiddenField]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:52:26: Parameter that should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:53: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:54: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:55: 'else' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:86:21: '1000' is a magic number. [MagicNumber]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:109: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:109: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 11 errors.

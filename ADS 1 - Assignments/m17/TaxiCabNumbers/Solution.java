@@ -10,11 +10,27 @@ class Taxicab implements Comparable<Taxicab> {
     /**
      * { variables i & j }.
      */
-    int i, j;
+    private int i, j;
     /**
      * { variable for sum }.
      */
     long sum;
+    /**
+     * { gets i }.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    int geti() {
+        return i;
+    }
+    /**
+     * { gets j }.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    int getj() {
+        return j;
+    }
     /**
      * Constructs the object.
      *
@@ -90,7 +106,7 @@ final class Solution {
                     pair = 1;
                 }
                 prev = curr;
-                if (curr.j < n) pq.insert(new Taxicab(curr.i, curr.j + 1));
+                if (curr.getj() < n) pq.insert(new Taxicab(curr.geti(), curr.getj() + 1));
             }
         }
     }
