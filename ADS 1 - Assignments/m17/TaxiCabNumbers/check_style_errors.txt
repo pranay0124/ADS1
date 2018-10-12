@@ -4,11 +4,6 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:40:30: 'i' hides a field. [HiddenField]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:40:43: 'j' hides a field. [HiddenField]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:52:26: Parameter that should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:53: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:54: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:55: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:86:21: '1000' is a magic number. [MagicNumber]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:109: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:109: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:90:21: '1000' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 6 errors.

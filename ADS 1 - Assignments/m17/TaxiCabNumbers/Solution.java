@@ -50,9 +50,13 @@ class Taxicab implements Comparable<Taxicab> {
      * @return     { description_of_the_return_value }
      */
     public int compareTo(Taxicab that) {
-        if      (this.sum < that.sum) return -1;
-        else if (this.sum > that.sum) return +1;
-        else                          return  0;
+        if (this.sum < that.sum) {
+            return -1;
+        } else if (this.sum > that.sum) {
+            return +1;
+        } else {
+            return  0;
+        }
     }
     /**
      * { Returns a string representation of the object }.
@@ -106,7 +110,9 @@ final class Solution {
                     pair = 1;
                 }
                 prev = curr;
-                if (curr.getj() < n) pq.insert(new Taxicab(curr.geti(), curr.getj() + 1));
+                if (curr.getj() < n) {
+                    pq.insert(new Taxicab(curr.geti(), curr.getj() + 1));
+                }
             }
         }
     }
