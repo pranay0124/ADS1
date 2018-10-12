@@ -1,9 +1,10 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:17:10: Variable 'sum' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:40:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:40:30: 'i' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:40:43: 'j' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:52:26: Parameter that should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:90:21: '1000' is a magic number. [MagicNumber]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:45:8: Unused @param tag for 'i'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:46:8: Unused @param tag for 'j'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:48:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:48:30: Expected @param tag for 'i1'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:48:44: Expected @param tag for 'j1'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:60:26: Parameter that should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m17\TaxiCabNumbers\Solution.java:98:21: '1000' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 7 errors.

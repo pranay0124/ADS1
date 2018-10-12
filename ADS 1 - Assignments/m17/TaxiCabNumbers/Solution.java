@@ -14,7 +14,7 @@ class Taxicab implements Comparable<Taxicab> {
     /**
      * { variable for sum }.
      */
-    long sum;
+    private long sum;
     /**
      * { gets i }.
      *
@@ -32,15 +32,23 @@ class Taxicab implements Comparable<Taxicab> {
         return j;
     }
     /**
+     * { Gets the sum }.
+     *
+     * @return     The sum.
+     */
+    long getSum() {
+        return sum;
+    }
+    /**
      * Constructs the object.
      *
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    public Taxicab(final int i, final int j) {
-        this.sum = (long) i * i * i + (long) j * j * j;
-        this.i = i;
-        this.j = j;
+    public Taxicab(final int i1, final int j1) {
+        this.sum = (long) i1 * i1 * i1 + (long) j1 * j1 * j1;
+        this.i = i1;
+        this.j = j1;
     }
     /**
      * { compares the sum value and returns the greatest }.
@@ -97,13 +105,13 @@ final class Solution {
             int pairCount = 0;
             while (!pq.isEmpty()) {
                 Taxicab curr = pq.delMin();
-                if (prev.sum == curr.sum) {
+                if (prev.getSum() == curr.getSum()) {
                     pair++;
                     if (pair == b) {
                         pairCount = pairCount + 1;
                     }
                     if (pairCount == a) {
-                        System.out.println(prev.sum);
+                        System.out.println(prev.getSum());
                         break;
                     }
                 } else {
