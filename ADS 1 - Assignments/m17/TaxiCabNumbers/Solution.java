@@ -7,18 +7,42 @@ import java.util.Scanner;
  *              Class for Taxicab.
  *==========================================================================*/
 class Taxicab implements Comparable<Taxicab> {
+    /**
+     * { variables i & j }.
+     */
     int i, j;
+    /**
+     * { variable for sum }.
+     */
     long sum;
-    public Taxicab(int i, int j) {
+    /**
+     * Constructs the object.
+     *
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     */
+    public Taxicab(final int i, final int j) {
         this.sum = (long) i * i * i + (long) j * j * j;
         this.i = i;
         this.j = j;
     }
+    /**
+     * { compares the sum value and returns the greatest }.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int compareTo(Taxicab that) {
         if      (this.sum < that.sum) return -1;
         else if (this.sum > that.sum) return +1;
         else                          return  0;
     }
+    /**
+     * { Returns a string representation of the object }.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return i + "^3 + " + j + "^3";
     }
@@ -27,8 +51,17 @@ class Taxicab implements Comparable<Taxicab> {
 /**==========================================================================
  *              Class for Solution class.
  *==========================================================================*/
-class Solution {
-    public static void main(String[] args) {
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() { }
+    /**
+     * Main Function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextLine()) {
             String[] input = sc.nextLine().split(" ");
