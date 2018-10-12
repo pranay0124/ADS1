@@ -1,4 +1,11 @@
-import java.util.*;
+/**
+ * @author : Pranay Kumar Y.
+ * Date : 12th October,2018.
+ */
+import java.util.Scanner;
+/**==========================================================================
+ *              Class for Taxicab.
+ *==========================================================================*/
 class Taxicab implements Comparable<Taxicab> {
     int i, j;
     long sum;
@@ -17,6 +24,9 @@ class Taxicab implements Comparable<Taxicab> {
     }
 }
 
+/**==========================================================================
+ *              Class for Solution class.
+ *==========================================================================*/
 class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
