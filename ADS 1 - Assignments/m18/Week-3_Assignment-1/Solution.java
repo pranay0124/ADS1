@@ -1,15 +1,15 @@
 import java.util.*;
 class StockData implements Comparable<StockData> {
 	private String stockname;
-	private double stockchange;
-	StockData(String name, double change) {
+	private float stockchange;
+	StockData(String name, float change) {
 		this.stockname = name;
 		this.stockchange = change;
 	}
 	public String getstockname() {
 		return this.stockname;
 	}
-	public double getstockchange() {
+	public float getstockchange() {
 		return this.stockchange;
 	}
 	public int compareTo(StockData other) {
@@ -36,10 +36,9 @@ class Solution {
 			int count = 0;
 			MinPQ<StockData> minpq = new MinPQ<>();
 			MaxPQ<StockData> maxpq = new MaxPQ<>();
-			System.out.println("minpq" + "maxpq");
 			while (count < n) {
 				String[] tokens = scan.nextLine().split(",");
-				StockData stockobj = new StockData(tokens[0], Double.parseDouble(tokens[1]));
+				StockData stockobj = new StockData(tokens[0], Float.parseFloat(tokens[1]));
 				minpq.insert(stockobj);
 				maxpq.insert(stockobj);
 				count++;
