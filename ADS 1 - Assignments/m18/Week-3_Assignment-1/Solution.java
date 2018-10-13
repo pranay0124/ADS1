@@ -1,28 +1,28 @@
 import java.util.*;
-class Stock implements Comparable<Stock> {
-	private String stockname;
-	private float stockchange;
-	Stock(String name, float change) {
-		this.stockname = name;
-		this.stockchange = change;
+class StockData implements Comparable<StockData> {
+	private String sname;
+	private float schange;
+	StockData(String name, float change) {
+		this.sname = name;
+		this.schange = change;
 	}
-	public String getstockname() {
-		return this.stockname;
+	public String getsname() {
+		return this.sname;
 	}
-	public float getstockchange() {
-		return this.stockchange;
+	public float getschange() {
+		return this.schange;
 	}
-	public int compareTo(Stock other) {
-		if (this.stockchange > other.stockchange) {
+	public int compareTo(StockData other) {
+		if (this.schange > other.schange) {
 			return 1;
 		}
-		if (this.stockchange < other.stockchange) {
+		if (this.schange < other.schange) {
 			return -1;
 		}
-		if (this.stockname.compareTo(other.stockname) > 0) {
+		if (this.sname.compareTo(other.sname) > 0) {
 			return 1;
 		}
-		if (this.stockname.compareTo(other.stockname) < 0) {
+		if (this.sname.compareTo(other.sname) < 0) {
 			return -1;
 		}
 		return 0;
@@ -44,15 +44,18 @@ class Solution {
 				maxpq.insert(stockobj);
 				count++;
 			}
-			for (StockData s1 : minpq) {
-				System.out.println(s1);
-				System.out.println("---------------");
+			BinarySearchST<String, Float> best = new  BinarySearchST<>();
+			BinarySearchST<String, Float> worst = new BinarySearchST<>();
+			for (int i = 0; i < 5; i++) {
+				StockData maxbest = maxpq.delMax();
+				System.out.println(maxbest);
+				best.put(maxbest.getsname(), maxbest.getschange());
 			}
-			for (StockData s2 : maxpq) {
-				System.out.println(s2);
-				System.out.println("---------------");
+			for(int j = 0; j < 5; j++) {
+				StockData minworst = minpq.delMin();
+				System.out.println(minworst);
+				worst.put(minworst.getsname(), minworst.getschange());
 			}
-
 			p++;
 		}
 

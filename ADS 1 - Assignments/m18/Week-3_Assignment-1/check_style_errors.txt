@@ -6,8 +6,8 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:3:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:5:15: Parameter name should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:5:28: Parameter change should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:5:19: Parameter name should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:5:32: Parameter change should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:9:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:12:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:15:9: Missing a Javadoc comment. [JavadocMethod]
@@ -18,5 +18,12 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:32:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:36:28: '6' is a magic number. [MagicNumber]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:42: Line is longer than 80 characters (found 107). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:47: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:48: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:49:45: '5' is a magic number. [MagicNumber]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:52: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:54:28: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:54:44: '5' is a magic number. [MagicNumber]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:57: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 26 errors.

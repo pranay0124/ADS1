@@ -72,486 +72,66 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
-Bosch0.3
----------------
-Abbott India0.46
----------------
-MRF0.48
----------------
-Oracle Fin0.52
----------------
-Bajaj Finserv0.64
----------------
-Lakshmi Machine0.7
----------------
-GSK Cons Health0.84
----------------
-Honeywell Auto1.08
----------------
-Sanofi India1.21
----------------
-Tasty Bite Eat1.23
----------------
-WABCO India1.33
----------------
-3M India1.56
----------------
-Nestle India1.57
----------------
-Eicher Motors1.6
----------------
-HEG Ltd1.61
----------------
-Bharat Rasayan2.0
----------------
-TTK Prestige2.15
----------------
-Schaeffler India2.57
----------------
-ICRA2.84
----------------
-Merck Ltd4.83
----------------
-Merck Ltd4.83
----------------
-ICRA2.84
----------------
-Schaeffler India2.57
----------------
-TTK Prestige2.15
----------------
-Bharat Rasayan2.0
----------------
-HEG Ltd1.61
----------------
-Eicher Motors1.6
----------------
-Nestle India1.57
----------------
-3M India1.56
----------------
-WABCO India1.33
----------------
-Tasty Bite Eat1.23
----------------
-Sanofi India1.21
----------------
-Honeywell Auto1.08
----------------
-GSK Cons Health0.84
----------------
-Lakshmi Machine0.7
----------------
-Bajaj Finserv0.64
----------------
-Oracle Fin0.52
----------------
-MRF0.48
----------------
-Abbott India0.46
----------------
-Bosch0.3
----------------
-Honeywell Auto-1.08
----------------
-TTK Prestige0.15
----------------
-WABCO India0.33
----------------
-Eicher Motors0.6
----------------
-GSK Cons Health0.84
----------------
-Bosch1.3
----------------
-Abbott India1.46
----------------
-Oracle Fin1.52
----------------
-Lakshmi Machine1.7
----------------
-Bharat Rasayan2.0
----------------
-Sanofi India2.21
----------------
-Tasty Bite Eat2.23
----------------
-3M India2.56
----------------
-HEG Ltd2.61
----------------
-MRF3.48
----------------
-Nestle India4.57
----------------
-Schaeffler India4.59
----------------
-ICRA4.84
----------------
-Bajaj Finserv5.64
----------------
-Merck Ltd5.83
----------------
-Merck Ltd5.83
----------------
-Bajaj Finserv5.64
----------------
-ICRA4.84
----------------
-Schaeffler India4.59
----------------
-Nestle India4.57
----------------
-MRF3.48
----------------
-HEG Ltd2.61
----------------
-3M India2.56
----------------
-Tasty Bite Eat2.23
----------------
-Sanofi India2.21
----------------
-Bharat Rasayan2.0
----------------
-Lakshmi Machine1.7
----------------
-Oracle Fin1.52
----------------
-Abbott India1.46
----------------
-Bosch1.3
----------------
-GSK Cons Health0.84
----------------
-Eicher Motors0.6
----------------
-WABCO India0.33
----------------
-TTK Prestige0.15
----------------
-Honeywell Auto-1.08
----------------
-WABCO India-1.33
----------------
-Sanofi India-1.21
----------------
-GSK Cons Health-0.84
----------------
-Abbott India0.46
----------------
-Oracle Fin0.52
----------------
-Honeywell Auto1.08
----------------
-MRF1.48
----------------
-3M India1.56
----------------
-Eicher Motors1.6
----------------
-HEG Ltd1.61
----------------
-Merck Ltd1.83
----------------
-Bharat Rasayan2.0
----------------
-TTK Prestige2.15
----------------
-Bosch2.3
----------------
-Schaeffler India2.57
----------------
-Lakshmi Machine3.7
----------------
-ICRA3.84
----------------
-Nestle India4.57
----------------
-Bajaj Finserv4.64
----------------
-Tasty Bite Eat5.23
----------------
-Tasty Bite Eat5.23
----------------
-Bajaj Finserv4.64
----------------
-Nestle India4.57
----------------
-ICRA3.84
----------------
-Lakshmi Machine3.7
----------------
-Schaeffler India2.57
----------------
-Bosch2.3
----------------
-TTK Prestige2.15
----------------
-Bharat Rasayan2.0
----------------
-Merck Ltd1.83
----------------
-HEG Ltd1.61
----------------
-Eicher Motors1.6
----------------
-3M India1.56
----------------
-MRF1.48
----------------
-Honeywell Auto1.08
----------------
-Oracle Fin0.52
----------------
-Abbott India0.46
----------------
-GSK Cons Health-0.84
----------------
-Sanofi India-1.21
----------------
-WABCO India-1.33
----------------
-ICRA-2.84
----------------
-Schaeffler India-2.57
----------------
-TTK Prestige-2.15
----------------
-Bharat Rasayan-2.0
----------------
-HEG Ltd-1.61
----------------
-Eicher Motors-1.6
----------------
-Nestle India-1.57
----------------
-WABCO India-1.33
----------------
-Tasty Bite Eat-1.23
----------------
-Sanofi India-1.21
----------------
-Honeywell Auto-1.08
----------------
-GSK Cons Health-0.84
----------------
-Lakshmi Machine-0.7
----------------
-Bajaj Finserv-0.64
----------------
-Oracle Fin-0.52
----------------
-Abbott India-0.46
----------------
-Bosch-0.3
----------------
-3M India2.56
----------------
-MRF3.48
----------------
-Merck Ltd4.83
----------------
-Merck Ltd4.83
----------------
-MRF3.48
----------------
-3M India2.56
----------------
-Bosch-0.3
----------------
-Abbott India-0.46
----------------
-Oracle Fin-0.52
----------------
-Bajaj Finserv-0.64
----------------
-Lakshmi Machine-0.7
----------------
-GSK Cons Health-0.84
----------------
-Honeywell Auto-1.08
----------------
-Sanofi India-1.21
----------------
-Tasty Bite Eat-1.23
----------------
-WABCO India-1.33
----------------
-Nestle India-1.57
----------------
-Eicher Motors-1.6
----------------
-HEG Ltd-1.61
----------------
-Bharat Rasayan-2.0
----------------
-TTK Prestige-2.15
----------------
-Schaeffler India-2.57
----------------
-ICRA-2.84
----------------
-Bosch0.3
----------------
-Abbott India0.46
----------------
-MRF0.48
----------------
-Oracle Fin0.52
----------------
-Bajaj Finserv0.64
----------------
-Lakshmi Machine0.7
----------------
-GSK Cons Health0.84
----------------
-Honeywell Auto1.08
----------------
-Sanofi India1.21
----------------
-Tasty Bite Eat1.23
----------------
-WABCO India1.33
----------------
-3M India1.56
----------------
-Nestle India1.57
----------------
-Eicher Motors1.6
----------------
-HEG Ltd1.61
----------------
-Bharat Rasayan2.0
----------------
-TTK Prestige2.15
----------------
-Schaeffler India2.57
----------------
-ICRA2.84
----------------
-Merck Ltd4.83
----------------
-Merck Ltd4.83
----------------
-ICRA2.84
----------------
-Schaeffler India2.57
----------------
-TTK Prestige2.15
----------------
-Bharat Rasayan2.0
----------------
-HEG Ltd1.61
----------------
-Eicher Motors1.6
----------------
-Nestle India1.57
----------------
-3M India1.56
----------------
-WABCO India1.33
----------------
-Tasty Bite Eat1.23
----------------
-Sanofi India1.21
----------------
-Honeywell Auto1.08
----------------
-GSK Cons Health0.84
----------------
-Lakshmi Machine0.7
----------------
-Bajaj Finserv0.64
----------------
-Oracle Fin0.52
----------------
-MRF0.48
----------------
-Abbott India0.46
----------------
-Bosch0.3
----------------
-Eicher Motors-1.6
----------------
-Honeywell Auto-1.08
----------------
-Sanofi India0.21
----------------
-Tasty Bite Eat0.23
----------------
-WABCO India0.33
----------------
-Bosch0.34
----------------
-Abbott India1.46
----------------
-MRF1.48
----------------
-Oracle Fin1.52
----------------
-3M India1.56
----------------
-Nestle India1.57
----------------
-Schaeffler India1.57
----------------
-HEG Ltd1.61
----------------
-GSK Cons Health1.84
----------------
-Bharat Rasayan2.0
----------------
-TTK Prestige3.15
----------------
-Bajaj Finserv3.64
----------------
-Merck Ltd3.83
----------------
-Lakshmi Machine4.7
----------------
-ICRA5.84
----------------
-ICRA5.84
----------------
-Lakshmi Machine4.7
----------------
-Merck Ltd3.83
----------------
-Bajaj Finserv3.64
----------------
-TTK Prestige3.15
----------------
-Bharat Rasayan2.0
----------------
-GSK Cons Health1.84
----------------
-HEG Ltd1.61
----------------
-Schaeffler India1.57
----------------
-Nestle India1.57
----------------
-3M India1.56
----------------
-Oracle Fin1.52
----------------
-MRF1.48
----------------
-Abbott India1.46
----------------
-Bosch0.34
----------------
-WABCO India0.33
----------------
-Tasty Bite Eat0.23
----------------
-Sanofi India0.21
----------------
-Honeywell Auto-1.08
----------------
-Eicher Motors-1.6
----------------
+StockData@58ceff1
+StockData@7c30a502
+StockData@49e4cb85
+StockData@2133c8f8
+StockData@43a25848
+StockData@3ac3fd8b
+StockData@5594a1b5
+StockData@6a5fc7f7
+StockData@3b6eb2ec
+StockData@1e643faf
+StockData@6e8dacdf
+StockData@7a79be86
+StockData@34ce8af7
+StockData@b684286
+StockData@880ec60
+StockData@3f3afe78
+StockData@7f63425a
+StockData@36d64342
+StockData@39ba5a14
+StockData@511baa65
+StockData@340f438e
+StockData@30c7da1e
+StockData@5b464ce8
+StockData@57829d67
+StockData@19dfb72a
+StockData@17c68925
+StockData@7e0ea639
+StockData@3d24753a
+StockData@59a6e353
+StockData@7a0ac6e3
+StockData@71be98f5
+StockData@6fadae5d
+StockData@17f6480
+StockData@2d6e8792
+StockData@2812cbfa
+StockData@2acf57e3
+StockData@506e6d5e
+StockData@96532d6
+StockData@3796751b
+StockData@67b64c45
+StockData@4411d970
+StockData@6442b0a6
+StockData@60f82f98
+StockData@35f983a6
+StockData@7f690630
+StockData@edf4efb
+StockData@2f7a2457
+StockData@566776ad
+StockData@6108b2d7
+StockData@1554909b
+StockData@6bf256fa
+StockData@6cd8737
+StockData@22f71333
+StockData@13969fbe
+StockData@6aaa5eb0
+StockData@3498ed
+StockData@1a407d53
+StockData@3d8c7aca
+StockData@5ebec15
+StockData@21bcffb5
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -627,246 +207,66 @@ Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
-Nalwa Sons Invst-0.06
----------------
-Jubilant Food0.08
----------------
-Endurance Technologies Ltd.0.1
----------------
-NIIT Tech0.21
----------------
-Ceat0.23
----------------
-Chola Inv Fin1.47
----------------
-Fine Organic Industries Ltd.2.29
----------------
-APL Apollo Tube3.18
----------------
-Vinati Organics4.03
----------------
-Larsen & Toubro4.11
----------------
-Larsen & Toubro4.11
----------------
-Vinati Organics4.03
----------------
-APL Apollo Tube3.18
----------------
-Fine Organic Industries Ltd.2.29
----------------
-Chola Inv Fin1.47
----------------
-Ceat0.23
----------------
-NIIT Tech0.21
----------------
-Endurance Technologies Ltd.0.1
----------------
-Jubilant Food0.08
----------------
-Nalwa Sons Invst-0.06
----------------
-Ceat-0.06
----------------
-Nalwa Sons Invst-0.06
----------------
-Endurance Technologies Ltd.1.1
----------------
-Fine Organic Industries Ltd.1.29
----------------
-APL Apollo Tube2.18
----------------
-Chola Inv Fin2.47
----------------
-Vinati Organics3.03
----------------
-NIIT Tech3.21
----------------
-Jubilant Food4.08
----------------
-Larsen & Toubro4.08
----------------
-Larsen & Toubro4.08
----------------
-Jubilant Food4.08
----------------
-NIIT Tech3.21
----------------
-Vinati Organics3.03
----------------
-Chola Inv Fin2.47
----------------
-APL Apollo Tube2.18
----------------
-Fine Organic Industries Ltd.1.29
----------------
-Endurance Technologies Ltd.1.1
----------------
-Nalwa Sons Invst-0.06
----------------
-Ceat-0.06
----------------
-Nalwa Sons Invst-0.06
----------------
-APL Apollo Tube0.18
----------------
-NIIT Tech0.21
----------------
-Ceat0.23
----------------
-Endurance Technologies Ltd.1.1
----------------
-Larsen & Toubro1.11
----------------
-Fine Organic Industries Ltd.3.29
----------------
-Vinati Organics4.03
----------------
-Jubilant Food4.08
----------------
-Chola Inv Fin4.47
----------------
-Chola Inv Fin4.47
----------------
-Jubilant Food4.08
----------------
-Vinati Organics4.03
----------------
-Fine Organic Industries Ltd.3.29
----------------
-Larsen & Toubro1.11
----------------
-Endurance Technologies Ltd.1.1
----------------
-Ceat0.23
----------------
-NIIT Tech0.21
----------------
-APL Apollo Tube0.18
----------------
-Nalwa Sons Invst-0.06
----------------
-Larsen & Toubro-4.11
----------------
-Endurance Technologies Ltd.-0.1
----------------
-Nalwa Sons Invst-0.1
----------------
-Jubilant Food0.08
----------------
-NIIT Tech0.34
----------------
-Vinati Organics1.03
----------------
-Ceat1.23
----------------
-APL Apollo Tube2.18
----------------
-Fine Organic Industries Ltd.3.29
----------------
-Chola Inv Fin3.47
----------------
-Chola Inv Fin3.47
----------------
-Fine Organic Industries Ltd.3.29
----------------
-APL Apollo Tube2.18
----------------
-Ceat1.23
----------------
-Vinati Organics1.03
----------------
-NIIT Tech0.34
----------------
-Jubilant Food0.08
----------------
-Nalwa Sons Invst-0.1
----------------
-Endurance Technologies Ltd.-0.1
----------------
-Larsen & Toubro-4.11
----------------
-Nalwa Sons Invst-2.06
----------------
-Fine Organic Industries Ltd.0.29
----------------
-Chola Inv Fin0.47
----------------
-Vinati Organics1.03
----------------
-Endurance Technologies Ltd.1.1
----------------
-NIIT Tech1.21
----------------
-Ceat1.23
----------------
-Jubilant Food2.08
----------------
-APL Apollo Tube2.18
----------------
-Larsen & Toubro3.11
----------------
-Larsen & Toubro3.11
----------------
-APL Apollo Tube2.18
----------------
-Jubilant Food2.08
----------------
-Ceat1.23
----------------
-NIIT Tech1.21
----------------
-Endurance Technologies Ltd.1.1
----------------
-Vinati Organics1.03
----------------
-Chola Inv Fin0.47
----------------
-Fine Organic Industries Ltd.0.29
----------------
-Nalwa Sons Invst-2.06
----------------
-Ceat-1.23
----------------
-NIIT Tech0.21
----------------
-Fine Organic Industries Ltd.0.29
----------------
-Vinati Organics1.03
----------------
-Chola Inv Fin1.47
----------------
-APL Apollo Tube2.18
----------------
-Nalwa Sons Invst4.06
----------------
-Endurance Technologies Ltd.4.1
----------------
-Jubilant Food5.08
----------------
-Larsen & Toubro5.11
----------------
-Larsen & Toubro5.11
----------------
-Jubilant Food5.08
----------------
-Endurance Technologies Ltd.4.1
----------------
-Nalwa Sons Invst4.06
----------------
-APL Apollo Tube2.18
----------------
-Chola Inv Fin1.47
----------------
-Vinati Organics1.03
----------------
-Fine Organic Industries Ltd.0.29
----------------
-NIIT Tech0.21
----------------
-Ceat-1.23
----------------
+StockData@58ceff1
+StockData@7c30a502
+StockData@49e4cb85
+StockData@2133c8f8
+StockData@43a25848
+StockData@3ac3fd8b
+StockData@5594a1b5
+StockData@6a5fc7f7
+StockData@3b6eb2ec
+StockData@1e643faf
+StockData@6e8dacdf
+StockData@7a79be86
+StockData@34ce8af7
+StockData@b684286
+StockData@880ec60
+StockData@3f3afe78
+StockData@7f63425a
+StockData@36d64342
+StockData@39ba5a14
+StockData@511baa65
+StockData@340f438e
+StockData@30c7da1e
+StockData@5b464ce8
+StockData@57829d67
+StockData@19dfb72a
+StockData@17c68925
+StockData@7e0ea639
+StockData@3d24753a
+StockData@59a6e353
+StockData@7a0ac6e3
+StockData@71be98f5
+StockData@6fadae5d
+StockData@17f6480
+StockData@2d6e8792
+StockData@2812cbfa
+StockData@2acf57e3
+StockData@506e6d5e
+StockData@96532d6
+StockData@3796751b
+StockData@67b64c45
+StockData@4411d970
+StockData@6442b0a6
+StockData@60f82f98
+StockData@35f983a6
+StockData@7f690630
+StockData@edf4efb
+StockData@2f7a2457
+StockData@566776ad
+StockData@6108b2d7
+StockData@1554909b
+StockData@6bf256fa
+StockData@6cd8737
+StockData@22f71333
+StockData@13969fbe
+StockData@6aaa5eb0
+StockData@3498ed
+StockData@1a407d53
+StockData@3d8c7aca
+StockData@5ebec15
+StockData@21bcffb5
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -947,486 +347,66 @@ WABCO India 0.33
 1
 3
 Your Output: 
-Bosch0.3
----------------
-Abbott India0.46
----------------
-MRF0.48
----------------
-Oracle Fin0.52
----------------
-Bajaj Finserv0.64
----------------
-Lakshmi Machine0.7
----------------
-GSK Cons Health0.84
----------------
-Honeywell Auto1.08
----------------
-Sanofi India1.21
----------------
-Tasty Bite Eat1.23
----------------
-WABCO India1.33
----------------
-3M India1.56
----------------
-Nestle India1.57
----------------
-Eicher Motors1.6
----------------
-HEG Ltd1.61
----------------
-Bharat Rasayan2.0
----------------
-TTK Prestige2.15
----------------
-Schaeffler India2.57
----------------
-ICRA2.84
----------------
-Merck Ltd4.83
----------------
-Merck Ltd4.83
----------------
-ICRA2.84
----------------
-Schaeffler India2.57
----------------
-TTK Prestige2.15
----------------
-Bharat Rasayan2.0
----------------
-HEG Ltd1.61
----------------
-Eicher Motors1.6
----------------
-Nestle India1.57
----------------
-3M India1.56
----------------
-WABCO India1.33
----------------
-Tasty Bite Eat1.23
----------------
-Sanofi India1.21
----------------
-Honeywell Auto1.08
----------------
-GSK Cons Health0.84
----------------
-Lakshmi Machine0.7
----------------
-Bajaj Finserv0.64
----------------
-Oracle Fin0.52
----------------
-MRF0.48
----------------
-Abbott India0.46
----------------
-Bosch0.3
----------------
-Honeywell Auto-1.08
----------------
-TTK Prestige0.15
----------------
-WABCO India0.33
----------------
-Eicher Motors0.6
----------------
-GSK Cons Health0.84
----------------
-Bosch1.3
----------------
-Abbott India1.46
----------------
-Oracle Fin1.52
----------------
-Lakshmi Machine1.7
----------------
-Bharat Rasayan2.0
----------------
-Sanofi India2.21
----------------
-Tasty Bite Eat2.23
----------------
-3M India2.56
----------------
-HEG Ltd2.61
----------------
-MRF3.48
----------------
-Nestle India4.57
----------------
-Schaeffler India4.59
----------------
-ICRA4.84
----------------
-Bajaj Finserv5.64
----------------
-Merck Ltd5.83
----------------
-Merck Ltd5.83
----------------
-Bajaj Finserv5.64
----------------
-ICRA4.84
----------------
-Schaeffler India4.59
----------------
-Nestle India4.57
----------------
-MRF3.48
----------------
-HEG Ltd2.61
----------------
-3M India2.56
----------------
-Tasty Bite Eat2.23
----------------
-Sanofi India2.21
----------------
-Bharat Rasayan2.0
----------------
-Lakshmi Machine1.7
----------------
-Oracle Fin1.52
----------------
-Abbott India1.46
----------------
-Bosch1.3
----------------
-GSK Cons Health0.84
----------------
-Eicher Motors0.6
----------------
-WABCO India0.33
----------------
-TTK Prestige0.15
----------------
-Honeywell Auto-1.08
----------------
-WABCO India-1.33
----------------
-Sanofi India-1.21
----------------
-GSK Cons Health-0.84
----------------
-Abbott India0.46
----------------
-Oracle Fin0.52
----------------
-Honeywell Auto1.08
----------------
-MRF1.48
----------------
-3M India1.56
----------------
-Eicher Motors1.6
----------------
-HEG Ltd1.61
----------------
-Merck Ltd1.83
----------------
-Bharat Rasayan2.0
----------------
-TTK Prestige2.15
----------------
-Bosch2.3
----------------
-Schaeffler India2.57
----------------
-Lakshmi Machine3.7
----------------
-ICRA3.84
----------------
-Nestle India4.57
----------------
-Bajaj Finserv4.64
----------------
-Tasty Bite Eat5.23
----------------
-Tasty Bite Eat5.23
----------------
-Bajaj Finserv4.64
----------------
-Nestle India4.57
----------------
-ICRA3.84
----------------
-Lakshmi Machine3.7
----------------
-Schaeffler India2.57
----------------
-Bosch2.3
----------------
-TTK Prestige2.15
----------------
-Bharat Rasayan2.0
----------------
-Merck Ltd1.83
----------------
-HEG Ltd1.61
----------------
-Eicher Motors1.6
----------------
-3M India1.56
----------------
-MRF1.48
----------------
-Honeywell Auto1.08
----------------
-Oracle Fin0.52
----------------
-Abbott India0.46
----------------
-GSK Cons Health-0.84
----------------
-Sanofi India-1.21
----------------
-WABCO India-1.33
----------------
-ICRA-2.84
----------------
-Schaeffler India-2.57
----------------
-TTK Prestige-2.15
----------------
-Bharat Rasayan-2.0
----------------
-HEG Ltd-1.61
----------------
-Eicher Motors-1.6
----------------
-Nestle India-1.57
----------------
-WABCO India-1.33
----------------
-Tasty Bite Eat-1.23
----------------
-Sanofi India-1.21
----------------
-Honeywell Auto-1.08
----------------
-GSK Cons Health-0.84
----------------
-Lakshmi Machine-0.7
----------------
-Bajaj Finserv-0.64
----------------
-Oracle Fin-0.52
----------------
-Abbott India-0.46
----------------
-Bosch-0.3
----------------
-3M India2.56
----------------
-MRF3.48
----------------
-Merck Ltd4.83
----------------
-Merck Ltd4.83
----------------
-MRF3.48
----------------
-3M India2.56
----------------
-Bosch-0.3
----------------
-Abbott India-0.46
----------------
-Oracle Fin-0.52
----------------
-Bajaj Finserv-0.64
----------------
-Lakshmi Machine-0.7
----------------
-GSK Cons Health-0.84
----------------
-Honeywell Auto-1.08
----------------
-Sanofi India-1.21
----------------
-Tasty Bite Eat-1.23
----------------
-WABCO India-1.33
----------------
-Nestle India-1.57
----------------
-Eicher Motors-1.6
----------------
-HEG Ltd-1.61
----------------
-Bharat Rasayan-2.0
----------------
-TTK Prestige-2.15
----------------
-Schaeffler India-2.57
----------------
-ICRA-2.84
----------------
-Bosch0.3
----------------
-Abbott India0.46
----------------
-MRF0.48
----------------
-Oracle Fin0.52
----------------
-Bajaj Finserv0.64
----------------
-Lakshmi Machine0.7
----------------
-GSK Cons Health0.84
----------------
-Honeywell Auto1.08
----------------
-Sanofi India1.21
----------------
-Tasty Bite Eat1.23
----------------
-WABCO India1.33
----------------
-3M India1.56
----------------
-Nestle India1.57
----------------
-Eicher Motors1.6
----------------
-HEG Ltd1.61
----------------
-Bharat Rasayan2.0
----------------
-TTK Prestige2.15
----------------
-Schaeffler India2.57
----------------
-ICRA2.84
----------------
-Merck Ltd4.83
----------------
-Merck Ltd4.83
----------------
-ICRA2.84
----------------
-Schaeffler India2.57
----------------
-TTK Prestige2.15
----------------
-Bharat Rasayan2.0
----------------
-HEG Ltd1.61
----------------
-Eicher Motors1.6
----------------
-Nestle India1.57
----------------
-3M India1.56
----------------
-WABCO India1.33
----------------
-Tasty Bite Eat1.23
----------------
-Sanofi India1.21
----------------
-Honeywell Auto1.08
----------------
-GSK Cons Health0.84
----------------
-Lakshmi Machine0.7
----------------
-Bajaj Finserv0.64
----------------
-Oracle Fin0.52
----------------
-MRF0.48
----------------
-Abbott India0.46
----------------
-Bosch0.3
----------------
-Eicher Motors-1.6
----------------
-Honeywell Auto-1.08
----------------
-Sanofi India0.21
----------------
-Tasty Bite Eat0.23
----------------
-WABCO India0.33
----------------
-Bosch0.34
----------------
-Abbott India1.46
----------------
-MRF1.48
----------------
-Oracle Fin1.52
----------------
-3M India1.56
----------------
-Nestle India1.57
----------------
-Schaeffler India1.57
----------------
-HEG Ltd1.61
----------------
-GSK Cons Health1.84
----------------
-Bharat Rasayan2.0
----------------
-TTK Prestige3.15
----------------
-Bajaj Finserv3.64
----------------
-Merck Ltd3.83
----------------
-Lakshmi Machine4.7
----------------
-ICRA5.84
----------------
-ICRA5.84
----------------
-Lakshmi Machine4.7
----------------
-Merck Ltd3.83
----------------
-Bajaj Finserv3.64
----------------
-TTK Prestige3.15
----------------
-Bharat Rasayan2.0
----------------
-GSK Cons Health1.84
----------------
-HEG Ltd1.61
----------------
-Schaeffler India1.57
----------------
-Nestle India1.57
----------------
-3M India1.56
----------------
-Oracle Fin1.52
----------------
-MRF1.48
----------------
-Abbott India1.46
----------------
-Bosch0.34
----------------
-WABCO India0.33
----------------
-Tasty Bite Eat0.23
----------------
-Sanofi India0.21
----------------
-Honeywell Auto-1.08
----------------
-Eicher Motors-1.6
----------------
+StockData@58ceff1
+StockData@7c30a502
+StockData@49e4cb85
+StockData@2133c8f8
+StockData@43a25848
+StockData@3ac3fd8b
+StockData@5594a1b5
+StockData@6a5fc7f7
+StockData@3b6eb2ec
+StockData@1e643faf
+StockData@6e8dacdf
+StockData@7a79be86
+StockData@34ce8af7
+StockData@b684286
+StockData@880ec60
+StockData@3f3afe78
+StockData@7f63425a
+StockData@36d64342
+StockData@39ba5a14
+StockData@511baa65
+StockData@340f438e
+StockData@30c7da1e
+StockData@5b464ce8
+StockData@57829d67
+StockData@19dfb72a
+StockData@17c68925
+StockData@7e0ea639
+StockData@3d24753a
+StockData@59a6e353
+StockData@7a0ac6e3
+StockData@71be98f5
+StockData@6fadae5d
+StockData@17f6480
+StockData@2d6e8792
+StockData@2812cbfa
+StockData@2acf57e3
+StockData@506e6d5e
+StockData@96532d6
+StockData@3796751b
+StockData@67b64c45
+StockData@4411d970
+StockData@6442b0a6
+StockData@60f82f98
+StockData@35f983a6
+StockData@7f690630
+StockData@edf4efb
+StockData@2f7a2457
+StockData@566776ad
+StockData@6108b2d7
+StockData@1554909b
+StockData@6bf256fa
+StockData@6cd8737
+StockData@22f71333
+StockData@13969fbe
+StockData@6aaa5eb0
+StockData@3498ed
+StockData@1a407d53
+StockData@3d8c7aca
+StockData@5ebec15
+StockData@21bcffb5
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -1507,246 +487,66 @@ Chola Inv Fin 1.47
 4
 0
 Your Output: 
-Nalwa Sons Invst-0.06
----------------
-Jubilant Food0.08
----------------
-Endurance Technologies Ltd.0.1
----------------
-NIIT Tech0.21
----------------
-Ceat0.23
----------------
-Chola Inv Fin1.47
----------------
-Fine Organic Industries Ltd.2.29
----------------
-APL Apollo Tube3.18
----------------
-Vinati Organics4.03
----------------
-Larsen & Toubro4.11
----------------
-Larsen & Toubro4.11
----------------
-Vinati Organics4.03
----------------
-APL Apollo Tube3.18
----------------
-Fine Organic Industries Ltd.2.29
----------------
-Chola Inv Fin1.47
----------------
-Ceat0.23
----------------
-NIIT Tech0.21
----------------
-Endurance Technologies Ltd.0.1
----------------
-Jubilant Food0.08
----------------
-Nalwa Sons Invst-0.06
----------------
-Ceat-0.06
----------------
-Nalwa Sons Invst-0.06
----------------
-Endurance Technologies Ltd.1.1
----------------
-Fine Organic Industries Ltd.1.29
----------------
-APL Apollo Tube2.18
----------------
-Chola Inv Fin2.47
----------------
-Vinati Organics3.03
----------------
-NIIT Tech3.21
----------------
-Jubilant Food4.08
----------------
-Larsen & Toubro4.08
----------------
-Larsen & Toubro4.08
----------------
-Jubilant Food4.08
----------------
-NIIT Tech3.21
----------------
-Vinati Organics3.03
----------------
-Chola Inv Fin2.47
----------------
-APL Apollo Tube2.18
----------------
-Fine Organic Industries Ltd.1.29
----------------
-Endurance Technologies Ltd.1.1
----------------
-Nalwa Sons Invst-0.06
----------------
-Ceat-0.06
----------------
-Nalwa Sons Invst-0.06
----------------
-APL Apollo Tube0.18
----------------
-NIIT Tech0.21
----------------
-Ceat0.23
----------------
-Endurance Technologies Ltd.1.1
----------------
-Larsen & Toubro1.11
----------------
-Fine Organic Industries Ltd.3.29
----------------
-Vinati Organics4.03
----------------
-Jubilant Food4.08
----------------
-Chola Inv Fin4.47
----------------
-Chola Inv Fin4.47
----------------
-Jubilant Food4.08
----------------
-Vinati Organics4.03
----------------
-Fine Organic Industries Ltd.3.29
----------------
-Larsen & Toubro1.11
----------------
-Endurance Technologies Ltd.1.1
----------------
-Ceat0.23
----------------
-NIIT Tech0.21
----------------
-APL Apollo Tube0.18
----------------
-Nalwa Sons Invst-0.06
----------------
-Larsen & Toubro-4.11
----------------
-Endurance Technologies Ltd.-0.1
----------------
-Nalwa Sons Invst-0.1
----------------
-Jubilant Food0.08
----------------
-NIIT Tech0.34
----------------
-Vinati Organics1.03
----------------
-Ceat1.23
----------------
-APL Apollo Tube2.18
----------------
-Fine Organic Industries Ltd.3.29
----------------
-Chola Inv Fin3.47
----------------
-Chola Inv Fin3.47
----------------
-Fine Organic Industries Ltd.3.29
----------------
-APL Apollo Tube2.18
----------------
-Ceat1.23
----------------
-Vinati Organics1.03
----------------
-NIIT Tech0.34
----------------
-Jubilant Food0.08
----------------
-Nalwa Sons Invst-0.1
----------------
-Endurance Technologies Ltd.-0.1
----------------
-Larsen & Toubro-4.11
----------------
-Nalwa Sons Invst-2.06
----------------
-Fine Organic Industries Ltd.0.29
----------------
-Chola Inv Fin0.47
----------------
-Vinati Organics1.03
----------------
-Endurance Technologies Ltd.1.1
----------------
-NIIT Tech1.21
----------------
-Ceat1.23
----------------
-Jubilant Food2.08
----------------
-APL Apollo Tube2.18
----------------
-Larsen & Toubro3.11
----------------
-Larsen & Toubro3.11
----------------
-APL Apollo Tube2.18
----------------
-Jubilant Food2.08
----------------
-Ceat1.23
----------------
-NIIT Tech1.21
----------------
-Endurance Technologies Ltd.1.1
----------------
-Vinati Organics1.03
----------------
-Chola Inv Fin0.47
----------------
-Fine Organic Industries Ltd.0.29
----------------
-Nalwa Sons Invst-2.06
----------------
-Ceat-1.23
----------------
-NIIT Tech0.21
----------------
-Fine Organic Industries Ltd.0.29
----------------
-Vinati Organics1.03
----------------
-Chola Inv Fin1.47
----------------
-APL Apollo Tube2.18
----------------
-Nalwa Sons Invst4.06
----------------
-Endurance Technologies Ltd.4.1
----------------
-Jubilant Food5.08
----------------
-Larsen & Toubro5.11
----------------
-Larsen & Toubro5.11
----------------
-Jubilant Food5.08
----------------
-Endurance Technologies Ltd.4.1
----------------
-Nalwa Sons Invst4.06
----------------
-APL Apollo Tube2.18
----------------
-Chola Inv Fin1.47
----------------
-Vinati Organics1.03
----------------
-Fine Organic Industries Ltd.0.29
----------------
-NIIT Tech0.21
----------------
-Ceat-1.23
----------------
+StockData@58ceff1
+StockData@7c30a502
+StockData@49e4cb85
+StockData@2133c8f8
+StockData@43a25848
+StockData@3ac3fd8b
+StockData@5594a1b5
+StockData@6a5fc7f7
+StockData@3b6eb2ec
+StockData@1e643faf
+StockData@6e8dacdf
+StockData@7a79be86
+StockData@34ce8af7
+StockData@b684286
+StockData@880ec60
+StockData@3f3afe78
+StockData@7f63425a
+StockData@36d64342
+StockData@39ba5a14
+StockData@511baa65
+StockData@340f438e
+StockData@30c7da1e
+StockData@5b464ce8
+StockData@57829d67
+StockData@19dfb72a
+StockData@17c68925
+StockData@7e0ea639
+StockData@3d24753a
+StockData@59a6e353
+StockData@7a0ac6e3
+StockData@71be98f5
+StockData@6fadae5d
+StockData@17f6480
+StockData@2d6e8792
+StockData@2812cbfa
+StockData@2acf57e3
+StockData@506e6d5e
+StockData@96532d6
+StockData@3796751b
+StockData@67b64c45
+StockData@4411d970
+StockData@6442b0a6
+StockData@60f82f98
+StockData@35f983a6
+StockData@7f690630
+StockData@edf4efb
+StockData@2f7a2457
+StockData@566776ad
+StockData@6108b2d7
+StockData@1554909b
+StockData@6bf256fa
+StockData@6cd8737
+StockData@22f71333
+StockData@13969fbe
+StockData@6aaa5eb0
+StockData@3498ed
+StockData@1a407d53
+StockData@3d8c7aca
+StockData@5ebec15
+StockData@21bcffb5
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -1842,484 +642,64 @@ Schaeffler India
 TTK Prestige
 Tasty Bite Eat
 Your Output: 
-Bosch0.3
----------------
-Abbott India0.48
----------------
-MRF0.48
----------------
-Oracle Fin0.52
----------------
-Bajaj Finserv0.64
----------------
-Lakshmi Machine0.7
----------------
-GSK Cons Health0.84
----------------
-Honeywell Auto1.08
----------------
-Sanofi India1.21
----------------
-Tasty Bite Eat1.23
----------------
-WABCO India1.33
----------------
-3M India1.56
----------------
-Nestle India1.57
----------------
-Eicher Motors1.6
----------------
-HEG Ltd1.61
----------------
-Bharat Rasayan2.0
----------------
-ICRA2.15
----------------
-TTK Prestige2.15
----------------
-Schaeffler India2.57
----------------
-Merck Ltd4.83
----------------
-Merck Ltd4.83
----------------
-Schaeffler India2.57
----------------
-TTK Prestige2.15
----------------
-ICRA2.15
----------------
-Bharat Rasayan2.0
----------------
-HEG Ltd1.61
----------------
-Eicher Motors1.6
----------------
-Nestle India1.57
----------------
-3M India1.56
----------------
-WABCO India1.33
----------------
-Tasty Bite Eat1.23
----------------
-Sanofi India1.21
----------------
-Honeywell Auto1.08
----------------
-GSK Cons Health0.84
----------------
-Lakshmi Machine0.7
----------------
-Bajaj Finserv0.64
----------------
-Oracle Fin0.52
----------------
-MRF0.48
----------------
-Abbott India0.48
----------------
-Bosch0.3
----------------
-Merck Ltd-5.83
----------------
-Honeywell Auto-1.08
----------------
-Abbott India0.0
----------------
-Eicher Motors0.0
----------------
-TTK Prestige0.0
----------------
-WABCO India0.33
----------------
-GSK Cons Health0.84
----------------
-Oracle Fin1.52
----------------
-Lakshmi Machine1.75
----------------
-Bharat Rasayan2.0
----------------
-Bosch2.15
----------------
-Tasty Bite Eat2.23
----------------
-3M India2.56
----------------
-HEG Ltd2.61
----------------
-MRF3.48
----------------
-ICRA4.0
----------------
-Nestle India4.0
----------------
-Sanofi India4.0
----------------
-Schaeffler India4.59
----------------
-Bajaj Finserv5.64
----------------
-Bajaj Finserv5.64
----------------
-Schaeffler India4.59
----------------
-Sanofi India4.0
----------------
-Nestle India4.0
----------------
-ICRA4.0
----------------
-MRF3.48
----------------
-HEG Ltd2.61
----------------
-3M India2.56
----------------
-Tasty Bite Eat2.23
----------------
-Bosch2.15
----------------
-Bharat Rasayan2.0
----------------
-Lakshmi Machine1.75
----------------
-Oracle Fin1.52
----------------
-GSK Cons Health0.84
----------------
-WABCO India0.33
----------------
-TTK Prestige0.0
----------------
-Eicher Motors0.0
----------------
-Abbott India0.0
----------------
-Honeywell Auto-1.08
----------------
-Merck Ltd-5.83
----------------
-Bajaj Finserv-4.64
----------------
-Schaeffler India-2.57
----------------
-Bharat Rasayan-2.0
----------------
-HEG Ltd-1.61
----------------
-Merck Ltd-1.61
----------------
-Oracle Fin-1.61
----------------
-Eicher Motors-1.6
----------------
-3M India-1.56
----------------
-WABCO India-1.33
----------------
-Sanofi India-1.21
----------------
-Honeywell Auto-1.08
----------------
-GSK Cons Health-0.84
----------------
-Abbott India0.46
----------------
-MRF1.48
----------------
-TTK Prestige2.15
----------------
-Bosch2.3
----------------
-Lakshmi Machine3.7
----------------
-ICRA3.84
----------------
-Nestle India4.57
----------------
-Tasty Bite Eat5.23
----------------
-Tasty Bite Eat5.23
----------------
-Nestle India4.57
----------------
-ICRA3.84
----------------
-Lakshmi Machine3.7
----------------
-Bosch2.3
----------------
-TTK Prestige2.15
----------------
-MRF1.48
----------------
-Abbott India0.46
----------------
-GSK Cons Health-0.84
----------------
-Honeywell Auto-1.08
----------------
-Sanofi India-1.21
----------------
-WABCO India-1.33
----------------
-3M India-1.56
----------------
-Eicher Motors-1.6
----------------
-Oracle Fin-1.61
----------------
-Merck Ltd-1.61
----------------
-HEG Ltd-1.61
----------------
-Bharat Rasayan-2.0
----------------
-Schaeffler India-2.57
----------------
-Bajaj Finserv-4.64
----------------
-ICRA-2.84
----------------
-Schaeffler India-2.57
----------------
-TTK Prestige-2.15
----------------
-Bharat Rasayan-2.0
----------------
-HEG Ltd-1.61
----------------
-Eicher Motors-1.6
----------------
-Nestle India-1.57
----------------
-WABCO India-1.33
----------------
-Tasty Bite Eat-1.23
----------------
-Sanofi India-1.21
----------------
-Honeywell Auto-1.08
----------------
-GSK Cons Health-0.84
----------------
-Lakshmi Machine-0.7
----------------
-Bajaj Finserv-0.64
----------------
-Oracle Fin-0.52
----------------
-Abbott India-0.46
----------------
-Bosch-0.3
----------------
-3M India2.56
----------------
-MRF3.48
----------------
-Merck Ltd4.83
----------------
-Merck Ltd4.83
----------------
-MRF3.48
----------------
-3M India2.56
----------------
-Bosch-0.3
----------------
-Abbott India-0.46
----------------
-Oracle Fin-0.52
----------------
-Bajaj Finserv-0.64
----------------
-Lakshmi Machine-0.7
----------------
-GSK Cons Health-0.84
----------------
-Honeywell Auto-1.08
----------------
-Sanofi India-1.21
----------------
-Tasty Bite Eat-1.23
----------------
-WABCO India-1.33
----------------
-Nestle India-1.57
----------------
-Eicher Motors-1.6
----------------
-HEG Ltd-1.61
----------------
-Bharat Rasayan-2.0
----------------
-TTK Prestige-2.15
----------------
-Schaeffler India-2.57
----------------
-ICRA-2.84
----------------
-Bosch0.3
----------------
-Abbott India0.46
----------------
-MRF0.48
----------------
-Oracle Fin0.52
----------------
-Bajaj Finserv0.64
----------------
-Lakshmi Machine0.7
----------------
-GSK Cons Health0.84
----------------
-Honeywell Auto1.08
----------------
-Sanofi India1.21
----------------
-Tasty Bite Eat1.23
----------------
-WABCO India1.33
----------------
-3M India1.56
----------------
-Nestle India1.57
----------------
-Eicher Motors1.6
----------------
-HEG Ltd1.61
----------------
-Bharat Rasayan2.0
----------------
-TTK Prestige2.15
----------------
-Schaeffler India2.57
----------------
-ICRA2.84
----------------
-Merck Ltd4.83
----------------
-Merck Ltd4.83
----------------
-ICRA2.84
----------------
-Schaeffler India2.57
----------------
-TTK Prestige2.15
----------------
-Bharat Rasayan2.0
----------------
-HEG Ltd1.61
----------------
-Eicher Motors1.6
----------------
-Nestle India1.57
----------------
-3M India1.56
----------------
-WABCO India1.33
----------------
-Tasty Bite Eat1.23
----------------
-Sanofi India1.21
----------------
-Honeywell Auto1.08
----------------
-GSK Cons Health0.84
----------------
-Lakshmi Machine0.7
----------------
-Bajaj Finserv0.64
----------------
-Oracle Fin0.52
----------------
-MRF0.48
----------------
-Abbott India0.46
----------------
-Bosch0.3
----------------
-Eicher Motors-1.6
----------------
-Honeywell Auto-1.08
----------------
-Sanofi India0.21
----------------
-Tasty Bite Eat0.23
----------------
-WABCO India0.33
----------------
-Bosch0.34
----------------
-Abbott India1.46
----------------
-MRF1.48
----------------
-Oracle Fin1.52
----------------
-3M India1.56
----------------
-Nestle India1.57
----------------
-Schaeffler India1.57
----------------
-HEG Ltd1.61
----------------
-GSK Cons Health1.84
----------------
-Bharat Rasayan2.0
----------------
-TTK Prestige3.15
----------------
-Bajaj Finserv3.64
----------------
-Merck Ltd3.83
----------------
-Lakshmi Machine4.7
----------------
-ICRA5.84
----------------
-ICRA5.84
----------------
-Lakshmi Machine4.7
----------------
-Merck Ltd3.83
----------------
-Bajaj Finserv3.64
----------------
-TTK Prestige3.15
----------------
-Bharat Rasayan2.0
----------------
-GSK Cons Health1.84
----------------
-HEG Ltd1.61
----------------
-Schaeffler India1.57
----------------
-Nestle India1.57
----------------
-3M India1.56
----------------
-Oracle Fin1.52
----------------
-MRF1.48
----------------
-Abbott India1.46
----------------
-Bosch0.34
----------------
-WABCO India0.33
----------------
-Tasty Bite Eat0.23
----------------
-Sanofi India0.21
----------------
-Honeywell Auto-1.08
----------------
-Eicher Motors-1.6
----------------
+StockData@58ceff1
+StockData@7c30a502
+StockData@49e4cb85
+StockData@2133c8f8
+StockData@43a25848
+StockData@3ac3fd8b
+StockData@5594a1b5
+StockData@6a5fc7f7
+StockData@3b6eb2ec
+StockData@1e643faf
+StockData@6e8dacdf
+StockData@7a79be86
+StockData@34ce8af7
+StockData@b684286
+StockData@880ec60
+StockData@3f3afe78
+StockData@7f63425a
+StockData@36d64342
+StockData@39ba5a14
+StockData@511baa65
+StockData@340f438e
+StockData@30c7da1e
+StockData@5b464ce8
+StockData@57829d67
+StockData@19dfb72a
+StockData@17c68925
+StockData@7e0ea639
+StockData@3d24753a
+StockData@59a6e353
+StockData@7a0ac6e3
+StockData@71be98f5
+StockData@6fadae5d
+StockData@17f6480
+StockData@2d6e8792
+StockData@2812cbfa
+StockData@2acf57e3
+StockData@506e6d5e
+StockData@96532d6
+StockData@3796751b
+StockData@67b64c45
+StockData@4411d970
+StockData@6442b0a6
+StockData@60f82f98
+StockData@35f983a6
+StockData@7f690630
+StockData@edf4efb
+StockData@2f7a2457
+StockData@566776ad
+StockData@6108b2d7
+StockData@1554909b
+StockData@6bf256fa
+StockData@6cd8737
+StockData@22f71333
+StockData@13969fbe
+StockData@6aaa5eb0
+StockData@3498ed
+StockData@1a407d53
+StockData@3d8c7aca
+StockData@5ebec15
+StockData@21bcffb5
 ----------------------------------------
