@@ -44,10 +44,10 @@ class Solution {
 				count++;
 			}
 			for (StockData s1 : minpq) {
-				System.out.println(s1);
+				System.out.println(s1 + "minpq");
 			}
 			for (StockData s2 : maxpq) {
-				System.out.println(s2);
+				System.out.println(s2 + "maxpq");
 			}
 
 			p++;
