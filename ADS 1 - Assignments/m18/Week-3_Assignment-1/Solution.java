@@ -36,6 +36,7 @@ class Solution {
 			int count = 0;
 			MinPQ<StockData> minpq = new MinPQ<>();
 			MaxPQ<StockData> maxpq = new MaxPQ<>();
+			System.out.println("minpq" + "maxpq");
 			while (count < n) {
 				String[] tokens = scan.nextLine().split(",");
 				StockData stockobj = new StockData(tokens[0], Double.parseDouble(tokens[1]));
