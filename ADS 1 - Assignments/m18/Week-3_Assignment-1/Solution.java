@@ -1,36 +1,23 @@
 import java.util.*;
 class StockData implements Comparable<StockData> {
 	private String sname;
-	private float schange;
-	StockData(String name, float change) {
+	private double schange;
+	StockData(String name, double change) {
 		this.sname = name;
 		this.schange = change;
 	}
 	public String getsname() {
 		return this.sname;
 	}
-	public float getschange() {
+	public double getschange() {
 		return this.schange;
 	}
-	public int compareTo(StockData other) {
-		if (this.schange > other.schange) {
-			return 1;
-		}
-		if (this.schange < other.schange) {
-			return -1;
-		}
-		if (this.sname.compareTo(other.sname) > 0) {
-			return 1;
-		}
-		if (this.sname.compareTo(other.sname) < 0) {
-			return -1;
-		}
+	public int compareTo(StockData that) {
+		if (this.schange < that.schange) return -1;
+		if (this.schange > that.schange) return 1;
+		if (this.sname.compareTo(that.sname) > 0) return 1;
+		if (this.sname.compareTo(that.sname) < 0) return -1;
 		return 0;
-	}
-	public String toString() {
-		String str = "";
-		str = str + this.sname + " " + this.schange;
-		return str;
 	}
 }
 class Solution {
@@ -41,27 +28,37 @@ class Solution {
 		BinarySearchST<String, Float> best = new  BinarySearchST<>();
 		BinarySearchST<String, Float> worst = new BinarySearchST<>();
 		while (p < 6) {
-			int count = 0;
+			int count = n;
 			MinPQ<StockData> minpq = new MinPQ<>();
 			MaxPQ<StockData> maxpq = new MaxPQ<>();
-			while (count < n) {
+			while (count > 0) {
 				String[] tokens = scan.nextLine().split(",");
-				StockData stockobj = new StockData(tokens[0], Float.parseFloat(tokens[1]));
+				StockData stockobj = new StockData(tokens[0], Double.parseDouble(tokens[1]));
 				minpq.insert(stockobj);
 				maxpq.insert(stockobj);
-				count++;
+				count--;
 			}
 
 			for (int i = 0; i < 5; i++) {
-				StockData maxbest = maxpq.delMax();
-				System.out.println(maxbest);
-				best.put(maxbest.getsname(), maxbest.getschange());
+				StockData mbest = maxpq.delMax();
+				// if(best.contains(mbest.getsname())) {
+				// 	best.put(mbest.getsname(), mbest.get(mbest.getsname()) + 1);
+				// } else {
+				// 	best.put(mbest.getsname(), 1);
+				// }
+				System.out.println(mbest.getsname() + " " + mbest.getschange());
 			}
+			System.out.println();
 			for (int j = 0; j < 5; j++) {
-				StockData minworst = minpq.delMin();
-				System.out.println(minworst);
-				worst.put(minworst.getsname(), minworst.getschange());
+				StockData mworst = minpq.delMin();
+				// if(worst.contains(mworst.getsname())) {
+				// 	worst.put(mworst.getsname(), mworst.get(mworst.getsname()) + 1);
+				// } else {
+				// 	worst.put(mworst.getsname(), 1);
+				// }
+				System.out.println(mworst.getsname() + " " + mworst.getschange());
 			}
+			System.out.println();
 			p++;
 		}
 
