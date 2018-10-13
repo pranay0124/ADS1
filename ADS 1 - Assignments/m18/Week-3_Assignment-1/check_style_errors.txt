@@ -17,6 +17,6 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:32:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:32:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:36:28: '6' is a magic number. [MagicNumber]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:42: Line is longer than 80 characters (found 107). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m18\Week-3_Assignment-1\Solution.java:43: Line is longer than 80 characters (found 107). [LineLength]
 Audit done.
 Checkstyle ends with 19 errors.
