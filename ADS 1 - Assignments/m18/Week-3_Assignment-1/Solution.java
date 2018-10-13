@@ -32,7 +32,7 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
 		int p = 0;
-		while (p > 6) {
+		while (p < 6) {
 			int count = 0;
 			MinPQ<StockData> minpq = new MinPQ<>();
 			MaxPQ<StockData> maxpq = new MaxPQ<>();
