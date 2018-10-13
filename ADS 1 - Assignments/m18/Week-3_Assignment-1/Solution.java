@@ -27,12 +27,19 @@ class StockData implements Comparable<StockData> {
 		}
 		return 0;
 	}
+	public String toString() {
+		String str = "";
+		str = str + this.sname + " " + this.schange;
+		return str;
+	}
 }
 class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
 		int p = 0;
+		BinarySearchST<String, Float> best = new  BinarySearchST<>();
+		BinarySearchST<String, Float> worst = new BinarySearchST<>();
 		while (p < 6) {
 			int count = 0;
 			MinPQ<StockData> minpq = new MinPQ<>();
@@ -44,14 +51,13 @@ class Solution {
 				maxpq.insert(stockobj);
 				count++;
 			}
-			BinarySearchST<String, Float> best = new  BinarySearchST<>();
-			BinarySearchST<String, Float> worst = new BinarySearchST<>();
+
 			for (int i = 0; i < 5; i++) {
 				StockData maxbest = maxpq.delMax();
 				System.out.println(maxbest);
 				best.put(maxbest.getsname(), maxbest.getschange());
 			}
-			for(int j = 0; j < 5; j++) {
+			for (int j = 0; j < 5; j++) {
 				StockData minworst = minpq.delMin();
 				System.out.println(minworst);
 				worst.put(minworst.getsname(), minworst.getschange());
