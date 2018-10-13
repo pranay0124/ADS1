@@ -780,7 +780,7 @@ Exception in thread "main" java.lang.NoClassDefFoundError: Queue$Node
 	at Queue.enqueue(Solution.java:1137)
 	at BinarySearchST.keys(Solution.java:447)
 	at BinarySearchST.keys(Solution.java:426)
-	at Solution.main(Solution.java:98)
+	at Solution.main(Solution.java:136)
 Caused by: java.lang.ClassNotFoundException: Queue$Node
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)

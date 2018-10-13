@@ -6,19 +6,48 @@ import java.util.*;
  * Class for stock data.
  */
 class StockData implements Comparable<StockData> {
+	/**
+	 * { variable for stock name }.
+	 */
 	private String sname;
+	/**
+	 * { variable for stock percentage change }.
+	 */
 	private double schange;
-	StockData(String name, double change) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      name    The name
+	 * @param      change  The change
+	 */
+	StockData(final String name, final double change) {
 		this.sname = name;
 		this.schange = change;
 	}
+	/**
+	 * { gets the name }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public String getsname() {
 		return this.sname;
 	}
+	/**
+	 * { gets the change }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public double getschange() {
 		return this.schange;
 	}
-	public int compareTo(StockData that) {
+	/**
+	 * { function_description }
+	 *
+	 * @param      that  The that
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public int compareTo(final StockData that) {
 		if (this.schange < that.schange) return -1;
 		if (this.schange > that.schange) return 1;
 		if (this.sname.compareTo(that.sname) > 0) return 1;
@@ -29,8 +58,17 @@ class StockData implements Comparable<StockData> {
 /**
  * Class for solution.
  */
-class Solution {
-	public static void main(String[] args) {
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() { }
+	/**
+	 * Main Function
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
 		int p = 0;
