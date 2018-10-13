@@ -88,7 +88,8 @@ final class Solution {
 			MaxPQ<StockData> maxpq = new MaxPQ<>();
 			while (count > 0) {
 				String[] tokens = scan.nextLine().split(",");
-				StockData stockobj = new StockData(tokens[0], Double.parseDouble(tokens[1]));
+				StockData stockobj = new StockData(tokens[0],
+				                        Double.parseDouble(tokens[1]));
 				minpq.insert(stockobj);
 				maxpq.insert(stockobj);
 				count--;
@@ -97,21 +98,25 @@ final class Solution {
 			for (int i = 0; i < 5; i++) {
 				StockData mbest = maxpq.delMax();
 				if (best.contains(mbest.getsname())) {
-					best.put(mbest.getsname(), best.get(mbest.getsname()) + 1);
+					best.put(mbest.getsname(), best.get(
+						mbest.getsname()) + 1);
 				} else {
 					best.put(mbest.getsname(), 1);
 				}
-				System.out.println(mbest.getsname() + " " + mbest.getschange());
+				System.out.println(mbest.getsname() + " "
+					+ mbest.getschange());
 			}
 			System.out.println();
 			for (int j = 0; j < 5; j++) {
 				StockData mworst = minpq.delMin();
 				if (worst.contains(mworst.getsname())) {
-					worst.put(mworst.getsname(), worst.get(mworst.getsname()) + 1);
+					worst.put(mworst.getsname(), worst.get(
+						mworst.getsname()) + 1);
 				} else {
 					worst.put(mworst.getsname(), 1);
 				}
-				System.out.println(mworst.getsname() + " " + mworst.getschange());
+				System.out.println(mworst.getsname() + " "
+					+ mworst.getschange());
 			}
 			System.out.println();
 			p++;
