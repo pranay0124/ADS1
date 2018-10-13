@@ -25,8 +25,8 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
 		int p = 0;
-		BinarySearchST<String, Float> best = new  BinarySearchST<>();
-		BinarySearchST<String, Float> worst = new BinarySearchST<>();
+		BinarySearchST<String, Integer> best = new  BinarySearchST<>();
+		BinarySearchST<String, Integer> worst = new BinarySearchST<>();
 		while (p < 6) {
 			int count = n;
 			MinPQ<StockData> minpq = new MinPQ<>();
@@ -41,7 +41,7 @@ class Solution {
 
 			for (int i = 0; i < 5; i++) {
 				StockData mbest = maxpq.delMax();
-				// if(best.contains(mbest.getsname())) {
+				// if (best.contains(mbest.getsname())) {
 				// 	best.put(mbest.getsname(), mbest.get(mbest.getsname()) + 1);
 				// } else {
 				// 	best.put(mbest.getsname(), 1);
@@ -51,7 +51,7 @@ class Solution {
 			System.out.println();
 			for (int j = 0; j < 5; j++) {
 				StockData mworst = minpq.delMin();
-				// if(worst.contains(mworst.getsname())) {
+				// if (worst.contains(mworst.getsname())) {
 				// 	worst.put(mworst.getsname(), mworst.get(mworst.getsname()) + 1);
 				// } else {
 				// 	worst.put(mworst.getsname(), 1);
@@ -61,6 +61,45 @@ class Solution {
 			System.out.println();
 			p++;
 		}
+		// int n1 = Integer.parseInt(scan.nextLine());
+		// while (n1 > 0) {
+		// 	String[] tokens = scan.nextLine().split(",");
+		// 	switch (tokens[0]) {
+		// 	case "get" :
+		// 		if (tokens[1].equals("maxST")) {
+		// 			if (maxpq.contains(tokens[2])) {
+		// 				System.out.println(maxpq.get(tokens[2]));
+		// 			} else {
+		// 				System.out.println("0");
+		// 			}
 
+		// 		} else {
+		// 			if (minpq.contains(tokens[2])) {
+		// 				System.out.println(minpq.get(tokens[2]));
+		// 			} else {
+		// 				System.out.println("0");
+		// 			}
+		// 		}
+
+		// 		break;
+		// 	case "intersection" :
+		// 		int maxpqSize = maxpq.size();
+		// 		int minpqSize = minpq.size();
+		// 		if (minpqSize > maxpqSize) {
+		// 			for (String each : minpq.keys()) {
+		// 				if (maxpq.contains(each)) {
+		// 					System.out.println(each);
+		// 				}
+		// 			}
+		// 		} else {
+		// 			for (String each : maxpq.keys()) {
+		// 				if (minpq.contains(each)) {
+		// 					System.out.println(each);
+		// 				}
+		// 			}
+		// 		}
+		// 		break;
+		// 	}
+		// }
 	}
 }
