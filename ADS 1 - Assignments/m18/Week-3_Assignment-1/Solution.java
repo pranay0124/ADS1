@@ -48,10 +48,18 @@ class StockData implements Comparable<StockData> {
 	 * @return     { description_of_the_return_value }
 	 */
 	public int compareTo(final StockData that) {
-		if (this.schange < that.schange) return -1;
-		if (this.schange > that.schange) return 1;
-		if (this.sname.compareTo(that.sname) > 0) return 1;
-		if (this.sname.compareTo(that.sname) < 0) return -1;
+		if (this.schange < that.schange) {
+			return -1;
+		}
+		if (this.schange > that.schange) {
+			return 1;
+		}
+		if (this.sname.compareTo(that.sname) > 0) {
+			return 1;
+		}
+		if (this.sname.compareTo(that.sname) < 0) {
+			return -1;
+		}
 		return 0;
 	}
 }
