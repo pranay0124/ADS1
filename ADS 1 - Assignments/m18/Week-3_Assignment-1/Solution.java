@@ -1,4 +1,10 @@
+/**
+ * @author : Pranay Kumar Y.
+ */
 import java.util.*;
+/**
+ * Class for stock data.
+ */
 class StockData implements Comparable<StockData> {
 	private String sname;
 	private double schange;
@@ -20,6 +26,9 @@ class StockData implements Comparable<StockData> {
 		return 0;
 	}
 }
+/**
+ * Class for solution.
+ */
 class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
