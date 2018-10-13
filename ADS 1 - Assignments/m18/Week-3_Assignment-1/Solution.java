@@ -19,6 +19,12 @@ class StockData implements Comparable<StockData> {
 		if (this.stockchange < other.stockchange) {
 			return -1;
 		}
+		if (this.stockname.compareTo(other.stockname) > 0) {
+			return 1;
+		}
+		if (this.stockname.compareTo(other.stockname) < 0) {
+			return -1;
+		}
 		return 0;
 	}
 	public String toString() {
