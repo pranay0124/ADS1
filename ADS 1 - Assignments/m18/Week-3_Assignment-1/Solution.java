@@ -31,7 +31,7 @@ class Stock implements Comparable<Stock> {
 class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int n = scan.nextInt();
+		int n = Integer.parseInt(scan.nextLine());
 		int p = 0;
 		while (p < 6) {
 			int count = 0;
