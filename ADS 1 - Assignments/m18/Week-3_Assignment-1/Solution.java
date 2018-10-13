@@ -39,17 +39,18 @@ class Solution {
 			MaxPQ<StockData> maxpq = new MaxPQ<>();
 			while (count < n) {
 				String[] tokens = scan.nextLine().split(",");
-				System.out.println(Arrays.toString(tokens));
 				StockData stockobj = new StockData(tokens[0], Float.parseFloat(tokens[1]));
 				minpq.insert(stockobj);
 				maxpq.insert(stockobj);
 				count++;
 			}
 			for (StockData s1 : minpq) {
-				System.out.println(s1 + "minpq");
+				System.out.println(s1);
+				System.out.println("---------------");
 			}
 			for (StockData s2 : maxpq) {
-				System.out.println(s2 + "maxpq");
+				System.out.println(s2);
+				System.out.println("---------------");
 			}
 
 			p++;
