@@ -109,6 +109,7 @@ class Solution {
 				}
 				break;
 			}
+			n1--;
 		}
 	}
 }
