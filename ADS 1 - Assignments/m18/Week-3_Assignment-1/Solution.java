@@ -1,8 +1,8 @@
 import java.util.*;
-class StockData implements Comparable<StockData> {
+class Stock implements Comparable<Stock> {
 	private String stockname;
 	private float stockchange;
-	StockData(String name, float change) {
+	Stock(String name, float change) {
 		this.stockname = name;
 		this.stockchange = change;
 	}
@@ -12,7 +12,7 @@ class StockData implements Comparable<StockData> {
 	public float getstockchange() {
 		return this.stockchange;
 	}
-	public int compareTo(StockData other) {
+	public int compareTo(Stock other) {
 		if (this.stockchange > other.stockchange) {
 			return 1;
 		}
@@ -26,11 +26,6 @@ class StockData implements Comparable<StockData> {
 			return -1;
 		}
 		return 0;
-	}
-	public String toString() {
-		String str = "";
-		str = str + this.stockname + this.stockchange;
-		return str;
 	}
 }
 class Solution {

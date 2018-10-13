@@ -73,7 +73,7 @@ Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -150,7 +150,7 @@ Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -232,7 +232,7 @@ WABCO India 0.33
 3
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -314,7 +314,7 @@ Chola Inv Fin 1.47
 0
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -411,5 +411,5 @@ TTK Prestige
 Tasty Bite Eat
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
