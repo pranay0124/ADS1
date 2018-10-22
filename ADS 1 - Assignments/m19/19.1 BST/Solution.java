@@ -43,7 +43,7 @@ class BookList<Key extends Comparable<Key>, Value> {
      *
      * @param      name  The name
      */
-    public void setName(final String name) {
+    public void setName(String name) {
         this.name = name;
     }
     /**
@@ -59,7 +59,7 @@ class BookList<Key extends Comparable<Key>, Value> {
      *
      * @param      author  The author
      */
-    public void setAuthor(final String author) {
+    public void setAuthor(String author) {
         this.author = author;
     }
     /**
@@ -75,7 +75,7 @@ class BookList<Key extends Comparable<Key>, Value> {
      *
      * @param      cost  The cost
      */
-    public void setCost(final float cost) {
+    public void setCost(float cost) {
         this.cost = cost;
     }
     /**

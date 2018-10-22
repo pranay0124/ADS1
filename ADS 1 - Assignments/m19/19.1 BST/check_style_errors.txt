@@ -1,7 +1,10 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:46:38: 'name' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:62:40: 'author' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:78:37: 'cost' hides a field. [HiddenField]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:46:25: Parameter name should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:46:32: 'name' hides a field. [HiddenField]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:62:27: Parameter author should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:62:34: 'author' hides a field. [HiddenField]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:78:25: Parameter cost should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:78:31: 'cost' hides a field. [HiddenField]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:89:26: Parameter that should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:158:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:183:21: Parameter head should be final. [FinalParameters]
@@ -11,4 +14,4 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:496: Line is longer than 80 characters (found 91). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:500: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 14 errors.
