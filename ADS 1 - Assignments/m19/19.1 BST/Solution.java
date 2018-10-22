@@ -220,20 +220,20 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * @return     { description_of_the_return_value }
      * Time complexity : O(N)
      */
-    private Value get(final Node root, final BookList key) {
+    private Value get(final Node root1, final BookList key) {
         if (key == null) {
             System.out.println("key is null");
         }
-        if (root == null) {
+        if (root1 == null) {
             return null;
         }
-        int compare = key.compareTo(root.key);
+        int compare = key.compareTo(root1.key);
         if (compare < 0) {
-            return get(root.left, key);
+            return get(root1.left, key);
         } else if (compare > 0) {
-            return get(root.right, key);
+            return get(root1.right, key);
         } else {
-            return root.val;
+            return root1.val;
         }
     }
     /**
