@@ -1,22 +1,13 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:8:44: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:46:38: 'name' hides a field. [HiddenField]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:62:40: 'author' hides a field. [HiddenField]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:78:37: 'cost' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:126:52: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:158:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:183:21: Parameter head should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:188:36: Inner assignments should be avoided. [InnerAssignment]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:223:34: 'root' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:235:15: 'else' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:235:15: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:424: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:426: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:428: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:430:37: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:430:38: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:430:39: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:430:40: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:437: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:486: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:496: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:500: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 10 errors.
