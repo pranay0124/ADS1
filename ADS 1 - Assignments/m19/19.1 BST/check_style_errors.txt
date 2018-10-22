@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:158:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:183:21: Parameter head should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:188:36: Inner assignments should be avoided. [InnerAssignment]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:223:34: 'root' hides a field. [HiddenField]
@@ -7,4 +6,4 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:496: Line is longer than 80 characters (found 91). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:500: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 6 errors.

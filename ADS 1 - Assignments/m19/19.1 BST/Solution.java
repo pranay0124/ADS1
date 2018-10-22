@@ -155,7 +155,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         /**
          * Constructs the object.
          */
-        public Node() { }
+        Node() { }
     }
     /**
      * { adds the element into the tree }.
