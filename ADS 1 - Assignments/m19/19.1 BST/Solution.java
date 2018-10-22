@@ -9,15 +9,15 @@ class BookList<Key extends Comparable<Key>, Value> {
     /**
      * Book name.
      */
-    private String name;
+    String name;
     /**
      * Author name.
      */
-    private String author;
+    String author;
     /**
      * Cost of the book.
      */
-    private Float cost;
+    Float cost;
     /**
      * Constructs the object.
      *

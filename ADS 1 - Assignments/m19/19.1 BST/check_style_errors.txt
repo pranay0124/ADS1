@@ -1,4 +1,7 @@
 Starting audit...
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:12:12: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:16:12: Variable 'author' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:20:11: Variable 'cost' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:46:25: Parameter name should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:46:32: 'name' hides a field. [HiddenField]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:62:27: Parameter author should be final. [FinalParameters]
@@ -14,4 +17,4 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:496: Line is longer than 80 characters (found 91). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:500: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 17 errors.
