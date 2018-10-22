@@ -1,7 +1,5 @@
 Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:183:21: Parameter head should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:188:36: Inner assignments should be avoided. [InnerAssignment]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:217:8: Unused @param tag for 'root'. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:223:34: Expected @param tag for 'root1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.

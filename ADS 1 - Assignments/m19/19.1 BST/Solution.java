@@ -214,7 +214,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     /**
      * { gets the element }.
      *
-     * @param      root  The root
+     * @param      root1  The root
      * @param      key   The key
      *
      * @return     { description_of_the_return_value }
