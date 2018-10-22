@@ -86,7 +86,7 @@ class BookList<Key extends Comparable<Key>, Value> {
      * @return     { description_of_the_return_value }
      * Time complexity : O(1)
      */
-    public int compareTo(final BookList that) {
+    public int compareTo(BookList that) {
         if (this.getName().compareTo(that.getName()) > 0) {
             return 1;
         } else if (this.getName().compareTo(that.getName()) < 0) {
