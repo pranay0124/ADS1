@@ -482,8 +482,8 @@ public final class Solution {
                         Integer.parseInt(tokens[2 + 2]));
                 break;
             case "get":
-                System.out.println(bst.get(new BookList(tokens[1],
-                                                        tokens[2], Float.parseFloat(tokens[2 + 1]))));
+                System.out.println(bst.get(new BookList(tokens[1], tokens[2],
+                                       Float.parseFloat(tokens[2 + 1]))));
                 break;
             case "min":
                 System.out.println(bst.min());
@@ -492,12 +492,12 @@ public final class Solution {
                 System.out.println(bst.max());
                 break;
             case "floor":
-                System.out.println(bst.floor(new BookList(tokens[1],
-                                             tokens[2], Float.parseFloat(tokens[2 + 1]))));
+                System.out.println(bst.floor(new BookList(tokens[1], tokens[2],
+                                        Float.parseFloat(tokens[2 + 1]))));
                 break;
             case "ceiling":
-                System.out.println(bst.ceiling(new BookList(tokens[1],
-                                               tokens[2], Float.parseFloat(tokens[2 + 1]))));
+                System.out.println(bst.ceiling(new BookList(tokens[1], tokens[2],
+                                        Float.parseFloat(tokens[2 + 1]))));
                 break;
             case "select":
                 System.out.println(bst.select(Integer.parseInt(
