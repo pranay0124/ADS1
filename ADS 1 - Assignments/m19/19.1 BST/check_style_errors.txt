@@ -1,7 +1,10 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:46:38: 'name' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:62:40: 'author' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:78:37: 'cost' hides a field. [HiddenField]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:44:8: Unused @param tag for 'name'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:46:38: Expected @param tag for 'name1'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:60:8: Unused @param tag for 'author'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:62:40: Expected @param tag for 'author1'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:76:8: Unused @param tag for 'cost'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:78:37: Expected @param tag for 'cost1'. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:158:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:183:21: Parameter head should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:188:36: Inner assignments should be avoided. [InnerAssignment]
@@ -10,4 +13,4 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:496: Line is longer than 80 characters (found 91). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m19\19.1 BST\Solution.java:500: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 13 errors.

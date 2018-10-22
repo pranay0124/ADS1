@@ -43,8 +43,8 @@ class BookList<Key extends Comparable<Key>, Value> {
      *
      * @param      name  The name
      */
-    public void setName(final String name) {
-        this.name = name;
+    public void setName(final String name1) {
+        this.name = name1;
     }
     /**
      * Gets the author.
@@ -59,8 +59,8 @@ class BookList<Key extends Comparable<Key>, Value> {
      *
      * @param      author  The author
      */
-    public void setAuthor(final String author) {
-        this.author = author;
+    public void setAuthor(final String author1) {
+        this.author = author1;
     }
     /**
      * Gets the cost.
@@ -75,8 +75,8 @@ class BookList<Key extends Comparable<Key>, Value> {
      *
      * @param      cost  The cost
      */
-    public void setCost(final float cost) {
-        this.cost = cost;
+    public void setCost(final float cost1) {
+        this.cost = cost1;
     }
     /**
      * Compare to function.
