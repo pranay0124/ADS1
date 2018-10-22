@@ -180,12 +180,13 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
      * @return     { description_of_the_return_value }
      * Time complexity : O(N)
      */
-    public Node put(Node head, final BookList key, final Value val) {
+    public Node put(final Node head1, final BookList key, final Value val) {
+        Node head = head1;
         if (head == null) {
             Node node = new Node();
             node.key = key;
             node.val = val;
-            node.left = node.right = null;
+            // node.left = node.right = null;
             head = node;
             size++;
         }
