@@ -173,7 +173,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
     /**
      * { adds the element into the tree }.
      *
-     * @param      head  The head
+     * @param      head1  The head
      * @param      key   The key
      * @param      val   The value
      *
