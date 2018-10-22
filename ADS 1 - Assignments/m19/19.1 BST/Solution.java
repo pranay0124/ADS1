@@ -9,15 +9,15 @@ class BookList<Key extends Comparable<Key>, Value> {
     /**
      * Book name.
      */
-    String name;
+    private String name;
     /**
      * Author name.
      */
-    String author;
+    private String author;
     /**
      * Cost of the book.
      */
-    Float cost;
+    private Float cost;
     /**
      * Constructs the object.
      *
@@ -26,9 +26,9 @@ class BookList<Key extends Comparable<Key>, Value> {
      * @param      cost1    The cost
      */
     BookList(final String name1, final String author1, final Float cost1) {
-        this.name = name;
-        this.author = author;
-        this.cost = cost;
+        this.name = name1;
+        this.author = author1;
+        this.cost = cost1;
     }
     /**
      * Gets the name.
@@ -43,7 +43,7 @@ class BookList<Key extends Comparable<Key>, Value> {
      *
      * @param      name  The name
      */
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
     /**
@@ -59,7 +59,7 @@ class BookList<Key extends Comparable<Key>, Value> {
      *
      * @param      author  The author
      */
-    public void setAuthor(String author) {
+    public void setAuthor(final String author) {
         this.author = author;
     }
     /**
@@ -75,7 +75,7 @@ class BookList<Key extends Comparable<Key>, Value> {
      *
      * @param      cost  The cost
      */
-    public void setCost(float cost) {
+    public void setCost(final float cost) {
         this.cost = cost;
     }
     /**
@@ -86,7 +86,7 @@ class BookList<Key extends Comparable<Key>, Value> {
      * @return     { description_of_the_return_value }
      * Time complexity : O(1)
      */
-    public int compareTo(BookList that) {
+    public int compareTo(final BookList that) {
         if (this.getName().compareTo(that.getName()) > 0) {
             return 1;
         } else if (this.getName().compareTo(that.getName()) < 0) {
