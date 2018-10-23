@@ -1,0 +1,1 @@
+{"version": "1", "message": "ERROR: Hidden Testcases server unreachable.", "problem_id": "", "user_id": "pranay0124@msitprogram.net", "score": {"sample": {"0": {"execution_time": 0.8254783153533936, "passed": true}, "1": {"execution_time": 0.5016350746154785, "passed": true}, "2": {"execution_time": 0.539240837097168, "passed": true}}}, "check_style_score": "1/1"}
