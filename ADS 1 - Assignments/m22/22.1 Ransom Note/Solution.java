@@ -403,7 +403,8 @@ class SeparateChainingHashST<Key, Value> {
     //  * @param args the command-line arguments
     //  */
     // public static void main(String[] args) {
-    //     SeparateChainingHashST<String, Integer> st = new SeparateChainingHashST<String, Integer>();
+    //     SeparateChainingHashST<String, Integer> st =
+    //     new SeparateChainingHashST<String, Integer>();
     //     for (int i = 0; !StdIn.isEmpty(); i++) {
     //         String key = StdIn.readString();
     //         st.put(key, i);
@@ -465,7 +466,7 @@ class SequentialSearchST<Key, Value> {
      * Constructs the object.
      * Initializes an empty symbol table.
      */
-    public SequentialSearchST() {
+    SequentialSearchST() {
     }
 
     /**
@@ -627,8 +628,8 @@ final class Solution {
         int count = tokens1.length;
         // System.out.println(count + "before");
         for (int j = 0; j < tokens1.length; j++) {
-            if (inputHash.contains(tokens1[j]) &&
-                    inputHash.get(tokens1[j]) > 0) {
+            if (inputHash.contains(tokens1[j])
+                    && inputHash.get(tokens1[j]) > 0) {
                 inputHash.put(tokens1[j], inputHash.get(tokens1[j]) - 1);
                 count--;
             }

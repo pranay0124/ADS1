@@ -1,6 +1,2 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:406: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:468:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:630:48: '&&' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 3 errors.
