@@ -11,8 +11,8 @@ Expected Output:
 No
 Your Output: 
 5before
-0after
-Yes
+1after
+No
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -27,8 +27,8 @@ Expected Output:
 No
 Your Output: 
 100before
-0after
-Yes
+30after
+No
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
