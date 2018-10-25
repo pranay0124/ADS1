@@ -1,21 +1,40 @@
+/**
+ * @author : Pranay Kumar Y.
+ * Date : 25th October,2018.
+ */
 import java.util.Scanner;
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
-
+/**
+ * Queue class for list of items.
+ *
+ * @param      <Item>  The item
+ */
 class Queue<Item> implements Iterable<Item> {
-    private Node<Item> first;    // beginning of queue
-    private Node<Item> last;     // end of queue
-    private int n;               // number of elements on queue
-
-    // helper linked list class
+	/**
+	 * { variable for beginning of queue }.
+	 */
+    private Node<Item> first;
+    /**
+     * { variable for end of queue }.
+     */
+    private Node<Item> last;
+    /**
+     * { variable for number of elements on queue }.
+     */
+    private int n;
+    /**
+     * Class for node.
+     * helper linked list class.
+     *
+     * @param      <Item>  The item
+     */
     private static class Node<Item> {
         private Item item;
         private Node<Item> next;
     }
-
     /**
+     * Constructs the object.
      * Initializes an empty queue.
      */
     public Queue() {
@@ -23,11 +42,10 @@ class Queue<Item> implements Iterable<Item> {
         last  = null;
         n = 0;
     }
-
     /**
      * Returns true if this queue is empty.
      *
-     * @return {@code true} if this queue is empty; {@code false} otherwise
+     * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return first == null;
@@ -36,17 +54,16 @@ class Queue<Item> implements Iterable<Item> {
     /**
      * Returns the number of items in this queue.
      *
-     * @return the number of items in this queue
+     * @return     { int value }
      */
     public int size() {
         return n;
     }
 
     /**
-     * Returns the item least recently added to this queue.
+     * { Returns the item least recently added to this queue }.
      *
-     * @return the item least recently added to this queue
-     * @throws NoSuchElementException if this queue is empty
+     * @return     { the item least recently added to this queue }
      */
     public Item peek() {
         if (isEmpty()) throw new NoSuchElementException("Queue underflow");
@@ -54,11 +71,11 @@ class Queue<Item> implements Iterable<Item> {
     }
 
     /**
-     * Adds the item to this queue.
+     * { Adds the item to this queue }.
      *
-     * @param  item the item to add
+     * @param      item  The item
      */
-    public void enqueue(Item item) {
+    public void enqueue(final Item item) {
         Node<Item> oldlast = last;
         last = new Node<Item>();
         last.item = item;
@@ -69,9 +86,10 @@ class Queue<Item> implements Iterable<Item> {
     }
 
     /**
-     * Removes and returns the item on this queue that was least recently added.
+     * { Removes and returns the item on this queue 
+     *   that was least recently added }.
      *
-     * @return the item on this queue that was least recently added
+     * @return     { the item on this queue that was least recently added }
      * @throws NoSuchElementException if this queue is empty
      */
     public Item dequeue() {
@@ -98,25 +116,29 @@ class Queue<Item> implements Iterable<Item> {
     }
 
     /**
-     * Returns an iterator that iterates over the items in this queue in FIFO order.
+     * { Returns an iterator that iterates over the 
+     *   items in this queue in FIFO order }.
      *
-     * @return an iterator that iterates over the items in this queue in FIFO order
+     * @return     { an iterator that iterates over the items
+     *               in this queue in FIFO order}
      */
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
     }
 
-    // an iterator, doesn't implement remove() since it's optional
+    /**
+     * Class for list iterator.
+     *
+     * @param      <Item>  The item
+     */
     private class ListIterator<Item> implements Iterator<Item> {
         private Node<Item> current;
 
         public ListIterator(Node<Item> first) {
             current = first;
         }
-
         public boolean hasNext()  { return current != null;                     }
         public void remove()      { throw new UnsupportedOperationException();  }
-
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
             Item item = current.item;
@@ -141,13 +163,30 @@ class Queue<Item> implements Iterable<Item> {
     //     StdOut.println("(" + queue.size() + " left on queue)");
     // }
 }
+
+/**
+ * Class for separate chaining hash st.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class SeparateChainingHashST<Key, Value> {
+	/**
+	 * { variable for capacity }.
+	 */
     private static final int INIT_CAPACITY = 4;
-
-    private int n;                                // number of key-value pairs
-    private int m;                                // hash table size
-    private SequentialSearchST<Key, Value>[] st;  // array of linked-list symbol tables
-
+    /**
+     * { variable for number of key-value pairs }.
+     */
+    private int n;
+    /**
+     * { variable for hash table size }.
+     */
+    private int m;
+    /**
+     * { array of linked-list symbol tables }.
+     */
+    private SequentialSearchST<Key, Value>[] st;
 
     /**
      * Initializes an empty symbol table.
@@ -157,19 +196,24 @@ class SeparateChainingHashST<Key, Value> {
     }
 
     /**
-     * Initializes an empty symbol table with {@code m} chains.
-     * @param m the initial number of chains
+     * Constructs the object.
+     *
+     * @param      m     { parameter_description }
      */
-    public SeparateChainingHashST(int m) {
+    public SeparateChainingHashST(final int m) {
         this.m = m;
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
         for (int i = 0; i < m; i++)
             st[i] = new SequentialSearchST<Key, Value>();
     }
 
-    // resize the hash table to have the given number of chains,
-    // rehashing all of the keys
-    private void resize(int chains) {
+    /**
+     * { resize the hash table to have the given number
+     *   of chains,rehashing all of the keys}.
+     *
+     * @param      chains  The chains
+     */
+    private void resize(final int chains) {
         SeparateChainingHashST<Key, Value> temp = new SeparateChainingHashST<Key, Value>(chains);
         for (int i = 0; i < m; i++) {
             for (Key key : st[i].keys()) {
@@ -181,8 +225,14 @@ class SeparateChainingHashST<Key, Value> {
         this.st = temp.st;
     }
 
-    // hash value between 0 and m-1
-    private int hash(Key key) {
+    /**
+     * { hash value between 0 and m-1 }.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private int hash(final Key key) {
         return (key.hashCode() & 0x7fffffff) % m;
     }
 
@@ -196,86 +246,83 @@ class SeparateChainingHashST<Key, Value> {
     }
 
     /**
-     * Returns true if this symbol table is empty.
+     * Determines if empty.
      *
-     * @return {@code true} if this symbol table is empty;
-     *         {@code false} otherwise
+     * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return size() == 0;
     }
 
     /**
-     * Returns true if this symbol table contains the specified key.
+     * { Returns true if this symbol table contains the specified key }.
      *
-     * @param  key the key
-     * @return {@code true} if this symbol table contains {@code key};
-     *         {@code false} otherwise
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         if (key == null) throw new IllegalArgumentException("argument to contains() is null");
         return get(key) != null;
     }
 
     /**
-     * Returns the value associated with the specified key in this symbol table.
+     * { Returns the value associated with the specified
+     *   key in this symbol table }.
      *
-     * @param  key the key
-     * @return the value associated with {@code key} in the symbol table;
-     *         {@code null} if no such value
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @param      key   The key
+     *
+     * @return     { the value associated with in the symbol table }
      */
-    public Value get(Key key) {
+    public Value get(final Key key) {
         if (key == null) throw new IllegalArgumentException("argument to get() is null");
         int i = hash(key);
         return st[i].get(key);
     }
 
     /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old
+     * { Inserts the specified key-value pair into the symbol table, overwriting the old
      * value with the new value if the symbol table already contains the specified key.
      * Deletes the specified key (and its associated value) from this symbol table
-     * if the specified value is {@code null}.
+     * if the specified value is }.
      *
-     * @param  key the key
-     * @param  val the value
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @param      key   The key
+     * @param      val   The value
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         if (key == null) throw new IllegalArgumentException("first argument to put() is null");
         if (val == null) {
             delete(key);
             return;
         }
-
         // double table size if average length of list >= 10
         if (n >= 10 * m) resize(2 * m);
-
         int i = hash(key);
         if (!st[i].contains(key)) n++;
         st[i].put(key, val);
     }
 
     /**
-     * Removes the specified key and its associated value from this symbol table
-     * (if the key is in this symbol table).
+     * { Removes the specified key and its associated value from this symbol table
+     *   (if the key is in this symbol table) }.
      *
-     * @param  key the key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
+     * @param      key   The key
      */
-    public void delete(Key key) {
+    public void delete(final Key key) {
         if (key == null) throw new IllegalArgumentException("argument to delete() is null");
 
         int i = hash(key);
         if (st[i].contains(key)) n--;
         st[i].delete(key);
-
         // halve table size if average length of list <= 2
         if (m > INIT_CAPACITY && n <= 2 * m) resize(m / 2);
     }
 
-    // return keys in symbol table as an Iterable
+    /**
+     * { return keys in symbol table as an Iterable }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
         for (int i = 0; i < m; i++) {
@@ -284,8 +331,6 @@ class SeparateChainingHashST<Key, Value> {
         }
         return queue;
     }
-
-
     // /**
     //  * Unit tests the {@code SeparateChainingHashST} data type.
     //  *
@@ -305,24 +350,53 @@ class SeparateChainingHashST<Key, Value> {
     // }
 
 }
+/**
+ * Class for sequential search st.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class SequentialSearchST<Key, Value> {
-    private int n;           // number of key-value pairs
-    private Node first;      // the linked list of key-value pairs
-
-    // a helper linked list data type
+	/**
+	 * { variable for number of key-value pairs }.
+	 */
+    private int n;
+    /**
+     * { the linked list of key-value pairs }.
+     */
+    private Node first;
+    /**
+     * Class for node.
+     * a helper linked list data type
+     */
     private class Node {
+    	/**
+    	 * { variable for key }.
+    	 */
         private Key key;
+        /**
+         * { variable for value }.
+         */
         private Value val;
+        /**
+         * { variable for node next }.
+         */
         private Node next;
-
-        public Node(Key key, Value val, Node next)  {
-            this.key  = key;
-            this.val  = val;
-            this.next = next;
+        /**
+         * Constructs the object.
+         *
+         * @param      key1   The key
+         * @param      val1   The value
+         * @param      next1  The next
+         */
+        public Node(final Key key1, final Value val1, final Node next1)  {
+            this.key  = key1;
+            this.val  = val1;
+            this.next = next1;
         }
     }
-
     /**
+     * Constructs the object.
      * Initializes an empty symbol table.
      */
     public SequentialSearchST() {
@@ -335,32 +409,34 @@ class SequentialSearchST<Key, Value> {
     public int size() {
         return n;
     }
-
     /**
-     * Is this symbol table empty?
-     * @return {@code true} if this symbol table is empty and {@code false} otherwise
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return size() == 0;
     }
 
     /**
-     * Does this symbol table contain the given key?
-     * @param key the key
-     * @return {@code true} if this symbol table contains {@code key} and
-     *     {@code false} otherwise
+     * { returns whether the key is present in the table or not }.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         return get(key) != null;
     }
 
     /**
-     * Returns the value associated with the given key.
-     * @param key the key
-     * @return the value associated with the given key if the key is in the symbol table
-     *     and {@code null} if the key is not in the symbol table
+     * { Returns the value associated with the given key. }.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
      */
-    public Value get(Key key) {
+    public Value get(final Key key) {
         for (Node x = first; x != null; x = x.next) {
             if (key.equals(x.key))
                 return x.val;
@@ -369,13 +445,14 @@ class SequentialSearchST<Key, Value> {
     }
 
     /**
-     * Inserts the key-value pair into the symbol table, overwriting the old value
-     * with the new value if the key is already in the symbol table.
-     * If the value is {@code null}, this effectively deletes the key from the symbol table.
-     * @param key the key
-     * @param val the value
+     * { Inserts the key-value pair into the symbol table, overwriting the old value
+     *   with the new value if the key is already in the symbol table.
+     *   If the value is null this effectively deletes the key from the symbol table }.
+     *
+     * @param      key   The key
+     * @param      val   The value
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         if (val == null) {
             delete(key);
             return;
@@ -392,17 +469,24 @@ class SequentialSearchST<Key, Value> {
     }
 
     /**
-     * Removes the key and associated value from the symbol table
-     * (if the key is in the symbol table).
-     * @param key the key
+     * { Removes the key and associated value from the symbol table
+     *   (if the key is in the symbol table) }.
+     *
+     * @param      key   The key
      */
-    public void delete(Key key) {
+    public void delete(final Key key) {
         first = delete(first, key);
     }
 
-    // delete key in linked list beginning at Node x
-    // warning: function call stack too large if table is large
-    private Node delete(Node x, Key key) {
+    /**
+     * { delete key in linked list beginning at Node x }.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node delete(final Node x, final Key key) {
         if (x == null) return null;
         if (key.equals(x.key)) {
             n--;
@@ -412,12 +496,12 @@ class SequentialSearchST<Key, Value> {
         return x;
     }
 
-
     /**
-     * Returns all keys in the symbol table as an {@code Iterable}.
-     * To iterate over all of the keys in the symbol table named {@code st},
-     * use the foreach notation: {@code for (Key key : st.keys())}.
-     * @return all keys in the symbol table as an {@code Iterable}
+     * { Returns all keys in the symbol table as an.
+     *   To iterate over all of the keys in the symbol table named,
+     *   use the foreach notation }.
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterable<Key> keys()  {
         Queue<Key> queue = new Queue<Key>();
@@ -425,8 +509,6 @@ class SequentialSearchST<Key, Value> {
             queue.enqueue(x.key);
         return queue;
     }
-
-
     // /**
     //  * Unit tests the {@code SequentialSearchST} data type.
     //  *
@@ -442,9 +524,20 @@ class SequentialSearchST<Key, Value> {
     //         StdOut.println(s + " " + st.get(s));
     // }
 }
-
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() { }
+	/**
+	 * { Main function }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String[] sizes = scan.nextLine().split(" ");
 		SeparateChainingHashST<String, Integer> inputHash = new SeparateChainingHashST<>(Integer.parseInt(sizes[0]));
