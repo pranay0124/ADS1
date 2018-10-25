@@ -162,7 +162,7 @@ class Queue<Item> implements Iterable<Item> {
      *              Best Case : O(1)
      *              Average Case : O(1)
      *              Worst Case : O(1)
-     *              
+     *
      * @return     { an iterator that iterates over the items
      *               in this queue in FIFO order}
      */
