@@ -51,6 +51,11 @@ class Queue<Item> implements Iterable<Item> {
     /**
      * Returns true if this queue is empty.
      *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *
      * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
@@ -59,7 +64,10 @@ class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns the number of items in this queue.
-     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      * @return     { int value }
      */
     public int size() {
@@ -68,7 +76,10 @@ class Queue<Item> implements Iterable<Item> {
 
     /**
      * { Returns the item least recently added to this queue }.
-     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      * @return     { the item least recently added to this queue }
      */
     public Item peek() {
@@ -80,7 +91,10 @@ class Queue<Item> implements Iterable<Item> {
 
     /**
      * { Adds the item to this queue }.
-     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      * @param      item  The item
      */
     public void enqueue(final Item item) {
@@ -99,6 +113,11 @@ class Queue<Item> implements Iterable<Item> {
     /**
      * { Removes and returns the item on this queue
      *   that was least recently added }.
+     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @return     { the item on this queue that was least recently added }
      * @throws NoSuchElementException if this queue is empty
@@ -119,6 +138,11 @@ class Queue<Item> implements Iterable<Item> {
     /**
      * Returns a string representation of this queue.
      *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *
      * @return the sequence of items in FIFO order, separated by spaces
      */
     public String toString() {
@@ -134,6 +158,11 @@ class Queue<Item> implements Iterable<Item> {
      * { Returns an iterator that iterates over the
      *   items in this queue in FIFO order }.
      *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *              
      * @return     { an iterator that iterates over the items
      *               in this queue in FIFO order}
      */
@@ -253,6 +282,11 @@ class SeparateChainingHashST<Key, Value> {
      * { resize the hash table to have the given number
      *   of chains,rehashing all of the keys}.
      *
+     * Complexity :
+     *              Best Case : O(N)
+     *              Average Case : O(N)
+     *              Worst Case : O(N)
+     *
      * @param      chains  The chains
      */
     private void resize(final int chains) {
@@ -271,6 +305,11 @@ class SeparateChainingHashST<Key, Value> {
     /**
      * { hash value between 0 and m-1 }.
      *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *
      * @param      key   The key
      *
      * @return     { description_of_the_return_value }
@@ -283,6 +322,11 @@ class SeparateChainingHashST<Key, Value> {
     /**
      * Returns the number of key-value pairs in this symbol table.
      *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *
      * @return the number of key-value pairs in this symbol table
      */
     public int size() {
@@ -292,6 +336,11 @@ class SeparateChainingHashST<Key, Value> {
     /**
      * Determines if empty.
      *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *
      * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
@@ -300,6 +349,11 @@ class SeparateChainingHashST<Key, Value> {
 
     /**
      * { Returns true if this symbol table contains the specified key }.
+     *
+     * Complexity :
+     *              Best Case : O(logN)
+     *              Average Case : O(logN)
+     *              Worst Case : O(logN)
      *
      * @param      key   The key
      *
@@ -316,6 +370,11 @@ class SeparateChainingHashST<Key, Value> {
     /**
      * { Returns the value associated with the specified
      *   key in this symbol table }.
+     *
+     *   Complexity :
+     *              Best Case : O(logN)
+     *              Average Case : O(logN)
+     *              Worst Case : O(logN)
      *
      * @param      key   The key
      *
@@ -336,6 +395,11 @@ class SeparateChainingHashST<Key, Value> {
      * already contains the specified key. Deletes the specified key
      * (and its associated value) from this symbol table
      * if the specified value is }.
+     *
+     * Complexity :
+     *              Best Case : O(logN)
+     *              Average Case : O(logN)
+     *              Worst Case : O(logN)
      *
      * @param      key   The key
      * @param      val   The value
@@ -365,6 +429,11 @@ class SeparateChainingHashST<Key, Value> {
      * { Removes the specified key and its associated value
      *   from this symbol table (if the key is in this symbol table) }.
      *
+     *   Complexity :
+     *              Best Case : O(logN)
+     *              Average Case : O(logN)
+     *              Worst Case : O(logN)
+     *
      * @param      key   The key
      */
     public void delete(final Key key) {
@@ -385,6 +454,11 @@ class SeparateChainingHashST<Key, Value> {
 
     /**
      * { return keys in symbol table as an Iterable }.
+     *
+     * Complexity :
+     *              Best Case : O(N^2)
+     *              Average Case : O(N^2)
+     *              Worst Case : O(N^2)
      *
      * @return     { description_of_the_return_value }
      */
@@ -471,6 +545,12 @@ class SequentialSearchST<Key, Value> {
 
     /**
      * Returns the number of key-value pairs in this symbol table.
+     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *
      * @return the number of key-value pairs in this symbol table
      */
     public int size() {
@@ -478,6 +558,11 @@ class SequentialSearchST<Key, Value> {
     }
     /**
      * Determines if empty.
+     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @return     True if empty, False otherwise.
      */
@@ -487,6 +572,11 @@ class SequentialSearchST<Key, Value> {
 
     /**
      * { returns whether the key is present in the table or not }.
+     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @param      key   The key
      *
@@ -498,6 +588,11 @@ class SequentialSearchST<Key, Value> {
 
     /**
      * { Returns the value associated with the given key. }.
+     *
+     * Complexity :
+     *              Best Case : O(N)
+     *              Average Case : O(N)
+     *              Worst Case : O(N)
      *
      * @param      key   The key
      *
@@ -518,6 +613,11 @@ class SequentialSearchST<Key, Value> {
      *   with the new value if the key is already in the symbol table.
      *   If the value is null this effectively deletes the key from
      *   the symbol table }.
+     *
+     *   Complexity :
+     *              Best Case : O(logN)
+     *              Average Case : O(logN)
+     *              Worst Case : O(logN)
      *
      * @param      key   The key
      * @param      val   The value
@@ -542,6 +642,11 @@ class SequentialSearchST<Key, Value> {
      * { Removes the key and associated value from the symbol table
      *   (if the key is in the symbol table) }.
      *
+     *   Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *
      * @param      key   The key
      */
     public void delete(final Key key) {
@@ -550,6 +655,11 @@ class SequentialSearchST<Key, Value> {
 
     /**
      * { delete key in linked list beginning at Node x }.
+     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
      *
      * @param      x     { parameter_description }
      * @param      key   The key
@@ -572,6 +682,11 @@ class SequentialSearchST<Key, Value> {
      * { Returns all keys in the symbol table as an.
      *   To iterate over all of the keys in the symbol table named,
      *   use the foreach notation }.
+     *
+     *   Complexity :
+     *              Best Case : O(N)
+     *              Average Case : O(N)
+     *              Worst Case : O(N)
      *
      * @return     { description_of_the_return_value }
      */
