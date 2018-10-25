@@ -333,7 +333,7 @@ class SeparateChainingHashST<Key, Value> {
     /**
      * { Inserts the specified key-value pair into the symbol table,
      * overwriting the old value with the new value if the symbol table
-     * already contains the specified key. Deletes the specified key 
+     * already contains the specified key. Deletes the specified key
      * (and its associated value) from this symbol table
      * if the specified value is }.
      *
@@ -341,6 +341,7 @@ class SeparateChainingHashST<Key, Value> {
      * @param      val   The value
      */
     public void put(final Key key, final Value val) {
+        final int ten = 10;
         if (key == null) {
             throw new IllegalArgumentException(
                 "first argument to put() is null");
@@ -350,7 +351,7 @@ class SeparateChainingHashST<Key, Value> {
             return;
         }
         // double table size if average length of list >= 10
-        if (n >= 10 * m) {
+        if (n >= ten * m) {
             resize(2 * m);
         }
         int i = hash(key);
@@ -361,8 +362,8 @@ class SeparateChainingHashST<Key, Value> {
     }
 
     /**
-     * { Removes the specified key and its associated value from this symbol table
-     *   (if the key is in this symbol table) }.
+     * { Removes the specified key and its associated value
+     *   from this symbol table (if the key is in this symbol table) }.
      *
      * @param      key   The key
      */
@@ -390,8 +391,9 @@ class SeparateChainingHashST<Key, Value> {
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
         for (int i = 0; i < m; i++) {
-            for (Key key : st[i].keys())
+            for (Key key : st[i].keys()) {
                 queue.enqueue(key);
+            }
         }
         return queue;
     }
@@ -453,7 +455,7 @@ class SequentialSearchST<Key, Value> {
          * @param      val1   The value
          * @param      next1  The next
          */
-        public Node(final Key key1, final Value val1, final Node next1)  {
+        Node(final Key key1, final Value val1, final Node next1)  {
             this.key  = key1;
             this.val  = val1;
             this.next = next1;

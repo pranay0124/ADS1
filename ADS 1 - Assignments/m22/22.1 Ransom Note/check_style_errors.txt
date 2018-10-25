@@ -1,11 +1,6 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:336: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:353:18: '10' is a magic number. [MagicNumber]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:364: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:393: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:404: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:456:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:466:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:628:48: '&&' should be on a new line. [OperatorWrap]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:406: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:468:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:630:48: '&&' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 3 errors.
