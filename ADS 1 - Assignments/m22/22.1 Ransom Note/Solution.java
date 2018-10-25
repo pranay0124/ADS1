@@ -14,14 +14,14 @@ class Solution {
 		}
 		String[] tokens1 = scan.nextLine().split(" ");
 		int count = tokens1.length;
-		System.out.println(count + "before");
+		// System.out.println(count + "before");
 		for (int j = 0; j < tokens1.length; j++) {
 			if (inputHash.contains(tokens1[j]) && inputHash.get(tokens1[j]) > 0) {
 				inputHash.put(tokens1[j], inputHash.get(tokens1[j]) - 1);
 				count--;
 			}
 		}
-		System.out.println(count + "after");
+		// System.out.println(count + "after");
 		if (count <= 0) {
 			System.out.println("Yes");
 		} else {
