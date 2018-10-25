@@ -147,13 +147,24 @@ class Queue<Item> implements Iterable<Item> {
      * @param      <Item>  The item
      */
     private class ListIterator<Item> implements Iterator<Item> {
+        /**
+         * { variable for current node }.
+         */
         private Node<Item> current;
-
+        /**
+         * Constructs the object.
+         *
+         * @param      first  The first
+         */
         public ListIterator(Node<Item> first) {
             current = first;
         }
-        public boolean hasNext()  { return current != null;                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
+        public boolean hasNext() {
+            return current != null;
+        }
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
         public Item next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();
