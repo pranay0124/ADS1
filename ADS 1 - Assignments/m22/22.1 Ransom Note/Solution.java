@@ -257,7 +257,7 @@ class SeparateChainingHashST<Key, Value> {
      */
     private void resize(final int chains) {
         SeparateChainingHashST<Key, Value> temp = new
-                SeparateChainingHashST<Key, Value>(chains);
+        SeparateChainingHashST<Key, Value>(chains);
         for (int i = 0; i < m; i++) {
             for (Key key : st[i].keys()) {
                 temp.put(key, st[i].get(key));
@@ -277,7 +277,7 @@ class SeparateChainingHashST<Key, Value> {
      */
     private int hash(final Key key) {
         final int fff = 0x7fffffff;
-        return (key.hashCode() & fff ) % m;
+        return (key.hashCode() & fff) % m;
     }
 
     /**
@@ -307,7 +307,8 @@ class SeparateChainingHashST<Key, Value> {
      */
     public boolean contains(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to contains() is null");
+            throw new IllegalArgumentException(
+                "argument to contains() is null");
         }
         return get(key) != null;
     }
@@ -322,7 +323,8 @@ class SeparateChainingHashST<Key, Value> {
      */
     public Value get(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to get() is null");
+            throw new IllegalArgumentException(
+                "argument to get() is null");
         }
         int i = hash(key);
         return st[i].get(key);
@@ -339,7 +341,8 @@ class SeparateChainingHashST<Key, Value> {
      */
     public void put(final Key key, final Value val) {
         if (key == null) {
-            throw new IllegalArgumentException("first argument to put() is null");
+            throw new IllegalArgumentException(
+                "first argument to put() is null");
         }
         if (val == null) {
             delete(key);
@@ -364,7 +367,8 @@ class SeparateChainingHashST<Key, Value> {
      */
     public void delete(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to delete() is null");
+            throw new IllegalArgumentException(
+                "argument to delete() is null");
         }
         int i = hash(key);
         if (st[i].contains(key)) {
@@ -505,9 +509,11 @@ class SequentialSearchST<Key, Value> {
     }
 
     /**
-     * { Inserts the key-value pair into the symbol table, overwriting the old value
+     * { Inserts the key-value pair into the symbol table,
+     *   overwriting the old value
      *   with the new value if the key is already in the symbol table.
-     *   If the value is null this effectively deletes the key from the symbol table }.
+     *   If the value is null this effectively deletes the key from
+     *   the symbol table }.
      *
      * @param      key   The key
      * @param      val   The value
@@ -578,7 +584,8 @@ class SequentialSearchST<Key, Value> {
     //  * @param args the command-line arguments
     //  */
     // public static void main(String[] args) {
-    //     SequentialSearchST<String, Integer> st = new SequentialSearchST<String, Integer>();
+    //     SequentialSearchST<String, Integer> st =
+    //     new SequentialSearchST<String, Integer>();
     //     for (int i = 0; !StdIn.isEmpty(); i++) {
     //         String key = StdIn.readString();
     //         st.put(key, i);
@@ -603,7 +610,8 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String[] sizes = scan.nextLine().split(" ");
-        SeparateChainingHashST<String, Integer> inputHash = new SeparateChainingHashST<>(Integer.parseInt(sizes[0]));
+        SeparateChainingHashST<String, Integer> inputHash =
+            new SeparateChainingHashST<>(Integer.parseInt(sizes[0]));
         String[] tokens = scan.nextLine().split(" ");
         for (int i = 0; i < tokens.length; i++) {
             if (inputHash.contains(tokens[i])) {
@@ -616,7 +624,8 @@ final class Solution {
         int count = tokens1.length;
         // System.out.println(count + "before");
         for (int j = 0; j < tokens1.length; j++) {
-            if (inputHash.contains(tokens1[j]) && inputHash.get(tokens1[j]) > 0) {
+            if (inputHash.contains(tokens1[j]) &&
+                    inputHash.get(tokens1[j]) > 0) {
                 inputHash.put(tokens1[j], inputHash.get(tokens1[j]) - 1);
                 count--;
             }
