@@ -8,5 +8,6 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:3:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:6: Line is longer than 80 characters (found 125). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:10: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:20: Line is longer than 80 characters (found 89). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 10 errors.

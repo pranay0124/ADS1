@@ -17,7 +17,7 @@ class Solution {
 		// System.out.println(count + "before");
 		for (int j = 0; j < tokens1.length; j++) {
 			if (inputHash.contains(tokens1[j])) {
-				inputHash.delete(tokens1[j]);
+				inputHash.put(tokens1[j], inputHash.get(tokens1[j]) - 1);
 				count--;
 			}
 		}
