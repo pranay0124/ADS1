@@ -1,36 +1,48 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 Yes
 Your Output: 
+4before
+0after
 Yes
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
 No
 Your Output: 
+5before
+0after
 Yes
 ----------------------------------------
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 No
 Your Output: 
+4before
+1after
 No
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
 No
 Your Output: 
+100before
+0after
 Yes
 ----------------------------------------
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 Yes
 Your Output: 
+2before
+0after
 Yes
 ----------------------------------------
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 Yes
 Your Output: 
+10000before
+0after
 Yes
 ----------------------------------------
