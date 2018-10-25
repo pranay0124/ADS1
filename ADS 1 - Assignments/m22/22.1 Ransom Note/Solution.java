@@ -22,7 +22,7 @@ class Solution {
 			}
 		}
 		System.out.println(count + "after");
-		if (count == 0) {
+		if (count <= 0) {
 			System.out.println("Yes");
 		} else {
 			System.out.println("No");
