@@ -43,7 +43,7 @@ class Queue<Item> implements Iterable<Item> {
      * Constructs the object.
      * Initializes an empty queue.
      */
-    public Queue() {
+    Queue() {
         first = null;
         last  = null;
         n = 0;
@@ -72,7 +72,9 @@ class Queue<Item> implements Iterable<Item> {
      * @return     { the item least recently added to this queue }
      */
     public Item peek() {
-        if (isEmpty()) throw new NoSuchElementException("Queue underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Queue underflow");
+        }
         return first.item;
     }
 
@@ -86,24 +88,31 @@ class Queue<Item> implements Iterable<Item> {
         last = new Node<Item>();
         last.item = item;
         last.next = null;
-        if (isEmpty()) first = last;
-        else           oldlast.next = last;
+        if (isEmpty()) {
+            first = last;
+        } else {
+            oldlast.next = last;
+        }
         n++;
     }
 
     /**
-     * { Removes and returns the item on this queue 
+     * { Removes and returns the item on this queue
      *   that was least recently added }.
      *
      * @return     { the item on this queue that was least recently added }
      * @throws NoSuchElementException if this queue is empty
      */
     public Item dequeue() {
-        if (isEmpty()) throw new NoSuchElementException("Queue underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Queue underflow");
+        }
         Item item = first.item;
         first = first.next;
         n--;
-        if (isEmpty()) last = null;   // to avoid loitering
+        if (isEmpty()) {
+            last = null;
+        }
         return item;
     }
 
@@ -122,7 +131,7 @@ class Queue<Item> implements Iterable<Item> {
     }
 
     /**
-     * { Returns an iterator that iterates over the 
+     * { Returns an iterator that iterates over the
      *   items in this queue in FIFO order }.
      *
      * @return     { an iterator that iterates over the items
@@ -146,7 +155,9 @@ class Queue<Item> implements Iterable<Item> {
         public boolean hasNext()  { return current != null;                     }
         public void remove()      { throw new UnsupportedOperationException();  }
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
             current = current.next;
             return item;
@@ -209,8 +220,9 @@ class SeparateChainingHashST<Key, Value> {
     public SeparateChainingHashST(final int m) {
         this.m = m;
         st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
-        for (int i = 0; i < m; i++)
+        for (int i = 0; i < m; i++) {
             st[i] = new SequentialSearchST<Key, Value>();
+        }
     }
 
     /**
@@ -268,7 +280,9 @@ class SeparateChainingHashST<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     public boolean contains(final Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to contains() is null");
+        if (key == null) {
+            throw new IllegalArgumentException("argument to contains() is null");
+        }
         return get(key) != null;
     }
 
@@ -281,7 +295,9 @@ class SeparateChainingHashST<Key, Value> {
      * @return     { the value associated with in the symbol table }
      */
     public Value get(final Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to get() is null");
+        if (key == null) {
+            throw new IllegalArgumentException("argument to get() is null");
+        }
         int i = hash(key);
         return st[i].get(key);
     }
@@ -296,15 +312,21 @@ class SeparateChainingHashST<Key, Value> {
      * @param      val   The value
      */
     public void put(final Key key, final Value val) {
-        if (key == null) throw new IllegalArgumentException("first argument to put() is null");
+        if (key == null) {
+            throw new IllegalArgumentException("first argument to put() is null");
+        }
         if (val == null) {
             delete(key);
             return;
         }
         // double table size if average length of list >= 10
-        if (n >= 10 * m) resize(2 * m);
+        if (n >= 10 * m) {
+            resize(2 * m);
+        }
         int i = hash(key);
-        if (!st[i].contains(key)) n++;
+        if (!st[i].contains(key)) {
+            n++;
+        }
         st[i].put(key, val);
     }
 
@@ -315,13 +337,18 @@ class SeparateChainingHashST<Key, Value> {
      * @param      key   The key
      */
     public void delete(final Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to delete() is null");
-
+        if (key == null) {
+            throw new IllegalArgumentException("argument to delete() is null");
+        }
         int i = hash(key);
-        if (st[i].contains(key)) n--;
+        if (st[i].contains(key)) {
+            n--;
+        }
         st[i].delete(key);
         // halve table size if average length of list <= 2
-        if (m > INIT_CAPACITY && n <= 2 * m) resize(m / 2);
+        if (m > INIT_CAPACITY && n <= 2 * m) {
+            resize(m / 2);
+        }
     }
 
     /**
@@ -444,8 +471,9 @@ class SequentialSearchST<Key, Value> {
      */
     public Value get(final Key key) {
         for (Node x = first; x != null; x = x.next) {
-            if (key.equals(x.key))
+            if (key.equals(x.key)) {
                 return x.val;
+            }
         }
         return null;
     }
@@ -493,7 +521,9 @@ class SequentialSearchST<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     private Node delete(final Node x, final Key key) {
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         if (key.equals(x.key)) {
             n--;
             return x.next;
@@ -511,8 +541,9 @@ class SequentialSearchST<Key, Value> {
      */
     public Iterable<Key> keys()  {
         Queue<Key> queue = new Queue<Key>();
-        for (Node x = first; x != null; x = x.next)
+        for (Node x = first; x != null; x = x.next) {
             queue.enqueue(x.key);
+        }
         return queue;
     }
     // /**
