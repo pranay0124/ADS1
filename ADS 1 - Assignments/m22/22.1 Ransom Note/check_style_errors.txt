@@ -1,6 +1,4 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:157:12: Unused @param tag for 'first'. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:159:39: Expected @param tag for 'first1'. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:235:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:244:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:244:45: 'm' hides a field. [HiddenField]
@@ -23,4 +21,4 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:604: Line is longer than 80 characters (found 117). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:617: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 21 errors.
