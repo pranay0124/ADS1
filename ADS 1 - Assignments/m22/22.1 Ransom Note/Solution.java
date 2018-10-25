@@ -256,7 +256,8 @@ class SeparateChainingHashST<Key, Value> {
      * @param      chains  The chains
      */
     private void resize(final int chains) {
-        SeparateChainingHashST<Key, Value> temp = new SeparateChainingHashST<Key, Value>(chains);
+        SeparateChainingHashST<Key, Value> temp = new
+                SeparateChainingHashST<Key, Value>(chains);
         for (int i = 0; i < m; i++) {
             for (Key key : st[i].keys()) {
                 temp.put(key, st[i].get(key));
@@ -275,7 +276,8 @@ class SeparateChainingHashST<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     private int hash(final Key key) {
-        return (key.hashCode() & 0x7fffffff) % m;
+        final int fff = 0x7fffffff;
+        return (key.hashCode() & fff ) % m;
     }
 
     /**
