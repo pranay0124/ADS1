@@ -1,7 +1,4 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:235:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:244:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:244:45: 'm' hides a field. [HiddenField]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:259: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:278:34: '0x7fffffff' is a magic number. [MagicNumber]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:308: Line is longer than 80 characters (found 81). [LineLength]
@@ -21,4 +18,4 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:604: Line is longer than 80 characters (found 117). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m22\22.1 Ransom Note\Solution.java:617: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 18 errors.

@@ -232,19 +232,19 @@ class SeparateChainingHashST<Key, Value> {
     /**
      * Initializes an empty symbol table.
      */
-    public SeparateChainingHashST() {
+    SeparateChainingHashST() {
         this(INIT_CAPACITY);
     }
 
     /**
      * Constructs the object.
      *
-     * @param      m     { parameter_description }
+     * @param      m1     { parameter_description }
      */
-    public SeparateChainingHashST(final int m) {
-        this.m = m;
-        st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m];
-        for (int i = 0; i < m; i++) {
+    SeparateChainingHashST(final int m1) {
+        this.m = m1;
+        st = (SequentialSearchST<Key, Value>[]) new SequentialSearchST[m1];
+        for (int i = 0; i < m1; i++) {
             st[i] = new SequentialSearchST<Key, Value>();
         }
     }
