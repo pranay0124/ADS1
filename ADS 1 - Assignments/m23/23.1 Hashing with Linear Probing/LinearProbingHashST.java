@@ -204,10 +204,10 @@ public class LinearProbingHashST<Key, Value> {
 
     public void display() {
         System.out.print("{");
-        for (int i = 0; i < keys.length - 1; i++) {
+        for (int i = 0; i < m - 1; i++) {
             System.out.print(keys[i] + ":" + vals[i] + ",");
         }
-        System.out.print(keys[keys.length] + ":" + vals[keys.length] + "}");
+        System.out.print(keys[m] + ":" + vals[m] + "}");
     }
 
 
