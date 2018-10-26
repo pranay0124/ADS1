@@ -6,6 +6,7 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:3:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:6: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:7:22: 'while' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:11: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 9 errors.

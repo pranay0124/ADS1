@@ -4,7 +4,7 @@ class Solution {
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
 		LinearProbingHashST<String, Integer> hashTable = new LinearProbingHashST<>();
-		for (int i = 0; i < n; i++) {
+		while(scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(" ");
 			switch (tokens[0]) {
 			case "put":
