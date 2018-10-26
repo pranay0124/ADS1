@@ -209,7 +209,7 @@ public class LinearProbingHashST<Key, Value> {
                 str += keys[i] + ":" + vals[i] + ",";
             }
         }
-        str += keys[m] + ":" + vals[m] + "}";
+        // str += keys[m] + ":" + vals[m] + "}";
     }
 
 
