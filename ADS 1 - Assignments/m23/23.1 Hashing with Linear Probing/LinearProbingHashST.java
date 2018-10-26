@@ -209,14 +209,9 @@ public class LinearProbingHashST<Key, Value> {
                 str += keys[i] + ":" + vals[i] + ", ";
             }
         }
-        if (str != "{") {
-            str = str.substring(0, str.length() - 2);
-            str = str + "}";
-            System.out.println(str);
-        } else {
-            System.out.println("{}");
-        }
-
+        str = str.substring(0,str.length()-2);
+        str = str + "}";
+        System.out.println(str);
     }
 
 
