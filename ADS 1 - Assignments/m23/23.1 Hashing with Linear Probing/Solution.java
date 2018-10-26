@@ -11,7 +11,7 @@ class Solution {
 				hashTable.put(tokens[1], Integer.parseInt(tokens[2]));
 				break;
 			case "get":
-				hashTable.get(tokens[1]);
+				System.out.println(hashTable.get(tokens[1]));
 				break;
 			case "delete":
 				hashTable.delete(tokens[1]);
