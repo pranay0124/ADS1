@@ -211,7 +211,7 @@ public class LinearProbingHashST<Key, Value> {
         }
         str = str.substring(0,str.length()-2);
         str = str + "}";
-        System.out.print(str);
+        System.out.println(str);
     }
 
 
