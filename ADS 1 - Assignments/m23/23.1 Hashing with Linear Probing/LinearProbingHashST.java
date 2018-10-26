@@ -204,12 +204,13 @@ public class LinearProbingHashST<Key, Value> {
 
     public void display() {
         String str = "{";
-        for (int i = 0; i < m - 2; i++) {
+        for (int i = 0; i < m - 1; i++) {
             if (keys[i] != null) {
                 str += keys[i] + ":" + vals[i] + ", ";
             }
         }
-        str += keys[m-1] + ":" + vals[m-1] + "}";
+        str = str.substring(0,str.length()-1);
+        str = str + "}";
         System.out.print(str);
     }
 
