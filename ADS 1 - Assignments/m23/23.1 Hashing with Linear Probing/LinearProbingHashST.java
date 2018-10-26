@@ -209,6 +209,7 @@ public class LinearProbingHashST<Key, Value> {
                 str += keys[i] + ":" + vals[i] + ",";
             }
         }
+        System.out.println(str);
         // str += keys[m] + ":" + vals[m] + "}";
     }
 
