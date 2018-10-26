@@ -1,19 +1,2 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:77: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:90:34: '11' is a magic number. [MagicNumber]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:94: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:99: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:111: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:112: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:113: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:121: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:150:22: Parameter key should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:163: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:167:24: Parameter key should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:200:31: '8' is a magic number. [MagicNumber]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:230: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:239: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:271: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:299: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 16 errors.

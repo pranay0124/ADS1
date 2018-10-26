@@ -74,7 +74,8 @@ class LinearProbingHashST<Key, Value> {
      */
     public boolean contains(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to contains() is null");
+            throw new IllegalArgumentException(
+                "argument to contains() is null");
         }
         return get(key) != null;
     }
@@ -87,16 +88,19 @@ class LinearProbingHashST<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     private int hash(final Key key) {
-        return (key.hashCode() * 11) % m;
+        final int eleven = 11;
+        return (key.hashCode() * eleven) % m;
     }
 
     /**
-     * { resizes the hash table to the given capacity by re-hashing all of the keys }.
+     * { resizes the hash table to the given capacity
+     *   by re-hashing all of the keys }.
      *
      * @param      capacity  The capacity
      */
     private void resize(final int capacity) {
-        LinearProbingHashST<Key, Value> temp = new LinearProbingHashST<Key, Value>(capacity);
+        LinearProbingHashST<Key, Value> temp =
+            new LinearProbingHashST<Key, Value>(capacity);
         for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
                 temp.put(keys[i], vals[i]);
@@ -108,17 +112,19 @@ class LinearProbingHashST<Key, Value> {
     }
 
     /**
-     * { Inserts the specified key-value pair into the symbol table, overwriting the old
-     * value with the new value if the symbol table already contains the specified key.
-     * Deletes the specified key (and its associated value) from this symbol table
-     * if the specified value is null }.
+     * { Inserts the specified key-value pair into the symbol table,
+     *   overwriting the old value with the new value if the symbol table
+     *   already contains the specified key.Deletes the specified key
+     *   (and its associated value) from this symbol table if the
+     *   specified value is null }.
      *
      * @param      key   The key
      * @param      val   The value
      */
     public void put(final Key key, final Value val) {
         if (key == null) {
-            throw new IllegalArgumentException("first argument to put() is null");
+            throw new IllegalArgumentException(
+                "first argument to put() is null");
         }
         if (val == null) {
             delete(key);
@@ -147,7 +153,7 @@ class LinearProbingHashST<Key, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Value get(Key key) {
+    public Value get(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to get() is null");
         }
@@ -160,11 +166,12 @@ class LinearProbingHashST<Key, Value> {
     }
 
     /**
-     * { Removes the specified key and its associated value from this symbol table }.
+     * { Removes the specified key and its
+     *   associated value from this symbol table }.
      *
      * @param      key   The key
      */
-    public void delete(Key key) {
+    public void delete(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to delete() is null");
         }
@@ -195,9 +202,9 @@ class LinearProbingHashST<Key, Value> {
         }
 
         n--;
-
+        final int eight = 8;
         // halves size of array if it's 12.5% full or less
-        if (n > 0 && n <= m / 8) {
+        if (n > 0 && n <= m / eight) {
             resize(m / 2);
         }
 
@@ -227,7 +234,8 @@ class LinearProbingHashST<Key, Value> {
 
         // check that hash table is at most 50% full
         if (m < 2 * n) {
-            System.err.println("Hash table size m = " + m + "; array size n = " + n);
+            System.err.println("Hash table size m = "
+                               + m + "; array size n = " + n);
             return false;
         }
 
@@ -236,7 +244,8 @@ class LinearProbingHashST<Key, Value> {
             if (keys[i] == null) {
                 continue;
             } else if (get(keys[i]) != vals[i]) {
-                System.err.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
+                System.err.println("get[" + keys[i] + "] = "
+                                   + get(keys[i]) + "; vals[i] = " + vals[i]);
                 return false;
             }
         }
@@ -268,7 +277,8 @@ class LinearProbingHashST<Key, Value> {
     //  * @param args the command-line arguments
     //  */
     // public static void main(String[] args) {
-    //     LinearProbingHashST<String, Integer> st = new LinearProbingHashST<String, Integer>();
+    //     LinearProbingHashST<String, Integer> st =
+    //     new LinearProbingHashST<String, Integer>();
     //     for (int i = 0; !StdIn.isEmpty(); i++) {
     //         String key = StdIn.readString();
     //         st.put(key, i);
@@ -296,7 +306,8 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        LinearProbingHashST<String, Integer> hashTable = new LinearProbingHashST<>();
+        LinearProbingHashST<String, Integer> hashTable =
+            new LinearProbingHashST<>();
         while (scan.hasNext()) {
             String[] tokens = scan.nextLine().split(" ");
             switch (tokens[0]) {
