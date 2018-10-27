@@ -9,92 +9,90 @@ import java.util.NoSuchElementException;
  * Class for student details.
  */
 class StudentDetails {
-	/**
-	 * { variable for student name }.
-	 */
-	private String name;
-	/**
-	 * { variable for student marks }.
-	 */
-	private double marks;
-	/**
-	 * Constructs the object.
-	 *
-	 * @param      n     { parameter_description }
-	 * @param      m     { parameter_description }
-	 */
-	StudentDetails(final String n, final String m) {
-		this.name = n;
-		this.marks = Double.parseDouble(m);
-	}
-	/**
-	 * Gets the name.
-	 *
-	 * @return     The name.
-	 */
-	public String getName() {
-		return name;
-	}
-	/**
-	 * Gets the marks.
-	 *
-	 * @return     The marks.
-	 */
-	public double getMarks() {
-		return marks;
-	}
+    /**
+     * { variable for student name }.
+     */
+    private String name;
+    /**
+     * { variable for student marks }.
+     */
+    private double marks;
+    /**
+     * Constructs the object.
+     *
+     * @param      n     { parameter_description }
+     * @param      m     { parameter_description }
+     */
+    StudentDetails(final String n, final String m) {
+        this.name = n;
+        this.marks = Double.parseDouble(m);
+    }
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
+    public String getName() {
+        return name;
+    }
+    /**
+     * Gets the marks.
+     *
+     * @return     The marks.
+     */
+    public double getMarks() {
+        return marks;
+    }
 }
 /**
  * Class for solution.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() { }
-	/**
-	 * { Main Function }.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int input1 = Integer.parseInt(scan.nextLine());
-		SeparateChainingHashST<Integer, StudentDetails> hashTable = new SeparateChainingHashST<>();
-		StudentDetails student = null;
-		while(input1>0) {
-			String[] tokens1 = scan.nextLine().split(",");
-			student = new StudentDetails(tokens1[1], tokens1[2]);
-			hashTable.put(Integer.parseInt(tokens1[0]), student);
-			input1--;
-		}
-		int input2 = Integer.parseInt(scan.nextLine());
-		while(input2 > 0) {
-			String[] tokens2 = scan.nextLine().split(" ");
-			switch (tokens2[2]) {
-			case "1":
-				int rollnumber = Integer.parseInt(tokens2[1]);
-				if (hashTable.contains(rollnumber)) {
-					System.out.println(hashTable.get(rollnumber).getName());
-				} else {
-					System.out.println("Student doesn't exists...");
-				}
-				break;
-			case "2":
-				int rollnumber1 = Integer.parseInt(tokens2[1]);
-				if (hashTable.contains(rollnumber1)) {
-					System.out.println(hashTable.get(rollnumber1).getMarks());
-				} else {
-					System.out.println("Student doesn't exists...");
-				}
-				break;
-			}
-			input2--;
-		}
-	}
+    /**
+     * Constructs the object.
+     */
+    private Solution() { }
+    /**
+     * { Main Function }.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int input1 = Integer.parseInt(scan.nextLine());
+        SeparateChainingHashST<Integer, StudentDetails> hashTable = new SeparateChainingHashST<>();
+        StudentDetails student = null;
+        while(input1>0) {
+            String[] tokens1 = scan.nextLine().split(",");
+            student = new StudentDetails(tokens1[1], tokens1[2]);
+            hashTable.put(Integer.parseInt(tokens1[0]), student);
+            input1--;
+        }
+        int input2 = Integer.parseInt(scan.nextLine());
+        while(input2 > 0) {
+            String[] tokens2 = scan.nextLine().split(" ");
+            switch (tokens2[2]) {
+            case "1":
+                int rollnumber = Integer.parseInt(tokens2[1]);
+                if (hashTable.contains(rollnumber)) {
+                    System.out.println(hashTable.get(rollnumber).getName());
+                } else {
+                    System.out.println("Student doesn't exists...");
+                }
+                break;
+            case "2":
+                int rollnumber1 = Integer.parseInt(tokens2[1]);
+                if (hashTable.contains(rollnumber1)) {
+                    System.out.println(hashTable.get(rollnumber1).getMarks());
+                } else {
+                    System.out.println("Student doesn't exists...");
+                }
+                break;
+            }
+            input2--;
+        }
+    }
 }
-
-
 
 /**
  * Class for separate chaining hash st.

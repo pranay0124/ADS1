@@ -1,14 +1,9 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:12:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:63: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:65:22: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:65:29: '>' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:65:30: '>' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:72:22: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:63: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:65:14: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:65:21: '>' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:65:22: '>' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:72:14: 'while' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:74: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:78: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:80: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:86: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:88: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 6 errors.
