@@ -25,7 +25,8 @@ public final class Solution {
 		StudentDetails student = null;
 		while (input1 > 0) {
 			String[] tokens1 = scan.nextLine().split(",");
-			student = new StudentDetails(tokens1[1], tokens1[2], tokens1[0]);
+			student = new StudentDetails(tokens1[1],
+			                             tokens1[2], tokens1[0]);
 			bst.put(student, Integer.parseInt(tokens1[0]));
 			input1--;
 		}
@@ -174,7 +175,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		 * @param      color  The color
 		 * @param      size   The size
 		 */
-		public Node(final Key key, final Value val, final boolean color, final int size) {
+		public Node(final Key key, final Value val,
+		            final boolean color, final int size) {
 			this.key = key;
 			this.val = val;
 			this.color = color;
@@ -293,7 +295,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 */
 	public void put(final Key key, final Value val) {
 		if (key == null) {
-			throw new IllegalArgumentException("first argument to put() is null");
+			throw new IllegalArgumentException(
+			    "first argument to put() is null");
 		}
 		if (val == null) {
 			delete(key);
@@ -428,7 +431,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	}
 
 	/**
-	 * { Removes the specified key and its associated value from this symbol table }.
+	 * { Removes the specified key and its associated
+	 *   value from this symbol table }.
 	 *
 	 * @param      key   The key
 	 */
@@ -637,7 +641,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 */
 	public Key min() {
 		if (isEmpty()) {
-			throw new NoSuchElementException("calls min() with empty symbol table");
+			throw new NoSuchElementException(
+			    "calls min() with empty symbol table");
 		}
 		return min(root).key;
 	}
@@ -664,7 +669,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 */
 	public Key max() {
 		if (isEmpty()) {
-			throw new NoSuchElementException("calls max() with empty symbol table");
+			throw new NoSuchElementException(
+			    "calls max() with empty symbol table");
 		}
 		return max(root).key;
 	}
@@ -685,7 +691,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	}
 
 	/**
-	 * { Returns the largest key in the symbol table less than or equal to key }.
+	 * { Returns the largest key in the symbol table less
+	 *   than or equal to key }.
 	 *
 	 * @param      key   The key
 	 *
@@ -693,10 +700,12 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 */
 	public Key floor(Key key) {
 		if (key == null) {
-			throw new IllegalArgumentException("argument to floor() is null");
+			throw new IllegalArgumentException(
+			    "argument to floor() is null");
 		}
 		if (isEmpty()) {
-			throw new NoSuchElementException("calls floor() with empty symbol table");
+			throw new NoSuchElementException(
+			    "calls floor() with empty symbol table");
 		}
 		Node x = floor(root, key);
 		if (x == null) {
@@ -707,7 +716,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	}
 
 	/**
-	 * { Returns the largest key in the symbol table less than or equal to key }.
+	 * { Returns the largest key in the symbol table less
+	 *   than or equal to key }.
 	 *
 	 * @param      x     { parameter_description }
 	 * @param      key   The key
@@ -734,7 +744,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	}
 
 	/**
-	 * { Returns the smallest key in the symbol table greater than or equal to key }.
+	 * { Returns the smallest key in the symbol table greater
+	 *   than or equal to key }.
 	 *
 	 * @param      key   The key
 	 *
@@ -742,10 +753,12 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 */
 	public Key ceiling(Key key) {
 		if (key == null) {
-			throw new IllegalArgumentException("argument to ceiling() is null");
+			throw new IllegalArgumentException(
+			    "argument to ceiling() is null");
 		}
 		if (isEmpty()) {
-			throw new NoSuchElementException("calls ceiling() with empty symbol table");
+			throw new NoSuchElementException(
+			    "calls ceiling() with empty symbol table");
 		}
 		Node x = ceiling(root, key);
 		if (x == null) {
@@ -756,7 +769,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	}
 
 	/**
-	 * { Returns the smallest key in the symbol table greater than or equal to key }.
+	 * { Returns the smallest key in the symbol table greater
+	 *   than or equal to key }.
 	 *
 	 * @param      x     { parameter_description }
 	 * @param      key   The key
@@ -792,7 +806,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 */
 	public Key select(final int k) {
 		if (k < 0 || k >= size()) {
-			throw new IllegalArgumentException("argument to select() is invalid: " + k);
+			throw new IllegalArgumentException(
+			    "argument to select() is invalid: " + k);
 		}
 		Node x = select(root, k);
 		return x.key;
@@ -820,7 +835,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	}
 
 	/**
-	 * { Return the number of keys in the symbol table strictly less than key }.
+	 * { Return the number of keys in the symbol table
+	 *   strictly less than key }.
 	 *
 	 * @param      key   The key
 	 *
@@ -828,7 +844,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 */
 	public int rank(final Key key) {
 		if (key == null) {
-			throw new IllegalArgumentException("argument to rank() is null");
+			throw new IllegalArgumentException(
+			    "argument to rank() is null");
 		}
 		return rank(key, root);
 	}
@@ -877,10 +894,12 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 */
 	public Iterable<Key> keys(final Key lo, final Key hi) {
 		if (lo == null) {
-			throw new IllegalArgumentException("first argument to keys() is null");
+			throw new IllegalArgumentException(
+			    "first argument to keys() is null");
 		}
 		if (hi == null) {
-			throw new IllegalArgumentException("second argument to keys() is null");
+			throw new IllegalArgumentException(
+			    "second argument to keys() is null");
 		}
 
 		Queue<Key> queue = new Queue<Key>();
@@ -897,7 +916,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @param      lo     The lower
 	 * @param      hi     The higher
 	 */
-	private void keys(final Node x, final Queue<Key> queue, final Key lo, final Key hi) {
+	private void keys(final Node x, final Queue<Key> queue,
+	                  final Key lo, final Key hi) {
 		if (x == null) {
 			return;
 		}
@@ -915,7 +935,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	}
 
 	/**
-	 * { Returns the number of keys in the symbol table in the given range }
+	 * { Returns the number of keys in the symbol table
+	 *   in the given range }
 	 *
 	 * @param      lo    The lower
 	 * @param      hi    The higher
@@ -924,10 +945,12 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 */
 	public int size(final Key lo, final Key hi) {
 		if (lo == null) {
-			throw new IllegalArgumentException("first argument to size() is null");
+			throw new IllegalArgumentException(
+			    "first argument to size() is null");
 		}
 		if (hi == null) {
-			throw new IllegalArgumentException("second argument to size() is null");
+			throw new IllegalArgumentException(
+			    "second argument to size() is null");
 		}
 
 		if (lo.compareTo(hi) > 0) {
@@ -946,11 +969,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	//  */
 	// private boolean check() {
 	// 	if (!isBST())            System.out.println("Not in symmetric order");
-	// 	if (!isSizeConsistent()) System.out.println("Subtree counts not consistent");
+	// 	if (!isSizeConsistent()) System.out.println("Subtree counts not
+	// 	  consistent");
 	// 	if (!isRankConsistent()) System.out.println("Ranks not consistent");
 	// 	if (!is23())             System.out.println("Not a 2-3 tree");
 	// 	if (!isBalanced())       System.out.println("Not balanced");
-	// 	return isBST() && isSizeConsistent() && isRankConsistent() && is23() && isBalanced();
+	// 	return isBST() && isSizeConsistent() && isRankConsistent() && is23()
+	// 	 && isBalanced();
 	// }
 	// /**
 	//  * Determines if bst.
@@ -1015,7 +1040,8 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	// 	return isBalanced(root, black);
 	// }
 
-	// // does every path from the root to a leaf have the given number of black links?
+	// // does every path from the root to a leaf have the
+	//    given number of black links?
 	// private boolean isBalanced(Node x, int black) {
 	// 	if (x == null) return black == 0;
 	// 	if (!isRed(x)) black--;
