@@ -194,7 +194,9 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     True if red, False otherwise.
 	 */
 	private boolean isRed(final Node x) {
-		if (x == null) return false;
+		if (x == null) {
+			return false;
+		}
 		return x.color == RED;
 	}
 
@@ -206,7 +208,9 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	private int size(Node x) {
-		if (x == null) return 0;
+		if (x == null) {
+			return 0;
+		}
 		return x.size;
 	}
 
@@ -236,8 +240,10 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	public Value get(final Key key) {
-		if (key == null) throw new
-			IllegalArgumentException("argument to get() is null");
+		if (key == null) {
+			throw new IllegalArgumentException(
+			    "argument to get() is null");
+		}
 		return get(root, key);
 	}
 
@@ -253,9 +259,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	private Value get(Node x, final Key key) {
 		while (x != null) {
 			int cmp = key.compareTo(x.key);
-			if      (cmp < 0) x = x.left;
-			else if (cmp > 0) x = x.right;
-			else              return x.val;
+			if (cmp < 0) {
+				x = x.left;
+			} else if (cmp > 0) {
+				x = x.right;
+			} else {
+				return x.val;
+			}
 		}
 		return null;
 	}
@@ -282,7 +292,9 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @param      val   The value
 	 */
 	public void put(final Key key, final Value val) {
-		if (key == null) throw new IllegalArgumentException("first argument to put() is null");
+		if (key == null) {
+			throw new IllegalArgumentException("first argument to put() is null");
+		}
 		if (val == null) {
 			delete(key);
 			return;
@@ -302,19 +314,30 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	private Node put(Node h, final Key key, final Value val) {
-		if (h == null) return new Node(key, val, RED, 1);
+		if (h == null) {
+			return new Node(key, val, RED, 1);
+		}
 
 		int cmp = key.compareTo(h.key);
-		if      (cmp < 0) h.left  = put(h.left,  key, val);
-		else if (cmp > 0) h.right = put(h.right, key, val);
-		else              h.val   = val;
+		if (cmp < 0) {
+			h.left  = put(h.left,  key, val);
+		} else if (cmp > 0) {
+			h.right = put(h.right, key, val);
+		} else {
+			h.val   = val;
+		}
 
 		// fix-up any right-leaning links
-		if (isRed(h.right) && !isRed(h.left))      h = rotateLeft(h);
-		if (isRed(h.left)  &&  isRed(h.left.left)) h = rotateRight(h);
-		if (isRed(h.left)  &&  isRed(h.right))     flipColors(h);
+		if (isRed(h.right) && !isRed(h.left)) {
+			h = rotateLeft(h);
+		}
+		if (isRed(h.left)  &&  isRed(h.left.left)) {
+			h = rotateRight(h);
+		}
+		if (isRed(h.left)  &&  isRed(h.right)) {
+			flipColors(h);
+		}
 		h.size = size(h.left) + size(h.right) + 1;
-
 		return h;
 	}
 
@@ -323,14 +346,19 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 *   from the symbol table }.
 	 */
 	public void deleteMin() {
-		if (isEmpty()) throw new NoSuchElementException("BST underflow");
+		if (isEmpty()) {
+			throw new NoSuchElementException("BST underflow");
+		}
 
 		// if both children of root are black, set root to red
-		if (!isRed(root.left) && !isRed(root.right))
+		if (!isRed(root.left) && !isRed(root.right)) {
 			root.color = RED;
+		}
 
 		root = deleteMin(root);
-		if (!isEmpty()) root.color = BLACK;
+		if (!isEmpty()) {
+			root.color = BLACK;
+		}
 		// assert check();
 	}
 
@@ -342,11 +370,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	private Node deleteMin(Node h) {
-		if (h.left == null)
+		if (h.left == null) {
 			return null;
+		}
 
-		if (!isRed(h.left) && !isRed(h.left.left))
+		if (!isRed(h.left) && !isRed(h.left.left)) {
 			h = moveRedLeft(h);
+		}
 
 		h.left = deleteMin(h.left);
 		return balance(h);
@@ -356,14 +386,19 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * { Removes the largest key and associated value from the symbol table }.
 	 */
 	public void deleteMax() {
-		if (isEmpty()) throw new NoSuchElementException("BST underflow");
+		if (isEmpty()) {
+			throw new NoSuchElementException("BST underflow");
+		}
 
 		// if both children of root are black, set root to red
-		if (!isRed(root.left) && !isRed(root.right))
+		if (!isRed(root.left) && !isRed(root.right)) {
 			root.color = RED;
+		}
 
 		root = deleteMax(root);
-		if (!isEmpty()) root.color = BLACK;
+		if (!isEmpty())  {
+			root.color = BLACK;
+		}
 		// assert check();
 	}
 
@@ -375,14 +410,17 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	private Node deleteMax(Node h) {
-		if (isRed(h.left))
+		if (isRed(h.left)) {
 			h = rotateRight(h);
+		}
 
-		if (h.right == null)
+		if (h.right == null) {
 			return null;
+		}
 
-		if (!isRed(h.right) && !isRed(h.right.left))
+		if (!isRed(h.right) && !isRed(h.right.left)) {
 			h = moveRedRight(h);
+		}
 
 		h.right = deleteMax(h.right);
 
@@ -395,16 +433,23 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @param      key   The key
 	 */
 	public void delete(final Key key) {
-		if (key == null) throw new IllegalArgumentException(
+		if (key == null)  {
+			throw new IllegalArgumentException(
 			    "argument to delete() is null");
-		if (!contains(key)) return;
+		}
+		if (!contains(key))  {
+			return;
+		}
 
 		// if both children of root are black, set root to red
-		if (!isRed(root.left) && !isRed(root.right))
+		if (!isRed(root.left) && !isRed(root.right)) {
 			root.color = RED;
+		}
 
 		root = delete(root, key);
-		if (!isEmpty()) root.color = BLACK;
+		if (!isEmpty())  {
+			root.color = BLACK;
+		}
 		// assert check();
 	}
 
@@ -420,16 +465,20 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		// assert get(h, key) != null;
 
 		if (key.compareTo(h.key) < 0)  {
-			if (!isRed(h.left) && !isRed(h.left.left))
+			if (!isRed(h.left) && !isRed(h.left.left)) {
 				h = moveRedLeft(h);
+			}
 			h.left = delete(h.left, key);
 		} else {
-			if (isRed(h.left))
+			if (isRed(h.left)) {
 				h = rotateRight(h);
-			if (key.compareTo(h.key) == 0 && (h.right == null))
+			}
+			if (key.compareTo(h.key) == 0 && (h.right == null)) {
 				return null;
-			if (!isRed(h.right) && !isRed(h.right.left))
+			}
+			if (!isRed(h.right) && !isRed(h.right.left)) {
 				h = moveRedRight(h);
+			}
 			if (key.compareTo(h.key) == 0) {
 				Node x = min(h.right);
 				h.key = x.key;
@@ -545,9 +594,15 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	private Node balance(Node h) {
 		// assert (h != null);
 
-		if (isRed(h.right))                      h = rotateLeft(h);
-		if (isRed(h.left) && isRed(h.left.left)) h = rotateRight(h);
-		if (isRed(h.left) && isRed(h.right))     flipColors(h);
+		if (isRed(h.right)) {
+			h = rotateLeft(h);
+		}
+		if (isRed(h.left) && isRed(h.left.left)) {
+			h = rotateRight(h);
+		}
+		if (isRed(h.left) && isRed(h.right)) {
+			flipColors(h);
+		}
 
 		h.size = size(h.left) + size(h.right) + 1;
 		return h;
@@ -569,7 +624,9 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	private int height(final Node x) {
-		if (x == null) return -1;
+		if (x == null) {
+			return -1;
+		}
 		return 1 + Math.max(height(x.left), height(x.right));
 	}
 
@@ -579,7 +636,9 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	public Key min() {
-		if (isEmpty()) throw new NoSuchElementException("calls min() with empty symbol table");
+		if (isEmpty()) {
+			throw new NoSuchElementException("calls min() with empty symbol table");
+		}
 		return min(root).key;
 	}
 	/**
@@ -591,8 +650,11 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 */
 	private Node min(final Node x) {
 		// assert x != null;
-		if (x.left == null) return x;
-		else                return min(x.left);
+		if (x.left == null) {
+			return x;
+		} else {
+			return min(x.left);
+		}
 	}
 
 	/**
@@ -601,7 +663,9 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	public Key max() {
-		if (isEmpty()) throw new NoSuchElementException("calls max() with empty symbol table");
+		if (isEmpty()) {
+			throw new NoSuchElementException("calls max() with empty symbol table");
+		}
 		return max(root).key;
 	}
 	/**
@@ -613,8 +677,11 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 */
 	private Node max(final Node x) {
 		// assert x != null;
-		if (x.right == null) return x;
-		else                 return max(x.right);
+		if (x.right == null) {
+			return x;
+		} else {
+			return max(x.right);
+		}
 	}
 
 	/**
@@ -625,11 +692,18 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	public Key floor(Key key) {
-		if (key == null) throw new IllegalArgumentException("argument to floor() is null");
-		if (isEmpty()) throw new NoSuchElementException("calls floor() with empty symbol table");
+		if (key == null) {
+			throw new IllegalArgumentException("argument to floor() is null");
+		}
+		if (isEmpty()) {
+			throw new NoSuchElementException("calls floor() with empty symbol table");
+		}
 		Node x = floor(root, key);
-		if (x == null) return null;
-		else           return x.key;
+		if (x == null) {
+			return null;
+		} else {
+			return x.key;
+		}
 	}
 
 	/**
@@ -641,13 +715,22 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	private Node floor(final Node x, final Key key) {
-		if (x == null) return null;
+		if (x == null) {
+			return null;
+		}
 		int cmp = key.compareTo(x.key);
-		if (cmp == 0) return x;
-		if (cmp < 0)  return floor(x.left, key);
+		if (cmp == 0) {
+			return x;
+		}
+		if (cmp < 0) {
+			return floor(x.left, key);
+		}
 		Node t = floor(x.right, key);
-		if (t != null) return t;
-		else           return x;
+		if (t != null) {
+			return t;
+		} else {
+			return x;
+		}
 	}
 
 	/**
@@ -658,11 +741,18 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	public Key ceiling(Key key) {
-		if (key == null) throw new IllegalArgumentException("argument to ceiling() is null");
-		if (isEmpty()) throw new NoSuchElementException("calls ceiling() with empty symbol table");
+		if (key == null) {
+			throw new IllegalArgumentException("argument to ceiling() is null");
+		}
+		if (isEmpty()) {
+			throw new NoSuchElementException("calls ceiling() with empty symbol table");
+		}
 		Node x = ceiling(root, key);
-		if (x == null) return null;
-		else           return x.key;
+		if (x == null) {
+			return null;
+		} else {
+			return x.key;
+		}
 	}
 
 	/**
@@ -674,13 +764,22 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	private Node ceiling(final Node x, final Key key) {
-		if (x == null) return null;
+		if (x == null) {
+			return null;
+		}
 		int cmp = key.compareTo(x.key);
-		if (cmp == 0) return x;
-		if (cmp > 0)  return ceiling(x.right, key);
+		if (cmp == 0) {
+			return x;
+		}
+		if (cmp > 0) {
+			return ceiling(x.right, key);
+		}
 		Node t = ceiling(x.left, key);
-		if (t != null) return t;
-		else           return x;
+		if (t != null) {
+			return t;
+		} else {
+			return x;
+		}
 	}
 
 	/**
@@ -711,9 +810,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 		// assert x != null;
 		// assert k >= 0 && k < size(x);
 		int t = size(x.left);
-		if      (t > k) return select(x.left,  k);
-		else if (t < k) return select(x.right, k - t - 1);
-		else            return x;
+		if (t > k) {
+			return select(x.left,  k);
+		} else if (t < k) {
+			return select(x.right, k - t - 1);
+		} else {
+			return x;
+		}
 	}
 
 	/**
@@ -724,7 +827,9 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	public int rank(final Key key) {
-		if (key == null) throw new IllegalArgumentException("argument to rank() is null");
+		if (key == null) {
+			throw new IllegalArgumentException("argument to rank() is null");
+		}
 		return rank(key, root);
 	}
 
@@ -737,11 +842,17 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	private int rank(final Key key, final Node x) {
-		if (x == null) return 0;
+		if (x == null) {
+			return 0;
+		}
 		int cmp = key.compareTo(x.key);
-		if      (cmp < 0) return rank(key, x.left);
-		else if (cmp > 0) return 1 + size(x.left) + rank(key, x.right);
-		else              return size(x.left);
+		if (cmp < 0) {
+			return rank(key, x.left);
+		} else if (cmp > 0) {
+			return 1 + size(x.left) + rank(key, x.right);
+		} else {
+			return size(x.left);
+		}
 	}
 
 	/**
@@ -750,7 +861,9 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	public Iterable<Key> keys() {
-		if (isEmpty()) return new Queue<Key>();
+		if (isEmpty()) {
+			return new Queue<Key>();
+		}
 		return keys(min(), max());
 	}
 
@@ -763,8 +876,12 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	public Iterable<Key> keys(final Key lo, final Key hi) {
-		if (lo == null) throw new IllegalArgumentException("first argument to keys() is null");
-		if (hi == null) throw new IllegalArgumentException("second argument to keys() is null");
+		if (lo == null) {
+			throw new IllegalArgumentException("first argument to keys() is null");
+		}
+		if (hi == null) {
+			throw new IllegalArgumentException("second argument to keys() is null");
+		}
 
 		Queue<Key> queue = new Queue<Key>();
 		// if (isEmpty() || lo.compareTo(hi) > 0) return queue;
@@ -781,12 +898,20 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @param      hi     The higher
 	 */
 	private void keys(final Node x, final Queue<Key> queue, final Key lo, final Key hi) {
-		if (x == null) return;
+		if (x == null) {
+			return;
+		}
 		int cmplo = lo.compareTo(x.key);
 		int cmphi = hi.compareTo(x.key);
-		if (cmplo < 0) keys(x.left, queue, lo, hi);
-		if (cmplo <= 0 && cmphi >= 0) queue.enqueue(x.key);
-		if (cmphi > 0) keys(x.right, queue, lo, hi);
+		if (cmplo < 0) {
+			keys(x.left, queue, lo, hi);
+		}
+		if (cmplo <= 0 && cmphi >= 0) {
+			queue.enqueue(x.key);
+		}
+		if (cmphi > 0) {
+			keys(x.right, queue, lo, hi);
+		}
 	}
 
 	/**
@@ -798,12 +923,21 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	 * @return     { description_of_the_return_value }
 	 */
 	public int size(final Key lo, final Key hi) {
-		if (lo == null) throw new IllegalArgumentException("first argument to size() is null");
-		if (hi == null) throw new IllegalArgumentException("second argument to size() is null");
+		if (lo == null) {
+			throw new IllegalArgumentException("first argument to size() is null");
+		}
+		if (hi == null) {
+			throw new IllegalArgumentException("second argument to size() is null");
+		}
 
-		if (lo.compareTo(hi) > 0) return 0;
-		if (contains(hi)) return rank(hi) - rank(lo) + 1;
-		else              return rank(hi) - rank(lo);
+		if (lo.compareTo(hi) > 0) {
+			return 0;
+		}
+		if (contains(hi)) {
+			return rank(hi) - rank(lo) + 1;
+		} else              {
+			return rank(hi) - rank(lo);
+		}
 	}
 	// /**
 	//  * { function for check }.
@@ -897,225 +1031,225 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
  * @param      <Item>  The item
  */
 class Queue<Item> implements Iterable<Item> {
-    /**
-     * { variable for beginning of queue }.
-     */
-    private Node<Item> first;
-    /**
-     * { variable for end of queue }.
-     */
-    private Node<Item> last;
-    /**
-     * { variable for number of elements on queue }.
-     */
-    private int n;
-    /**
-     * Class for node.
-     * helper linked list class.
-     *
-     * @param      <Item>  The item
-     */
-    private static class Node<Item> {
-        /**
-         * { variable for item }.
-         */
-        private Item item;
-        /**
-         * { variable for node next }.
-         */
-        private Node<Item> next;
-    }
-    /**
-     * Constructs the object.
-     * Initializes an empty queue.
-     */
-    Queue() {
-        first = null;
-        last  = null;
-        n = 0;
-    }
-    /**
-     * Returns true if this queue is empty.
-     *
-     * Complexity :
-     *              Best Case : O(1)
-     *              Average Case : O(1)
-     *              Worst Case : O(1)
-     *
-     * @return     True if empty, False otherwise.
-     */
-    public boolean isEmpty() {
-        return first == null;
-    }
+	/**
+	 * { variable for beginning of queue }.
+	 */
+	private Node<Item> first;
+	/**
+	 * { variable for end of queue }.
+	 */
+	private Node<Item> last;
+	/**
+	 * { variable for number of elements on queue }.
+	 */
+	private int n;
+	/**
+	 * Class for node.
+	 * helper linked list class.
+	 *
+	 * @param      <Item>  The item
+	 */
+	private static class Node<Item> {
+		/**
+		 * { variable for item }.
+		 */
+		private Item item;
+		/**
+		 * { variable for node next }.
+		 */
+		private Node<Item> next;
+	}
+	/**
+	 * Constructs the object.
+	 * Initializes an empty queue.
+	 */
+	Queue() {
+		first = null;
+		last  = null;
+		n = 0;
+	}
+	/**
+	 * Returns true if this queue is empty.
+	 *
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
+	public boolean isEmpty() {
+		return first == null;
+	}
 
-    /**
-     * Returns the number of items in this queue.
-     * Complexity :
-     *              Best Case : O(1)
-     *              Average Case : O(1)
-     *              Worst Case : O(1)
-     * @return     { int value }
-     */
-    public int size() {
-        return n;
-    }
+	/**
+	 * Returns the number of items in this queue.
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 * @return     { int value }
+	 */
+	public int size() {
+		return n;
+	}
 
-    /**
-     * { Returns the item least recently added to this queue }.
-     * Complexity :
-     *              Best Case : O(1)
-     *              Average Case : O(1)
-     *              Worst Case : O(1)
-     * @return     { the item least recently added to this queue }
-     */
-    public Item peek() {
-        if (isEmpty()) {
-            throw new NoSuchElementException("Queue underflow");
-        }
-        return first.item;
-    }
+	/**
+	 * { Returns the item least recently added to this queue }.
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 * @return     { the item least recently added to this queue }
+	 */
+	public Item peek() {
+		if (isEmpty()) {
+			throw new NoSuchElementException("Queue underflow");
+		}
+		return first.item;
+	}
 
-    /**
-     * { Adds the item to this queue }.
-     * Complexity :
-     *              Best Case : O(1)
-     *              Average Case : O(1)
-     *              Worst Case : O(1)
-     * @param      item  The item
-     */
-    public void enqueue(final Item item) {
-        Node<Item> oldlast = last;
-        last = new Node<Item>();
-        last.item = item;
-        last.next = null;
-        if (isEmpty()) {
-            first = last;
-        } else {
-            oldlast.next = last;
-        }
-        n++;
-    }
+	/**
+	 * { Adds the item to this queue }.
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 * @param      item  The item
+	 */
+	public void enqueue(final Item item) {
+		Node<Item> oldlast = last;
+		last = new Node<Item>();
+		last.item = item;
+		last.next = null;
+		if (isEmpty()) {
+			first = last;
+		} else {
+			oldlast.next = last;
+		}
+		n++;
+	}
 
-    /**
-     * { Removes and returns the item on this queue
-     *   that was least recently added }.
-     *
-     * Complexity :
-     *              Best Case : O(1)
-     *              Average Case : O(1)
-     *              Worst Case : O(1)
-     *
-     * @return     { the item on this queue that was least recently added }
-     * @throws NoSuchElementException if this queue is empty
-     */
-    public Item dequeue() {
-        if (isEmpty()) {
-            throw new NoSuchElementException("Queue underflow");
-        }
-        Item item = first.item;
-        first = first.next;
-        n--;
-        if (isEmpty()) {
-            last = null;
-        }
-        return item;
-    }
+	/**
+	 * { Removes and returns the item on this queue
+	 *   that was least recently added }.
+	 *
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 *
+	 * @return     { the item on this queue that was least recently added }
+	 * @throws NoSuchElementException if this queue is empty
+	 */
+	public Item dequeue() {
+		if (isEmpty()) {
+			throw new NoSuchElementException("Queue underflow");
+		}
+		Item item = first.item;
+		first = first.next;
+		n--;
+		if (isEmpty()) {
+			last = null;
+		}
+		return item;
+	}
 
-    /**
-     * Returns a string representation of this queue.
-     *
-     * Complexity :
-     *              Best Case : O(1)
-     *              Average Case : O(1)
-     *              Worst Case : O(1)
-     *
-     * @return the sequence of items in FIFO order, separated by spaces
-     */
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        for (Item item : this) {
-            s.append(item);
-            s.append(' ');
-        }
-        return s.toString();
-    }
+	/**
+	 * Returns a string representation of this queue.
+	 *
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 *
+	 * @return the sequence of items in FIFO order, separated by spaces
+	 */
+	public String toString() {
+		StringBuilder s = new StringBuilder();
+		for (Item item : this) {
+			s.append(item);
+			s.append(' ');
+		}
+		return s.toString();
+	}
 
-    /**
-     * { Returns an iterator that iterates over the
-     *   items in this queue in FIFO order }.
-     *
-     * Complexity :
-     *              Best Case : O(1)
-     *              Average Case : O(1)
-     *              Worst Case : O(1)
-     *
-     * @return     { an iterator that iterates over the items
-     *               in this queue in FIFO order}
-     */
-    public Iterator<Item> iterator()  {
-        return new ListIterator<Item>(first);
-    }
+	/**
+	 * { Returns an iterator that iterates over the
+	 *   items in this queue in FIFO order }.
+	 *
+	 * Complexity :
+	 *              Best Case : O(1)
+	 *              Average Case : O(1)
+	 *              Worst Case : O(1)
+	 *
+	 * @return     { an iterator that iterates over the items
+	 *               in this queue in FIFO order}
+	 */
+	public Iterator<Item> iterator()  {
+		return new ListIterator<Item>(first);
+	}
 
-    /**
-     * Class for list iterator.
-     *
-     * @param      <Item>  The item
-     */
-    private class ListIterator<Item> implements Iterator<Item> {
-        /**
-         * { variable for current node }.
-         */
-        private Node<Item> current;
-        /**
-         * Constructs the object.
-         *
-         * @param      first1  The first
-         */
-        ListIterator(final Node<Item> first1) {
-            current = first1;
-        }
-        /**
-         * Determines if it has next.
-         *
-         * @return     True if has next, False otherwise.
-         */
-        public boolean hasNext() {
-            return current != null;
-        }
-        /**
-         * { function for remove }.
-         */
-        public void remove() {
-            throw new UnsupportedOperationException();
-        }
-        /**
-         * { function for next }.
-         *
-         * @return     { description_of_the_return_value }
-         */
-        public Item next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
-            Item item = current.item;
-            current = current.next;
-            return item;
-        }
-    }
-    // /**
-    //  * Unit tests the {@code Queue} data type.
-    //  *
-    //  * @param args the command-line arguments
-    //  */
-    // public static void main(String[] args) {
-    //     Queue<String> queue = new Queue<String>();
-    //     while (!StdIn.isEmpty()) {
-    //         String item = StdIn.readString();
-    //         if (!item.equals("-"))
-    //             queue.enqueue(item);
-    //         else if (!queue.isEmpty())
-    //             StdOut.print(queue.dequeue() + " ");
-    //     }
-    //     StdOut.println("(" + queue.size() + " left on queue)");
-    // }
+	/**
+	 * Class for list iterator.
+	 *
+	 * @param      <Item>  The item
+	 */
+	private class ListIterator<Item> implements Iterator<Item> {
+		/**
+		 * { variable for current node }.
+		 */
+		private Node<Item> current;
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      first1  The first
+		 */
+		ListIterator(final Node<Item> first1) {
+			current = first1;
+		}
+		/**
+		 * Determines if it has next.
+		 *
+		 * @return     True if has next, False otherwise.
+		 */
+		public boolean hasNext() {
+			return current != null;
+		}
+		/**
+		 * { function for remove }.
+		 */
+		public void remove() {
+			throw new UnsupportedOperationException();
+		}
+		/**
+		 * { function for next }.
+		 *
+		 * @return     { description_of_the_return_value }
+		 */
+		public Item next() {
+			if (!hasNext()) {
+				throw new NoSuchElementException();
+			}
+			Item item = current.item;
+			current = current.next;
+			return item;
+		}
+	}
+	// /**
+	//  * Unit tests the {@code Queue} data type.
+	//  *
+	//  * @param args the command-line arguments
+	//  */
+	// public static void main(String[] args) {
+	//     Queue<String> queue = new Queue<String>();
+	//     while (!StdIn.isEmpty()) {
+	//         String item = StdIn.readString();
+	//         if (!item.equals("-"))
+	//             queue.enqueue(item);
+	//         else if (!queue.isEmpty())
+	//             StdOut.print(queue.dequeue() + " ");
+	//     }
+	//     StdOut.println("(" + queue.size() + " left on queue)");
+	// }
 }
