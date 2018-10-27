@@ -1,9 +1,2 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:63: Line is longer than 80 characters (found 99). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:65:14: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:65:21: '>' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:65:22: '>' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:72:14: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\1\Solution.java:74: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
-Checkstyle ends with 6 errors.

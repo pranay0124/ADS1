@@ -60,16 +60,17 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int input1 = Integer.parseInt(scan.nextLine());
-        SeparateChainingHashST<Integer, StudentDetails> hashTable = new SeparateChainingHashST<>();
+        SeparateChainingHashST<Integer, StudentDetails> hashTable =
+            new SeparateChainingHashST<>();
         StudentDetails student = null;
-        while(input1>0) {
+        while (input1 > 0) {
             String[] tokens1 = scan.nextLine().split(",");
             student = new StudentDetails(tokens1[1], tokens1[2]);
             hashTable.put(Integer.parseInt(tokens1[0]), student);
             input1--;
         }
         int input2 = Integer.parseInt(scan.nextLine());
-        while(input2 > 0) {
+        while (input2 > 0) {
             String[] tokens2 = scan.nextLine().split(" ");
             switch (tokens2[2]) {
             case "1":
@@ -87,6 +88,8 @@ final class Solution {
                 } else {
                     System.out.println("Student doesn't exists...");
                 }
+                break;
+            default:
                 break;
             }
             input2--;
