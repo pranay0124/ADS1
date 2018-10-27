@@ -595,9 +595,9 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node balance(Node h) {
+    private Node balance(final Node h1) {
         // assert (h != null);
-
+        Node h = h1;
         if (isRed(h.right)) {
             h = rotateLeft(h);
         }
@@ -698,7 +698,7 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Key floor(Key key) {
+    public Key floor(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException(
                 "argument to floor() is null");

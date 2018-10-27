@@ -23,7 +23,7 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:541:29: Parameter h should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:559:30: Parameter h should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:580:31: Parameter h should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:598:26: Parameter h should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:701:22: Parameter key should be final. [FinalParameters]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:594:8: Unused @param tag for 'h'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:598:37: Expected @param tag for 'h1'. [JavadocMethod]
 Audit done.
 Checkstyle ends with 26 errors.
