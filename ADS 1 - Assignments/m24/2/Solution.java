@@ -38,24 +38,24 @@ public final class Solution {
                 double min = Double.parseDouble(tokens2[1]);
                 double max = Double.parseDouble(tokens2[2]);
                 for (StudentDetails each : bst.keys()) {
-                    if (each.marks >= min && each.marks <= max) {
-                        System.out.println(each.name);
+                    if (each.getMarks() >= min && each.getMarks() <= max) {
+                        System.out.println(each.getName());
                     }
                 }
                 break;
             case "LE":
                 double low = Double.parseDouble(tokens2[1]);
                 for (StudentDetails each : bst.keys()) {
-                    if (each.marks <= low) {
-                        System.out.println(each.name);
+                    if (each.getMarks() <= low) {
+                        System.out.println(each.getName());
                     }
                 }
                 break;
             case "GE":
                 double high = Double.parseDouble(tokens2[1]);
                 for (StudentDetails each : bst.keys()) {
-                    if (each.marks >= high) {
-                        System.out.println(each.name);
+                    if (each.getMarks() >= high) {
+                        System.out.println(each.getName());
                     }
                 }
                 break;
@@ -72,15 +72,15 @@ class StudentDetails implements Comparable<StudentDetails> {
     /**
      * { variable for student name }.
      */
-    String name;
+    private String name;
     /**
      * { variable for student marks }.
      */
-    double marks;
+    private double marks;
     /**
      * { variable for student rollnumber }.
      */
-    int rollnumber;
+    private int rollnumber;
     /**
      * Constructs the object.
      *
@@ -92,6 +92,30 @@ class StudentDetails implements Comparable<StudentDetails> {
         this.name  = n;
         this.marks = Double.parseDouble(m);
         this.rollnumber = Integer.parseInt(o);
+    }
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
+    public String getName() {
+        return name;
+    }
+    /**
+     * Gets the marks.
+     *
+     * @return     The marks.
+     */
+    public double getMarks() {
+        return marks;
+    }
+    /**
+     * Gets the rollnumber.
+     *
+     * @return     The rollnumber.
+     */
+    public int getRollnumber() {
+        return rollnumber;
     }
     /**
      * { CompareTo function }.
@@ -156,7 +180,7 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
          */
         private Value val;
         /**
-         * { links to left and right subtrees }
+         * { links to left and right subtrees }.
          */
         private Node left, right;
         /**
@@ -175,7 +199,7 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
          * @param      color1  The color
          * @param      size1   The size
          */
-        public Node(final Key key1, final Value val1,
+        Node(final Key key1, final Value val1,
                     final boolean color1, final int size1) {
             this.key = key1;
             this.val = val1;
