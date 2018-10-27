@@ -60,10 +60,10 @@ class StudentDetails implements Comparable<StudentDetails> {
 	public int compareTo(StudentDetails that) {
 		if (this.marks > that.marks) return 1;
 		if (this.marks < that.marks) return -1;
-		if (this.name.compareTo(that.name) > 0) return 1;
-		if (this.name.compareTo(that.name) < 0) return -1;
 		if (this.rollnumber > that.rollnumber) return 1;
 		if (this.rollnumber < that.rollnumber) return -1;
+		if (this.name.compareTo(that.name) > 0) return 1;
+		if (this.name.compareTo(that.name) < 0) return -1;
 		return 0;
 	}
 }

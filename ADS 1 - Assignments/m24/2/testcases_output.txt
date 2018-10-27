@@ -232,7 +232,7 @@ Neil Cadigan
 Megon
 Meili Cady
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 Stuart B. MacBride
 Wayne Pacelle
@@ -963,8 +963,8 @@ Yamile Saied Méndez
 Namita Jain
 Ed J. Paine
 Jimmy Palmiotti
-Macky Pamintuan
 Monica Palms
+Macky Pamintuan
 Laurence Packer
 John W. Jacobs M.D.
 Michael Panckridge
@@ -1069,8 +1069,8 @@ Nafisa Haji
 Rebecca Paley
 Marilyn Hagerty
 Shaili Jain M.D.
-Al Jaffee
 John Jacobs
+Al Jaffee
 Nasim Marie Jafry
 Laura Holmes Haddad
 David H. Hackworth
@@ -1225,8 +1225,8 @@ Sari Padorr
 Mary MacCracken
 Michael Haag
 Maxwell Mackenzie
-Kevin MacAllister
 Todd Haberkorn
+Kevin MacAllister
 Michael Jaime-Becerra
 David Macfarlane
 Jake Page
@@ -1257,8 +1257,8 @@ Yamile Saied Méndez
 Namita Jain
 Ed J. Paine
 Jimmy Palmiotti
-Macky Pamintuan
 Monica Palms
+Macky Pamintuan
 Laurence Packer
 John W. Jacobs M.D.
 Michael Panckridge
@@ -1414,8 +1414,8 @@ Sari Padorr
 Mary MacCracken
 Michael Haag
 Maxwell Mackenzie
-Kevin MacAllister
 Todd Haberkorn
+Kevin MacAllister
 Michael Jaime-Becerra
 David Macfarlane
 Jake Page
@@ -1456,8 +1456,8 @@ Daniel Hahn
 Sara Palacios
 Ed J. Paine
 Jimmy Palmiotti
-Macky Pamintuan
 Monica Palms
+Macky Pamintuan
 Laurence Packer
 John W. Jacobs M.D.
 Michael Panckridge
@@ -1582,8 +1582,8 @@ Libby Jackson
 Kristin Halbrook
 Ed J. Paine
 Jimmy Palmiotti
-Macky Pamintuan
 Monica Palms
+Macky Pamintuan
 Laurence Packer
 John W. Jacobs M.D.
 Michael Panckridge
@@ -1653,8 +1653,8 @@ Nafisa Haji
 Rebecca Paley
 Marilyn Hagerty
 Shaili Jain M.D.
-Al Jaffee
 John Jacobs
+Al Jaffee
 Nasim Marie Jafry
 Laura Holmes Haddad
 David H. Hackworth
