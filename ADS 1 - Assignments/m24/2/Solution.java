@@ -1,9 +1,24 @@
+/**
+ * @author : Pranay Kumar Y.
+ * Date : 27th October,2018.
+ */
 import java.util.Scanner;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() { }
+	/**
+	 * { Main function }.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int input1 = Integer.parseInt(scan.nextLine());
 		RedBlackBST<StudentDetails, Integer> bst = new RedBlackBST<>();
@@ -48,105 +63,194 @@ public class Solution {
 		}
 	}
 }
+
+/**
+ * Class for student details.
+ */
 class StudentDetails implements Comparable<StudentDetails> {
+	/**
+	 * { variable for student name }.
+	 */
 	String name;
+	/**
+	 * { variable for student marks }.
+	 */
 	double marks;
+	/**
+	 * { variable for student rollnumber }.
+	 */
 	int rollnumber;
-	StudentDetails(String n, String m, String o) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      n     { parameter_description }
+	 * @param      m     { parameter_description }
+	 * @param      o     { parameter_description }
+	 */
+	StudentDetails(final String n, final String m, final String o) {
 		this.name  = n;
 		this.marks = Double.parseDouble(m);
 		this.rollnumber = Integer.parseInt(o);
 	}
-	public int compareTo(StudentDetails that) {
-		if (this.marks > that.marks) return 1;
-		if (this.marks < that.marks) return -1;
-		if (this.rollnumber > that.rollnumber) return 1;
-		if (this.rollnumber < that.rollnumber) return -1;
-		if (this.name.compareTo(that.name) > 0) return 1;
-		if (this.name.compareTo(that.name) < 0) return -1;
+	/**
+	 * { CompareTo function }.
+	 *
+	 * @param      that  The that
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public int compareTo(final StudentDetails that) {
+		if (this.marks > that.marks) {
+			return 1;
+		}
+		if (this.marks < that.marks) {
+			return -1;
+		}
+		if (this.rollnumber > that.rollnumber) {
+			return 1;
+		}
+		if (this.rollnumber < that.rollnumber) {
+			return -1;
+		}
+		if (this.name.compareTo(that.name) > 0) {
+			return 1;
+		}
+		if (this.name.compareTo(that.name) < 0) {
+			return -1;
+		}
 		return 0;
 	}
 }
+
+/**
+ * Class for red black bst.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class RedBlackBST<Key extends Comparable<Key>, Value> {
-
+	/**
+	 * { variable for colour red }.
+	 */
 	private static final boolean RED   = true;
+	/**
+	 * { variable for colour black }.
+	 */
 	private static final boolean BLACK = false;
-
-	private Node root;     // root of the BST
-
-	// BST helper node data type
+	/**
+	 * { root of the BST }.
+	 */
+	private Node root;
+	/**
+	 * Class for node.
+	 * BST helper node data type
+	 */
 	private class Node {
-		private Key key;           // key
-		private Value val;         // associated data
-		private Node left, right;  // links to left and right subtrees
-		private boolean color;     // color of parent link
-		private int size;          // subtree count
-
-		public Node(Key key, Value val, boolean color, int size) {
+		/**
+		 * { variable for key }.
+		 */
+		private Key key;
+		/**
+		 * { associated data }.
+		 */
+		private Value val;
+		/**
+		 * { links to left and right subtrees }
+		 */
+		private Node left, right;
+		/**
+		 * { color of parent link }.
+		 */
+		private boolean color;
+		/**
+		 * { subtree count }.
+		 */
+		private int size;
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      key    The key
+		 * @param      val    The value
+		 * @param      color  The color
+		 * @param      size   The size
+		 */
+		public Node(final Key key, final Value val, final boolean color, final int size) {
 			this.key = key;
 			this.val = val;
 			this.color = color;
 			this.size = size;
 		}
 	}
-
 	/**
 	 * Initializes an empty symbol table.
 	 */
 	public RedBlackBST() {
 	}
-
-	/***************************************************************************
-	 *  Node helper methods.
-	 ***************************************************************************/
-	// is node x red; false if x is null ?
-	private boolean isRed(Node x) {
+	/**
+	 * Determines if red.
+	 *
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     True if red, False otherwise.
+	 */
+	private boolean isRed(final Node x) {
 		if (x == null) return false;
 		return x.color == RED;
 	}
 
-	// number of node in subtree rooted at x; 0 if x is null
+	/**
+	 * { number of node in subtree rooted at x; 0 if x is null }.
+	 *
+	 * @param      x     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	private int size(Node x) {
 		if (x == null) return 0;
 		return x.size;
 	}
 
-
 	/**
-	 * Returns the number of key-value pairs in this symbol table.
-	 * @return the number of key-value pairs in this symbol table
+	 * { Returns the number of key-value pairs in this symbol table }.
+	 *
+	 * @return     { description_of_the_return_value }
 	 */
 	public int size() {
 		return size(root);
 	}
 
 	/**
-	  * Is this symbol table empty?
-	  * @return {@code true} if this symbol table is empty and {@code false} otherwise
-	  */
+	 * Determines if empty.
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
 	public boolean isEmpty() {
 		return root == null;
 	}
 
-
-	/***************************************************************************
-	 *  Standard BST search.
-	 ***************************************************************************/
-
 	/**
-	 * Returns the value associated with the given key.
-	 * @param key the key
-	 * @return the value associated with the given key if the key is in the symbol table
-	 *     and {@code null} if the key is not in the symbol table
-	 * @throws IllegalArgumentException if {@code key} is {@code null}
+	 * { Returns the value associated with the given key }.
+	 *
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
 	 */
-	public Value get(Key key) {
-		if (key == null) throw new IllegalArgumentException("argument to get() is null");
+	public Value get(final Key key) {
+		if (key == null) throw new
+			IllegalArgumentException("argument to get() is null");
 		return get(root, key);
 	}
 
-	// value associated with the given key in subtree rooted at x; null if no such key
-	private Value get(Node x, Key key) {
+	/**
+	 * { value associated with the given key in
+	 *   subtree rooted at x; null if no such key }.
+	 *
+	 * @param      x     { parameter_description }
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	private Value get(Node x, final Key key) {
 		while (x != null) {
 			int cmp = key.compareTo(x.key);
 			if      (cmp < 0) x = x.left;
@@ -157,37 +261,32 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
 	}
 
 	/**
-	 * Does this symbol table contain the given key?
-	 * @param key the key
-	 * @return {@code true} if this symbol table contains {@code key} and
-	 *     {@code false} otherwise
-	 * @throws IllegalArgumentException if {@code key} is {@code null}
+	 * { Does this symbol table contain the given key }.
+	 *
+	 * @param      key   The key
+	 *
+	 * @return     { description_of_the_return_value }
 	 */
-	public boolean contains(Key key) {
+	public boolean contains(final Key key) {
 		return get(key) != null;
 	}
 
-	/***************************************************************************
-	 *  Red-black tree insertion.
-	 ***************************************************************************/
-
 	/**
-	 * Inserts the specified key-value pair into the symbol table, overwriting the old
-	 * value with the new value if the symbol table already contains the specified key.
-	 * Deletes the specified key (and its associated value) from this symbol table
-	 * if the specified value is {@code null}.
+	 * { Inserts the specified key-value pair into the symbol table,
+	 *   overwriting the old value with the new value if the symbol 
+	 *   table already contains the specified key. Deletes the specified key
+	 *   (and its associated value) from this symbol table 
+	 *   if the specified value is null }.
 	 *
-	 * @param key the key
-	 * @param val the value
-	 * @throws IllegalArgumentException if {@code key} is {@code null}
+	 * @param      key   The key
+	 * @param      val   The value
 	 */
-	public void put(Key key, Value val) {
+	public void put(final Key key, final Value val) {
 		if (key == null) throw new IllegalArgumentException("first argument to put() is null");
 		if (val == null) {
 			delete(key);
 			return;
 		}
-
 		root = put(root, key, val);
 		root.color = BLACK;
 		// assert check();
