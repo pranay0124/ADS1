@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:36: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
-Checkstyle ends with 1 errors.

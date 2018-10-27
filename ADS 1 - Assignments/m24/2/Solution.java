@@ -59,6 +59,8 @@ public final class Solution {
                     }
                 }
                 break;
+            default:
+                break;
             }
             input2--;
         }
@@ -200,7 +202,7 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
          * @param      size1   The size
          */
         Node(final Key key1, final Value val1,
-                    final boolean color1, final int size1) {
+             final boolean color1, final int size1) {
             this.key = key1;
             this.val = val1;
             this.color = color1;
