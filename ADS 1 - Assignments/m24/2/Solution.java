@@ -10,7 +10,7 @@ public class Solution {
 		StudentDetails student = null;
 		while (input1 > 0) {
 			String[] tokens1 = scan.nextLine().split(",");
-			student = new StudentDetails(tokens1[1], tokens1[2], tokens1[3]);
+			student = new StudentDetails(tokens1[1], tokens1[2], tokens1[0]);
 			bst.put(student, Integer.parseInt(tokens1[0]));
 			input1--;
 		}

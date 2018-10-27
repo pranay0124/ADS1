@@ -6,7 +6,6 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:6:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:13: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:13:86: '3' is a magic number. [MagicNumber]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:20: switch without "default" clause. [MissingSwitchDefault]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:25: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:51: Missing a Javadoc comment. [JavadocType]
@@ -326,4 +325,4 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:819:17: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:820: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 326 errors.
+Checkstyle ends with 325 errors.
