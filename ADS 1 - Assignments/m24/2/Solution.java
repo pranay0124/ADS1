@@ -253,12 +253,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      * { value associated with the given key in
      *   subtree rooted at x; null if no such key }.
      *
-     * @param      x     { parameter_description }
+     * @param      x1     { parameter_description }
      * @param      key   The key
      *
      * @return     { description_of_the_return_value }
      */
-    private Value get(Node x, final Key key) {
+    private Value get(final Node x1, final Key key) {
+        Node x = x1;
         while (x != null) {
             int cmp = key.compareTo(x.key);
             if (cmp < 0) {
@@ -310,13 +311,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     /**
      * { insert the key-value pair in the subtree rooted at h }.
      *
-     * @param      h     { parameter_description }
+     * @param      h1     { parameter_description }
      * @param      key   The key
      * @param      val   The value
      *
      * @return     { description_of_the_return_value }
      */
-    private Node put(Node h, final Key key, final Value val) {
+    private Node put(final Node h1, final Key key, final Value val) {
+        Node h = h1;
         if (h == null) {
             return new Node(key, val, RED, 1);
         }
@@ -368,11 +370,12 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     /**
      * { delete the key-value pair with the minimum key rooted at h }.
      *
-     * @param      h     { parameter_description }
+     * @param      h1     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    private Node deleteMin(Node h) {
+    private Node deleteMin(final Node h1) {
+        Node h = h1;
         if (h.left == null) {
             return null;
         }
@@ -408,11 +411,12 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     /**
      * { delete the key-value pair with the maximum key rooted at h }.
      *
-     * @param      h     { parameter_description }
+     * @param      h1     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    private Node deleteMax(Node h) {
+    private Node deleteMax(final Node h1) {
+        Node h = h1;
         if (isRed(h.left)) {
             h = rotateRight(h);
         }
@@ -460,13 +464,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     /**
      * { delete the key-value pair with the given key rooted at h }.
      *
-     * @param      h     { parameter_description }
+     * @param      h1     { parameter_description }
      * @param      key   The key
      *
      * @return     { description_of_the_return_value }
      */
-    private Node delete(Node h, final Key key) {
+    private Node delete(final Node h1, final Key key) {
         // assert get(h, key) != null;
+        Node h = h1;
 
         if (key.compareTo(h.key) < 0)  {
             if (!isRed(h.left) && !isRed(h.left.left)) {
@@ -498,12 +503,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     /**
      * { make a left-leaning link lean to the right }.
      *
-     * @param      h     { parameter_description }
+     * @param      h1     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    private Node rotateRight (Node h) {
+    private Node rotateRight (final Node h1) {
         // assert (h != null) && isRed(h.left);
+        Node h = h1;
         Node x = h.left;
         h.left = x.right;
         x.right = h;
@@ -517,12 +523,13 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     /**
      * { make a right-leaning link lean to the left }.
      *
-     * @param      h     { parameter_description }
+     * @param      h1     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    private Node rotateLeft(Node h) {
+    private Node rotateLeft(final Node h1) {
         // assert (h != null) && isRed(h.right);
+        Node h = h1;
         Node x = h.right;
         h.right = x.left;
         x.left = h;
@@ -536,13 +543,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     /**
      * { flip the colors of a node and its two children }.
      *
-     * @param      h     { parameter_description }
+     * @param      h1     { parameter_description }
      */
-    private void flipColors(Node h) {
+    private void flipColors(final Node h1) {
         // h must have opposite color of its two children
         // assert (h != null) && (h.left != null) && (h.right != null);
         // assert (!isRed(h) &&  isRed(h.left) &&  isRed(h.right))
         //    || (isRed(h)  && !isRed(h.left) && !isRed(h.right));
+        Node h = h1;
         h.color = !h.color;
         h.left.color = !h.left.color;
         h.right.color = !h.right.color;
@@ -552,14 +560,14 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      * { Assuming that h is red and both h.left and h.left.left
      *   are black, make h.left or one of its children red }.
      *
-     * @param      h     { parameter_description }
+     * @param      h1     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    private Node moveRedLeft(Node h) {
+    private Node moveRedLeft(final Node h1) {
         // assert (h != null);
         // assert isRed(h) && !isRed(h.left) && !isRed(h.left.left);
-
+        Node h = h1;
         flipColors(h);
         if (isRed(h.right.left)) {
             h.right = rotateRight(h.right);
@@ -573,11 +581,12 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      * { Assuming that h is red and both h.right and h.right.left
      *   are black, make h.right or one of its children red }.
      *
-     * @param      h     { parameter_description }
+     * @param      h1     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    private Node moveRedRight(Node h) {
+    private Node moveRedRight(final Node h1) {
+        Node h = h1;
         // assert (h != null);
         // assert isRed(h) && !isRed(h.right) && !isRed(h.right.left);
         flipColors(h);
@@ -591,7 +600,7 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     /**
      * { restore red-black tree invariant }.
      *
-     * @param      h     { parameter_description }
+     * @param      h1     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */

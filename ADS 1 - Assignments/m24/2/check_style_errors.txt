@@ -11,19 +11,7 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:179:52: 'size' hides a field. [HiddenField]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:189:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:212:22: Parameter x should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:261:23: Parameter x should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:319:22: Parameter h should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:375:28: Parameter h should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:415:28: Parameter h should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:468:25: Parameter h should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:493: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:505:30: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:505:31: Parameter h should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:524:29: Parameter h should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:541:29: Parameter h should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:559:30: Parameter h should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:580:31: Parameter h should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:594:8: Unused @param tag for 'h'. [JavadocMethod]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:598:37: Expected @param tag for 'h1'. [JavadocMethod]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:498: 'else' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:510:30: '(' is preceded with whitespace. [MethodParamPad]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 14 errors.
