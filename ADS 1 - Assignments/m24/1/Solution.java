@@ -1,19 +1,38 @@
+/**
+ * @author : Pranay Kumar Y.
+ * Date : 27th October,2018.
+ */
 import java.util.Scanner;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+/**
+ * Class for student details.
+ */
 class StudentDetails {
-	String name;
-	double marks;
-	StudentDetails(String n, String m) {
+	/**
+	 * { variable for student name }.
+	 */
+	private String name;
+	/**
+	 * { variable for student marks }.
+	 */
+	private double marks;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      n     { parameter_description }
+	 * @param      m     { parameter_description }
+	 */
+	StudentDetails(final String n, final String m) {
 		this.name = n;
 		this.marks = Double.parseDouble(m);
 	}
-	// String getName() {
-	// 	return name;
-	// }
-	// double getMarks() {
-	// 	return marks;
-	// }
+	public String getName() {
+		return name;
+	}
+	public double getMarks() {
+		return marks;
+	}
 }
 class Solution {
 	public static void main(String[] args) {
@@ -34,7 +53,7 @@ class Solution {
 			case "1":
 				int rollnumber = Integer.parseInt(tokens2[1]);
 				if (hashTable.contains(rollnumber)) {
-					System.out.println(hashTable.get(rollnumber).name);
+					System.out.println(hashTable.get(rollnumber).getName());
 				} else {
 					System.out.println("Student doesn't exists...");
 				}
@@ -42,7 +61,7 @@ class Solution {
 			case "2":
 				int rollnumber1 = Integer.parseInt(tokens2[1]);
 				if (hashTable.contains(rollnumber1)) {
-					System.out.println(hashTable.get(rollnumber1).marks);
+					System.out.println(hashTable.get(rollnumber1).getMarks());
 				} else {
 					System.out.println("Student doesn't exists...");
 				}
