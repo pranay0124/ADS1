@@ -205,11 +205,12 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
     /**
      * { number of node in subtree rooted at x; 0 if x is null }.
      *
-     * @param      x     { parameter_description }
+     * @param      x1     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    private int size(Node x) {
+    private int size(final Node x1) {
+        Node x = x1;
         if (x == null) {
             return 0;
         }
@@ -495,7 +496,9 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
                 // h.val = get(h.right, min(h.right).key);
                 // h.key = min(h.right).key;
                 h.right = deleteMin(h.right);
-            } else h.right = delete(h.right, key);
+            } else {
+                h.right = delete(h.right, key);
+            }
         }
         return balance(h);
     }
@@ -507,7 +510,7 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node rotateRight (final Node h1) {
+    private Node rotateRight(final Node h1) {
         // assert (h != null) && isRed(h.left);
         Node h = h1;
         Node x = h.left;

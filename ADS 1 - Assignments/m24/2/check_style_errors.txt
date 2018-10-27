@@ -10,8 +10,5 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:179:35: 'color' hides a field. [HiddenField]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:179:52: 'size' hides a field. [HiddenField]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:189:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:212:22: Parameter x should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:498: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:510:30: '(' is preceded with whitespace. [MethodParamPad]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 11 errors.
