@@ -10,7 +10,7 @@ public class Solution {
 		StudentDetails student = null;
 		while (input1 > 0) {
 			String[] tokens1 = scan.nextLine().split(",");
-			student = new StudentDetails(tokens1[1], tokens1[2]);
+			student = new StudentDetails(tokens1[1], tokens1[2], tokens1[3]);
 			bst.put(student, Integer.parseInt(tokens1[0]));
 			input1--;
 		}
@@ -51,13 +51,19 @@ public class Solution {
 class StudentDetails implements Comparable<StudentDetails> {
 	String name;
 	double marks;
-	StudentDetails(String n, String m) {
+	int rollnumber;
+	StudentDetails(String n, String m, String o) {
 		this.name  = n;
 		this.marks = Double.parseDouble(m);
+		this.rollnumber = Integer.parseInt(o);
 	}
 	public int compareTo(StudentDetails that) {
 		if (this.marks > that.marks) return 1;
 		if (this.marks < that.marks) return -1;
+		if (this.name.compareTo(that.name) > 0) return 1;
+		if (this.name.compareTo(that.name) < 0) return -1;
+		if (this.rollnumber > that.rollnumber) return 1;
+		if (this.rollnumber < that.rollnumber) return -1;
 		return 0;
 	}
 }
