@@ -18,7 +18,7 @@ class StudentDetails {
 class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int input1 = scan.nextInt();
+		int input1 = Integer.parseInt(scan.nextLine());
 		SeparateChainingHashST<Integer, StudentDetails> hashTable = new SeparateChainingHashST<>();
 		StudentDetails student = null;
 		while(input1>0) {
@@ -27,7 +27,7 @@ class Solution {
 			hashTable.put(Integer.parseInt(tokens1[0]), student);
 			input1--;
 		}
-		int input2 = scan.nextInt();
+		int input2 = Integer.parseInt(scan.nextLine());
 		while(input2 > 0) {
 			String[] tokens2 = scan.nextLine().split(" ");
 			switch (tokens2[2]) {
