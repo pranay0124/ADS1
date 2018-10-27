@@ -5,10 +5,5 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:83:9: Variable 'rollnumber' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:158: First sentence should end with a period. [JavadocStyle]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:178:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:178:31: 'key' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:178:48: 'val' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:179:35: 'color' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:179:52: 'size' hides a field. [HiddenField]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:189:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 6 errors.

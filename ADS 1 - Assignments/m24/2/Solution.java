@@ -170,23 +170,23 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
         /**
          * Constructs the object.
          *
-         * @param      key    The key
-         * @param      val    The value
-         * @param      color  The color
-         * @param      size   The size
+         * @param      key1    The key
+         * @param      val1    The value
+         * @param      color1  The color
+         * @param      size1   The size
          */
-        public Node(final Key key, final Value val,
-                    final boolean color, final int size) {
-            this.key = key;
-            this.val = val;
-            this.color = color;
-            this.size = size;
+        public Node(final Key key1, final Value val1,
+                    final boolean color1, final int size1) {
+            this.key = key1;
+            this.val = val1;
+            this.color = color1;
+            this.size = size1;
         }
     }
     /**
      * Initializes an empty symbol table.
      */
-    public RedBlackBST() {
+    RedBlackBST() {
     }
     /**
      * Determines if red.
