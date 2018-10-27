@@ -21,13 +21,14 @@ class Solution {
 		int input1 = scan.nextInt();
 		SeparateChainingHashST<Integer, StudentDetails> hashTable = new SeparateChainingHashST<>();
 		StudentDetails student = null;
-		for (int i = 0; i < input1; i++) {
+		while(input1>0) {
 			String[] tokens1 = scan.nextLine().split(",");
 			student = new StudentDetails(tokens1[1], tokens1[2]);
 			hashTable.put(Integer.parseInt(tokens1[0]), student);
+			input1--;
 		}
 		int input2 = scan.nextInt();
-		for (int j = 0; j < input2; j++) {
+		while(input2 > 0) {
 			String[] tokens2 = scan.nextLine().split(" ");
 			switch (tokens2[2]) {
 			case "1":
@@ -47,6 +48,7 @@ class Solution {
 				}
 				break;
 			}
+			input2--;
 		}
 	}
 }
