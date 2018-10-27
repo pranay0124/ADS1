@@ -25,7 +25,5 @@ Starting audit...
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:580:31: Parameter h should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:598:26: Parameter h should be final. [FinalParameters]
 [ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:701:22: Parameter key should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:754:24: Parameter key should be final. [FinalParameters]
-[ERROR] E:\ADS1\ADS 1 - Assignments\m24\2\Solution.java:937: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 26 errors.

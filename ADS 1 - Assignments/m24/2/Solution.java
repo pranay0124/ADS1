@@ -751,7 +751,7 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Key ceiling(Key key) {
+    public Key ceiling(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException(
                 "argument to ceiling() is null");
@@ -934,7 +934,7 @@ class RedBlackBST<Key extends Comparable<Key>, Value> {
         }
     }
 
-    /**
+    /**.
      * { Returns the number of keys in the symbol table
      *   in the given range }
      *
